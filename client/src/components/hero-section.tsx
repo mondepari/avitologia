@@ -9,10 +9,9 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="bg-gradient-purple min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
-      {/* Purple Circle Decorations */}
-      <div className="purple-circle-decoration w-[700px] h-[700px] top-[-250px] right-[-250px]"></div>
-      <div className="purple-circle-decoration w-[600px] h-[600px] bottom-[10%] left-[-300px]"></div>
+    <header className="bg-white min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
+      {/* Purple Decoration */}
+      <div className="absolute top-0 right-0 w-[40%] h-full bg-[#8139f2] z-0 rounded-bl-[100px]"></div>
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
@@ -20,11 +19,11 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <div className="text-left mb-4 mt-4">
-                <h2 className="text-xl text-white">Настройка и ведение Яндекс Директ под ключ</h2>
+                <h2 className="text-xl text-gray-900 font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
               </div>
               
               <div className="mb-6">
-                <h1 className="text-4xl md:text-5xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight uppercase">
+                <h1 className="text-4xl md:text-5xl lg:text-[52px] font-black text-gray-900 leading-tight tracking-tight uppercase">
                   ПОЛУЧАЙТЕ СТАБИЛЬНЫЙ<br />
                   ПОТОК ЖИВЫХ КЛИЕНТОВ<br />
                   ЕЖЕНЕДЕЛЬНО
@@ -32,30 +31,42 @@ const HeroSection = () => {
               </div>
               
               <div className="mb-8">
-                <p className="text-lg text-white/90">
+                <p className="text-lg text-gray-800">
                   С помощью профессиональной настройки<br />
                   и ведения контекстной рекламы
                 </p>
               </div>
               
               <div className="mt-6 mb-10">
-                <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-start">
-                  <button 
-                    onClick={() => scrollToSection('calculator')} 
-                    className="bg-[#8139f2] text-white font-medium px-8 py-3 rounded-full hover:bg-[#7235d7] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
-                  >
-                    <span className="text-sm uppercase">Рассчитать стоимость</span>
-                    <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>
-                  </button>
-                  
-                  <div 
-                    onClick={() => scrollToSection('contact')}
-                    className="flex items-center justify-center text-[#333] hover:text-[#8139f2] transition-all duration-300 cursor-pointer group"
-                  >
-                    <div className="bg-white/90 p-2 rounded-full mr-3">
-                      <MessageCircle className="h-5 w-5 text-[#8139f2]" />
+                <div className="flex flex-col space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
+                    <button 
+                      onClick={() => scrollToSection('calculator')} 
+                      className="bg-[#8139f2] text-white font-medium px-8 py-3 rounded-[30px] hover:bg-[#7235d7] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
+                    >
+                      <span className="text-sm uppercase">РАССЧИТАТЬ СТОИМОСТЬ</span>
+                      <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>
+                    </button>
+                    
+                    <div 
+                      onClick={() => scrollToSection('contact')}
+                      className="flex items-center justify-center text-[#333] hover:text-[#8139f2] transition-all duration-300 cursor-pointer group border-b border-dashed border-[#8139f2]"
+                    >
+                      <div className="flex items-center">
+                        <MessageCircle className="h-5 w-5 text-[#8139f2] mr-2" />
+                        <span className="text-sm uppercase text-[#333]">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                      </div>
                     </div>
-                    <span className="text-sm uppercase text-white">Получить консультацию</span>
+                  </div>
+                  
+                  <div className="mt-8 flex items-center">
+                    <div className="flex items-center">
+                      <div className="text-[#8139f2] text-5xl font-bold mr-3">×2.7</div>
+                      <div className="text-sm text-gray-600 max-w-[240px]">
+                        Средний коэффициент увеличения прибыли бизнеса
+                      </div>
+                    </div>
+                    <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-12 w-12 ml-3" />
                   </div>
                 </div>
               </div>
