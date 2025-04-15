@@ -108,14 +108,16 @@ const HeroSection = () => {
       </div>
       
       {/* Features section */}
-      <div className="mt-12 pt-20 bg-white rounded-t-[50px] relative z-20">
+      <div className="mt-20 relative z-20">
         <div className="container mx-auto px-4 pb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-12 text-left">У ВАС БУДЕТ<br />ЭФФЕКТИВНАЯ РЕКЛАМА</h2>
+          <div className="mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">У ВАС БУДЕТ<br />ЭФФЕКТИВНАЯ РЕКЛАМА</h2>
+          </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#8139f2] rounded-xl p-6 text-white shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="bg-[#8139f2] rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
               <div className="mb-4">
-                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-14 h-14" />
+                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-12 h-12 opacity-90" />
               </div>
               <h3 className="text-lg font-bold mb-3">Выбор стратегии продвижения</h3>
               <p className="text-sm opacity-90">
@@ -123,28 +125,31 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
               <div className="mb-4">
-                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-14 h-14" />
+                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-12 h-12 opacity-90" />
               </div>
               <h3 className="text-lg font-bold mb-3">На ваш сайт идут только целевые посетители</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm opacity-90">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
-            <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
               <div className="mb-4">
-                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-14 h-14" />
+                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-12 h-12 opacity-90" />
               </div>
               <h3 className="text-lg font-bold mb-3">Грамотная настройка аналитики</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm opacity-90">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* White bottom curve decoration */}
+      <div className="w-full h-12 bg-white rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
   );
 };
