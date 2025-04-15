@@ -55,6 +55,17 @@ const HeroSection = () => {
                   <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                 </button>
               </div>
+              
+              <div className="mt-8 bg-white rounded-lg p-3 shadow-xl inline-flex items-center space-x-2">
+                <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-8 h-8" />
+                <div>
+                  <div className="font-bold text-purple-600">×2.7</div>
+                  <div className="text-xs text-gray-500">
+                    Средний коэффициент<br />
+                    увеличения прибыли
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -78,18 +89,7 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                <div className="absolute top-1/3 right-0 transform translate-x-1/3">
-                  <div className="bg-white rounded-lg p-3 shadow-xl flex items-center space-x-2">
-                    <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-8 h-8" />
-                    <div>
-                      <div className="font-bold text-purple-600">×2.7</div>
-                      <div className="text-xs text-gray-500">
-                        Средний коэффициент<br />
-                        увеличения прибыли
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
