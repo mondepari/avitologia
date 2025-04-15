@@ -68,6 +68,44 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-5">
+                <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                  <div className="mb-5 flex justify-center">
+                    <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                      <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+                  <p className="text-sm text-gray-600 text-center">
+                    Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                  <div className="mb-5 flex justify-center">
+                    <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                      <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
+                  <p className="text-sm text-gray-600 text-center">
+                    Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+                  <div className="mb-5 flex justify-center">
+                    <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                      <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
+                  <p className="text-sm text-gray-600 text-center">
+                    Дает максимальную точность отчетов и понимание динамики конверсий
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           
@@ -84,50 +122,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Features section */}
-      <div className="mt-20 relative z-20">
-        <div className="container mx-auto px-4 pb-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-[#8139f2]/90 rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
-              <div className="mb-5 flex justify-center">
-                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
-              <p className="text-sm opacity-90 text-center">
-                Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
-              </p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-5 flex justify-center">
-                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">На ваш сайт идут только целевые посетители</h3>
-              <p className="text-sm opacity-90 text-center">
-                Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
-              </p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-5 flex justify-center">
-                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Грамотная настройка аналитики</h3>
-              <p className="text-sm opacity-90 text-center">
-                Дает максимальную точность отчетов и понимание динамики конверсий
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       {/* White bottom curve decoration */}
       <div className="w-full h-12 bg-white rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
