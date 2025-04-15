@@ -1,0 +1,18 @@
+{
+  "name": "digital-marketing-site",
+  "version": "1.0.0",
+  "description": "Сайт специалиста по цифровому маркетингу",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "memorystore": "^1.6.7",
+    "ws": "^8.16.0"
+  }
+}
