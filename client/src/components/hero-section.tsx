@@ -10,12 +10,19 @@ const HeroSection = () => {
 
   return (
     <header className="bg-gradient-purple min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
-      {/* Background Image */}
-      <img 
-        src="./src/assets/images/background.png" 
-        alt="Background" 
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      />
+      {/* Фиолетовые боковые элементы */}
+      <div className="absolute top-0 left-0 h-full w-1/3 bg-[#8139f2] z-0"></div>
+      <div className="absolute top-0 right-0 h-full w-[45%] bg-[#8139f2] z-0"></div>
+      
+      {/* Белая волнистая линия слева */}
+      <div className="absolute h-full w-1/3 left-0 top-0 z-[1] overflow-hidden">
+        <div className="absolute h-full w-[60%] right-[-5%] wave-bg-left"></div>
+      </div>
+      
+      {/* Белая волнистая область справа */}
+      <div className="absolute h-full w-2/3 right-0 top-0 z-[1] overflow-hidden">
+        <div className="absolute h-[120%] w-[90%] left-[5%] top-[-5%] wave-bg-right"></div>
+      </div>
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">

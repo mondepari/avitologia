@@ -15,10 +15,25 @@
 @layer components {
   .bg-gradient-purple {
     background-color: #8139f2;
-    /* Нижний фон - градиент, но основное изображение будет загружено в компоненте */
+    /* Основной фон */
     background-image: linear-gradient(to bottom right, #8139f2, #7c33f2, #6928e0);
     background-size: cover;
     background-position: center;
+  }
+  
+  /* Стили для волнистых фоновых элементов */
+  .wave-bg-right {
+    background-color: white;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 40%;
+    transform: rotate(12deg) translateX(5%) translateY(-5%);
+  }
+  
+  .wave-bg-left {
+    background-color: white;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 80%;
+    transform: rotate(-8deg);
   }
   
   .section-padding {
