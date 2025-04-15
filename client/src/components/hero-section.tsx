@@ -79,19 +79,6 @@ const HeroSection = () => {
                   alt="Телефон с аналитикой" 
                   className="max-h-[500px] md:max-h-[600px] object-contain"
                 />
-                
-                <div className="absolute top-1/4 left-0 transform -translate-x-1/2">
-                  <div className="flex items-center">
-                    <div className="bg-white rounded-full shadow-xl p-2">
-                      <div className="flex items-center space-x-1">
-                        <img src="./src/assets/icons/google-icon.svg" alt="Google" className="w-7 h-7" />
-                        <img src="./src/assets/icons/yandex-icon.svg" alt="Яндекс" className="w-7 h-7" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-
               </div>
             </div>
           </div>
