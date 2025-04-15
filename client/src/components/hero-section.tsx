@@ -56,8 +56,8 @@ const HeroSection = () => {
                 </button>
               </div>
               
-              <div className="mt-8 bg-white rounded-lg p-4 shadow-xl flex items-center justify-between w-full sm:w-auto sm:min-w-[400px] max-w-[500px]">
-                <div className="flex items-center space-x-3">
+              <div className="mt-8 bg-white rounded-lg p-4 shadow-xl flex items-center w-full sm:w-auto sm:min-w-[400px] max-w-[500px]">
+                <div className="flex items-center space-x-3 mx-auto">
                   <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-8 h-8 flex-shrink-0" />
                   <div>
                     <div className="font-bold text-purple-600">×2.7</div>
@@ -66,9 +66,6 @@ const HeroSection = () => {
                       увеличения прибыли
                     </div>
                   </div>
-                </div>
-                <div className="hidden sm:block text-sm text-gray-500 font-medium pr-3 border-l border-gray-200 pl-4 ml-2">
-                  По данным клиентов за 2023-2024
                 </div>
               </div>
             </div>
