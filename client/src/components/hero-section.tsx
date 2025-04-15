@@ -41,10 +41,10 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-start">
                 <button 
                   onClick={() => scrollToSection('calculator')} 
-                  className="bg-[#8139f2] border-2 border-[#8139f2] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] transition duration-300 text-center shadow-lg"
+                  className="bg-[#8139f2] border-2 border-[#8139f2] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] transition duration-300 text-center shadow-lg flex items-center justify-center"
                 >
+                  <img src="./src/assets/icons/price-icon.svg" alt="Цена" className="w-5 h-5 mr-2" />
                   <span className="font-bold">РАССЧИТАТЬ СТОИМОСТЬ</span>
-                  <span className="text-xs block mt-1 text-white/80">(за 1 минуту в подарок!)</span>
                 </button>
                 
                 <button 
