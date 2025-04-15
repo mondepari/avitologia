@@ -41,17 +41,17 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-start">
                 <button 
                   onClick={() => scrollToSection('calculator')} 
-                  className="bg-[#8139f2] border-2 border-[#8139f2] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] transition duration-300 text-center shadow-lg flex items-center justify-center"
+                  className="bg-[#8139f2] border-2 border-white/20 text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] hover:border-white hover:shadow-xl transition-all duration-300 text-center shadow-lg flex items-center justify-center group"
                 >
-                  <img src="./src/assets/icons/price-icon.svg" alt="Цена" className="w-5 h-5 mr-2" />
+                  <img src="./src/assets/icons/price-icon.svg" alt="Цена" className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                   <span className="font-bold">РАССЧИТАТЬ СТОИМОСТЬ</span>
                 </button>
                 
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="flex items-center justify-center text-white font-medium hover:underline cursor-pointer border border-white/30 rounded-full px-6 py-3 bg-white/5"
+                  className="flex items-center justify-center text-white font-medium hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer border border-white/30 rounded-full px-6 py-3 bg-white/5 group"
                 >
-                  <MessageCircle className="h-5 w-5 mr-2" />
+                  <MessageCircle className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
                   <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                 </button>
               </div>
