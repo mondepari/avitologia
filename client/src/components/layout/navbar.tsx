@@ -43,21 +43,36 @@ const Navbar = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-6">
-            <span className="text-xs text-primary font-medium">Позвоните, я на связи:</span>
+          <div className="hidden md:flex items-center justify-between flex-grow">
+            <div className="flex items-center space-x-6 ml-8">
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Услуги
+              </button>
+              <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Портфолио
+              </button>
+              <button onClick={() => handleNavLinkClick('about')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Обо мне
+              </button>
+              <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Контакты
+              </button>
+            </div>
             
-            <a href="tel:+73433454343" className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
-              <Phone className="h-4 w-4 mr-2" />
-              <span className="font-medium text-sm">+7(937) 343-45-43</span>
-            </a>
-            
-            <button 
-              onClick={() => handleNavLinkClick('contact')} 
-              className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
-            >
-              <MessageCircle className="h-4 w-4 mr-2" />
-              <span className="text-sm">Пишите</span>
-            </button>
+            <div className="flex items-center space-x-4">
+              <a href="tel:+73433454343" className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
+                <Phone className="h-4 w-4 mr-2" />
+                <span className="font-medium text-sm">+7(937) 343-45-43</span>
+              </a>
+              
+              <button 
+                onClick={() => handleNavLinkClick('contact')} 
+                className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
+              >
+                <MessageCircle className="h-4 w-4 mr-2" />
+                <span className="text-sm">Пишите</span>
+              </button>
+            </div>
           </div>
           
           <div className="md:hidden">
@@ -78,6 +93,22 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t">
           <div className="px-4 pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
+              <span className="text-gray-600 mb-2">Навигация:</span>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Услуги
+              </button>
+              <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Портфолио
+              </button>
+              <button onClick={() => handleNavLinkClick('about')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Обо мне
+              </button>
+              <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Контакты
+              </button>
+            </div>
+            
+            <div className="flex flex-col">
               <span className="text-gray-600 mb-2">Мои услуги:</span>
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Яндекс.Директ</button>
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Google Ads</button>
@@ -85,7 +116,7 @@ const Navbar = () => {
             </div>
             
             <div className="flex flex-col">
-              <span className="text-gray-600 mb-2">Контакты:</span>
+              <span className="text-gray-600 mb-2">Связаться:</span>
               <a href="tel:+73433454343" className="flex items-center py-2">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
                 <span>+7(937) 343-45-43</span>
