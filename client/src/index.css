@@ -14,7 +14,10 @@
 
 @layer components {
   .bg-gradient-purple {
-    @apply bg-gradient-to-r from-primary/90 to-primary;
+    @apply bg-gradient-to-br from-primary via-primary to-purple-900;
+    background-image: url('./assets/images/bg-pattern.svg'), linear-gradient(to bottom right, #6D28D9, #6D28D9, #4C1D95);
+    background-size: cover;
+    background-position: center;
   }
   
   .section-padding {
