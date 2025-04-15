@@ -104,37 +104,37 @@ const HeroSection = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-[#8139f2] rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+            <div className="bg-[#8139f2]/90 rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
               <p className="text-sm opacity-90 text-center">
                 Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-3 text-center">На ваш сайт идут только целевые посетители</h3>
+              <h3 className="text-xl font-bold mb-3 text-center">На ваш сайт идут только целевые посетители</h3>
               <p className="text-sm opacity-90 text-center">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4 flex justify-center">
-                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-3 text-center">Грамотная настройка аналитики</h3>
+              <h3 className="text-xl font-bold mb-3 text-center">Грамотная настройка аналитики</h3>
               <p className="text-sm opacity-90 text-center">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
