@@ -14,8 +14,8 @@
 
 @layer components {
   .bg-gradient-purple {
-    @apply bg-gradient-to-br from-primary via-primary to-purple-900;
-    background-image: url('./assets/images/bg-pattern.svg'), linear-gradient(to bottom right, #6D28D9, #6D28D9, #4C1D95);
+    background-color: #8139f2;
+    background-image: url('./assets/images/bg-pattern.svg'), linear-gradient(to bottom right, #8139f2, #7c33f2, #6928e0);
     background-size: cover;
     background-position: center;
   }
@@ -41,6 +41,6 @@
   }
   
   .purple-circle-decoration {
-    @apply absolute rounded-full bg-primary/20 blur-2xl;
+    @apply absolute rounded-full bg-[#9e62ff]/40 blur-xl;
   }
 }
