@@ -116,8 +116,8 @@ const HeroSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-[#8139f2] rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
-              <div className="mb-4">
-                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-12 h-12 opacity-90" />
+              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
+                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
               </div>
               <h3 className="text-lg font-bold mb-3">Выбор стратегии продвижения</h3>
               <p className="text-sm opacity-90">
@@ -126,8 +126,8 @@ const HeroSection = () => {
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4">
-                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-12 h-12 opacity-90" />
+              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
+                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
               </div>
               <h3 className="text-lg font-bold mb-3">На ваш сайт идут только целевые посетители</h3>
               <p className="text-sm opacity-90">
@@ -136,8 +136,8 @@ const HeroSection = () => {
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4">
-                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-12 h-12 opacity-90" />
+              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
+                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
               </div>
               <h3 className="text-lg font-bold mb-3">Грамотная настройка аналитики</h3>
               <p className="text-sm opacity-90">
