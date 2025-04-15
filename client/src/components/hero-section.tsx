@@ -61,7 +61,7 @@ const HeroSection = () => {
           <div className="flex justify-center items-center relative">
             <div className="relative">
               <img 
-                src="/src/assets/images/phone.png" 
+                src="./src/assets/images/phone.png" 
                 alt="Телефон с аналитикой" 
                 className="max-h-[450px] object-contain relative z-20"
               />
@@ -70,7 +70,7 @@ const HeroSection = () => {
                 <div className="flex items-center">
                   <div className="bg-white rounded-lg shadow-lg p-4 flex items-center">
                     <div className="mr-2">
-                      <img src="/src/assets/icons/stats-icon.svg" alt="Статистика" className="w-10 h-10" />
+                      <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-10 h-10" />
                     </div>
                     <div>
                       <div className="text-primary text-xl font-bold">x2.7</div>
@@ -97,7 +97,7 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-primary rounded-xl p-6 text-white">
               <div className="mb-4">
-                <img src="/src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-12 h-12" />
+                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-12 h-12" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Выбор стратегии продвижения</h3>
               <p className="text-sm opacity-90">
@@ -107,7 +107,7 @@ const HeroSection = () => {
             
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
               <div className="mb-4">
-                <img src="/src/assets/icons/shield-icon.svg" alt="Защита" className="w-12 h-12" />
+                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-12 h-12" />
               </div>
               <h3 className="text-lg font-semibold mb-2">На ваш сайт идут только целевые посетители</h3>
               <p className="text-sm text-gray-600">
@@ -117,7 +117,7 @@ const HeroSection = () => {
             
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
               <div className="mb-4">
-                <img src="/src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-12 h-12" />
+                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-12 h-12" />
               </div>
               <h3 className="text-lg font-semibold mb-2">Грамотная настройка аналитики</h3>
               <p className="text-sm text-gray-600">
