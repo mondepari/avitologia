@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-right 7s ease-in-out infinite;
+}
+
+.animate-float-left {
+  animation: float-left 8s ease-in-out infinite;
+}
+
 @layer base {
   * {
     @apply border-border;
