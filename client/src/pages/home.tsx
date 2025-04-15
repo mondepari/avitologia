@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/testimonials-section";
 import ProcessSection from "@/components/process-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/layout/footer";
+import QuizCalculator from "@/components/quiz-calculator";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroSection />
+      <QuizCalculator />
       <ServicesSection />
       <AboutSection />
       <PortfolioSection />
