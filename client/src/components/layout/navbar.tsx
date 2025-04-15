@@ -44,8 +44,6 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <span className="text-xs text-gray-600 mr-3">Работаю удаленно по всей РФ и СНГ</span>
-            
             <span className="text-xs text-primary font-medium">Позвоните, я на связи:</span>
             
             <a href="tel:+73433454343" className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
