@@ -1,4 +1,4 @@
-import { CalculatorIcon, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -18,19 +18,19 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col">
-            <div className="text-left mb-2 mt-4">
-              <h2 className="text-xl text-white mb-2">Настройка и ведение Яндекс Директ под ключ</h2>
+            <div className="text-left mb-4 mt-4">
+              <h2 className="text-xl text-white">Настройка и ведение Яндекс Директ под ключ</h2>
             </div>
             
-            <div className="mb-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight uppercase">
+            <div className="mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-[42px] font-extrabold text-white leading-tight tracking-tight uppercase">
                 ПОЛУЧАЙТЕ СТАБИЛЬНЫЙ<br />
                 ПОТОК ЖИВЫХ КЛИЕНТОВ<br />
                 ЕЖЕНЕДЕЛЬНО
               </h1>
             </div>
             
-            <div className="mb-6">
+            <div className="mb-8">
               <p className="text-lg text-white/90">
                 С помощью профессиональной настройки<br />
                 и ведения контекстной рекламы
@@ -38,34 +38,23 @@ const HeroSection = () => {
             </div>
             
             <div className="mt-6 mb-10">
-              <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-start">
+              <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-start">
                 <button 
                   onClick={() => scrollToSection('calculator')} 
-                  className="bg-[#8139f2] border-2 border-white/20 text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] hover:border-white hover:shadow-xl transition-all duration-300 text-center shadow-lg flex items-center justify-center group"
+                  className="bg-[#8139f2] text-white font-medium px-8 py-3 rounded-full hover:bg-[#7235d7] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
                 >
-                  <img src="./src/assets/icons/price-icon.svg" alt="Цена" className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                  <span className="font-bold">РАССЧИТАТЬ СТОИМОСТЬ</span>
+                  <span className="text-sm uppercase">Рассчитать стоимость</span>
+                  <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>
                 </button>
                 
-                <button 
+                <div 
                   onClick={() => scrollToSection('contact')}
-                  className="flex items-center justify-center text-white font-medium hover:border-white hover:bg-white/10 transition-all duration-300 cursor-pointer border border-white/30 rounded-full px-6 py-3 bg-white/5 group"
+                  className="flex items-center justify-center text-[#333] hover:text-[#8139f2] transition-all duration-300 cursor-pointer group"
                 >
-                  <MessageCircle className="h-5 w-5 mr-2 group-hover:scale-110 transition-transform" />
-                  <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
-                </button>
-              </div>
-              
-              <div className="mt-8 bg-white rounded-lg p-4 shadow-xl flex items-center w-full sm:w-auto sm:min-w-[400px] max-w-[500px]">
-                <div className="flex items-center space-x-3 mx-auto">
-                  <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-8 h-8 flex-shrink-0" />
-                  <div>
-                    <div className="font-bold text-purple-600">×2.7</div>
-                    <div className="text-xs text-gray-500">
-                      Средний коэффициент<br />
-                      увеличения прибыли
-                    </div>
+                  <div className="bg-white/90 p-2 rounded-full mr-3">
+                    <MessageCircle className="h-5 w-5 text-[#8139f2]" />
                   </div>
+                  <span className="text-sm uppercase text-white">Получить консультацию</span>
                 </div>
               </div>
 
@@ -112,11 +101,24 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative flex items-center justify-center lg:justify-end h-full mt-10 lg:mt-0">
               <div className="relative z-20">
-                <img 
-                  src="./src/assets/images/phone.png" 
-                  alt="Телефон с аналитикой" 
-                  className="max-h-[500px] md:max-h-[600px] object-contain"
-                />
+                <div className="relative">
+                  <img 
+                    src="./src/assets/images/phone.png"
+                    alt="Телефон с аналитикой" 
+                    className="max-h-[500px] md:max-h-[650px] object-contain"
+                  />
+                  <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3 animate-pulse">
+                    <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
+                    <div className="text-lg font-bold">349 286</div>
+                  </div>
+                  <div className="absolute top-[30%] right-[15%] bg-white rounded-xl shadow-lg p-1">
+                    <img src="./src/assets/icons/yandex-red.svg" alt="Яндекс" className="w-12 h-12" />
+                  </div>
+                  <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
+                    <div className="text-sm font-semibold text-gray-700">Конверсия</div>
+                    <div className="text-lg font-bold">25,12%</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
