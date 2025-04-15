@@ -1,6 +1,23 @@
 import { MessageCircle } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
+  const [viewCount, setViewCount] = useState(349286);
+  
+  useEffect(() => {
+    // Увеличиваем счетчик просмотров каждые 2 секунды
+    const interval = setInterval(() => {
+      setViewCount(prevCount => prevCount + Math.floor(Math.random() * 15) + 1);
+    }, 2000);
+    
+    return () => clearInterval(interval);
+  }, []);
+  
+  // Форматируем число с пробелами между тысячами
+  const formatNumber = (num: number): string => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -10,8 +27,8 @@ const HeroSection = () => {
 
   return (
     <header className="bg-white min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
-      {/* Purple Decoration */}
-      <div className="absolute top-0 right-0 w-[40%] h-full bg-[#8139f2] z-0 rounded-bl-[100px]"></div>
+      {/* Purple Circle Decoration */}
+      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-[#8139f2] z-0"></div>
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
@@ -81,9 +98,9 @@ const HeroSection = () => {
                       alt="Телефон с аналитикой" 
                       className="max-h-[500px] md:max-h-[550px] object-contain"
                     />
-                    <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3 animate-pulse">
+                    <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
                       <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
-                      <div className="text-lg font-bold">349 286</div>
+                      <div className="text-lg font-bold transition-all duration-500">{formatNumber(viewCount)}</div>
                     </div>
                     <div className="absolute top-[30%] right-[15%] bg-white rounded-xl shadow-lg p-1">
                       <img src="./src/assets/icons/yandex-red.svg" alt="Яндекс" className="w-12 h-12" />
