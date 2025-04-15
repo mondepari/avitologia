@@ -99,37 +99,43 @@ const HeroSection = () => {
       {/* Features section */}
       <div className="mt-20 relative z-20">
         <div className="container mx-auto px-4 pb-16">
-          <div className="mb-10">
+          <div className="mb-10 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold text-white">У ВАС БУДЕТ<br />ЭФФЕКТИВНАЯ РЕКЛАМА</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-[#8139f2] rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
-              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
-                <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+              <div className="mb-4 flex justify-center">
+                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/chart-icon.svg" alt="Аналитика" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-3">Выбор стратегии продвижения</h3>
-              <p className="text-sm opacity-90">
+              <h3 className="text-lg font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+              <p className="text-sm opacity-90 text-center">
                 Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
-                <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+              <div className="mb-4 flex justify-center">
+                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/shield-icon.svg" alt="Защита" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-3">На ваш сайт идут только целевые посетители</h3>
-              <p className="text-sm opacity-90">
+              <h3 className="text-lg font-bold mb-3 text-center">На ваш сайт идут только целевые посетители</h3>
+              <p className="text-sm opacity-90 text-center">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 text-white overflow-hidden relative">
-              <div className="mb-4 bg-white inline-flex p-2 rounded-lg">
-                <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-10 h-10" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+              <div className="mb-4 flex justify-center">
+                <div className="bg-white w-14 h-14 rounded-xl flex items-center justify-center">
+                  <img src="./src/assets/icons/analytics-icon.svg" alt="Отчеты" className="w-8 h-8" style={{filter: "invert(23%) sepia(83%) saturate(6636%) hue-rotate(260deg) brightness(91%) contrast(93%)"}} />
+                </div>
               </div>
-              <h3 className="text-lg font-bold mb-3">Грамотная настройка аналитики</h3>
-              <p className="text-sm opacity-90">
+              <h3 className="text-lg font-bold mb-3 text-center">Грамотная настройка аналитики</h3>
+              <p className="text-sm opacity-90 text-center">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
             </div>
