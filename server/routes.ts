@@ -2,18 +2,11 @@ import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactFormSchema } from "@shared/schema";
-import { initDb } from "./db";
 import { ZodError } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Инициализируем соединение с базой данных
-  try {
-    await initDb();
-    console.log("Database initialized successfully");
-  } catch (error) {
-    console.error("Failed to initialize database:", error);
-    // Если не удалось подключиться к базе данных, продолжаем работу с MemStorage
-  }
+  // Используем MemStorage для локальной разработки
+  console.log("Using in-memory storage for development");
 
   // API для отправки сообщения через контактную форму
   app.post("/api/contact", async (req: Request, res: Response) => {

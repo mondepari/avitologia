@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import Logo from '@/components/ui/logo';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle, Phone } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,28 +32,33 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || mobileMenuOpen ? 'bg-white shadow-lg' : 'bg-transparent'
+      scrolled || mobileMenuOpen ? 'bg-white shadow-lg' : 'bg-white'
     }`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Logo />
-            <div className={`ml-6 text-sm hidden lg:block ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-              <p>Сертифицированный специалист по Яндекс.Директ и Google.Ads</p>
+            <div className="ml-6 text-xs font-medium text-gray-600 hidden lg:block">
+              <p>Сертифицированный специалист по<br />Яндекс.Директ и Google Ads</p>
             </div>
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <button onClick={() => handleNavLinkClick('services')} className={`font-medium ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-primary`}>Услуги</button>
-            <button onClick={() => handleNavLinkClick('about')} className={`font-medium ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-primary`}>О себе</button>
-            <button onClick={() => handleNavLinkClick('portfolio')} className={`font-medium ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-primary`}>Кейсы</button>
-            <button onClick={() => handleNavLinkClick('process')} className={`font-medium ${scrolled ? 'text-gray-800' : 'text-white'} hover:text-primary`}>Как я работаю</button>
+            <span className="text-xs text-gray-600 mr-3">Работаю удаленно по всей РФ и СНГ</span>
+            
+            <span className="text-xs text-primary font-medium">Позвоните, я на связи:</span>
+            
+            <a href="tel:+73433454343" className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
+              <Phone className="h-4 w-4 mr-2" />
+              <span className="font-medium text-sm">+7(937) 343-45-43</span>
+            </a>
             
             <button 
               onClick={() => handleNavLinkClick('contact')} 
-              className="bg-primary text-white font-medium px-6 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
+              className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
             >
-              Пишите
+              <MessageCircle className="h-4 w-4 mr-2" />
+              <span className="text-sm">Пишите</span>
             </button>
           </div>
           
@@ -61,7 +66,7 @@ const Navbar = () => {
             <button 
               type="button" 
               onClick={toggleMobileMenu}
-              className={`focus:outline-none ${scrolled ? 'text-gray-800' : 'text-white'}`}
+              className="focus:outline-none text-gray-800"
               aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -72,21 +77,27 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white">
-          <div className="px-4 pt-2 pb-4 space-y-4">
-            <div className="flex flex-col space-y-3">
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Услуги</button>
-              <button onClick={() => handleNavLinkClick('about')} className="text-gray-800 hover:text-primary py-2">О себе</button>
-              <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary py-2">Кейсы</button>
-              <button onClick={() => handleNavLinkClick('process')} className="text-gray-800 hover:text-primary py-2">Как я работаю</button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary py-2">Контакты</button>
+        <div className="md:hidden bg-white border-t">
+          <div className="px-4 pt-4 pb-6 space-y-6">
+            <div className="flex flex-col">
+              <span className="text-gray-600 mb-2">Мои услуги:</span>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Яндекс.Директ</button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Google Ads</button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Аналитика</button>
             </div>
-            <div className="pt-2">
+            
+            <div className="flex flex-col">
+              <span className="text-gray-600 mb-2">Контакты:</span>
+              <a href="tel:+73433454343" className="flex items-center py-2">
+                <Phone className="h-4 w-4 mr-2 text-primary" />
+                <span>+7(937) 343-45-43</span>
+              </a>
               <button 
                 onClick={() => handleNavLinkClick('contact')} 
-                className="w-full bg-primary text-white px-6 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
+                className="mt-3 w-full bg-primary text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
               >
-                Пишите
+                <MessageCircle className="h-5 w-5 mr-2" />
+                <span>Написать</span>
               </button>
             </div>
           </div>

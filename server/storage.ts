@@ -139,5 +139,5 @@ export class MemStorage implements IStorage {
   }
 }
 
-// Используем реализацию хранилища в базе данных MySQL
-export const storage = new DatabaseStorage();
+// Используем реализацию хранилища в памяти для локальной разработки
+export const storage = new MemStorage();
