@@ -44,22 +44,45 @@ const ContactSection = () => {
 
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Отправляем данные формы на сервер
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.message || 'Ошибка при отправке сообщения');
+      }
+      
+      // Показываем успешное уведомление
       toast({
         title: "Сообщение отправлено",
         description: "Спасибо за ваше сообщение! Я свяжусь с вами в ближайшее время.",
       });
       
+      // Очищаем форму
       setFormData({
         name: '',
         email: '',
         phone: '',
         message: ''
       });
-      
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Ошибка",
+        description: error instanceof Error ? error.message : "Произошла ошибка при отправке сообщения",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (

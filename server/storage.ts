@@ -1,6 +1,6 @@
 import { users, type User, type InsertUser, contactMessages, type InsertContact, type Contact } from "@shared/schema";
 import { eq } from "drizzle-orm";
-import { db } from "./db";
+import { getDb } from "./db";
 
 // Интерфейс хранилища данных с методами CRUD
 
@@ -15,27 +15,77 @@ export interface IStorage {
 // Реализация хранилища через базу данных MySQL
 export class DatabaseStorage implements IStorage {
   async getUser(id: number): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.id, id));
-    return user;
+    try {
+      const { db } = getDb();
+      const [user] = await db.select().from(users).where(eq(users.id, id));
+      return user;
+    } catch (error) {
+      console.error('Error getting user:', error);
+      return undefined;
+    }
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    const [user] = await db.select().from(users).where(eq(users.username, username));
-    return user;
+    try {
+      const { db } = getDb();
+      const [user] = await db.select().from(users).where(eq(users.username, username));
+      return user;
+    } catch (error) {
+      console.error('Error getting user by username:', error);
+      return undefined;
+    }
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const [user] = await db.insert(users).values(insertUser).returning();
-    return user;
+    try {
+      const { db, connection } = getDb();
+      
+      // Вставляем запись
+      await db.insert(users).values(insertUser);
+      
+      // Выполняем прямой SQL-запрос для получения последнего вставленного ID
+      const [result] = await connection.query('SELECT LAST_INSERT_ID() as id');
+      const lastId = (result as any)[0].id;
+      
+      // Получаем полную запись
+      const [user] = await db.select().from(users).where(eq(users.id, Number(lastId)));
+      
+      return user;
+    } catch (error) {
+      console.error('Error creating user:', error);
+      throw error;
+    }
   }
 
   async createContactMessage(message: InsertContact): Promise<Contact> {
-    const [contact] = await db.insert(contactMessages).values(message).returning();
-    return contact;
+    try {
+      const { db, connection } = getDb();
+      
+      // Вставляем сообщение
+      await db.insert(contactMessages).values(message);
+      
+      // Выполняем прямой SQL-запрос для получения последнего вставленного ID
+      const [result] = await connection.query('SELECT LAST_INSERT_ID() as id');
+      const lastId = (result as any)[0].id;
+      
+      // Получаем полную запись
+      const [contact] = await db.select().from(contactMessages).where(eq(contactMessages.id, Number(lastId)));
+      
+      return contact;
+    } catch (error) {
+      console.error('Error creating contact message:', error);
+      throw error;
+    }
   }
 
   async getContactMessages(): Promise<Contact[]> {
-    return await db.select().from(contactMessages).orderBy(contactMessages.createdAt);
+    try {
+      const { db } = getDb();
+      return await db.select().from(contactMessages).orderBy(contactMessages.createdAt);
+    } catch (error) {
+      console.error('Error getting contact messages:', error);
+      return [];
+    }
   }
 }
 
