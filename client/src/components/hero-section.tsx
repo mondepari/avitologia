@@ -9,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="bg-gradient-purple min-h-screen pt-20 flex flex-col justify-between relative overflow-hidden">
+    <header className="bg-gradient-purple min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
       {/* Purple Circle Decorations */}
       <div className="purple-circle-decoration w-[700px] h-[700px] top-[-250px] right-[-250px]"></div>
       <div className="purple-circle-decoration w-[600px] h-[600px] bottom-[10%] left-[-300px]"></div>
@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col">
-            <div className="text-left mb-2">
+            <div className="text-left mb-2 mt-4">
               <h2 className="text-xl text-white mb-2">Настройка и ведение Яндекс Директ под ключ</h2>
             </div>
             
@@ -37,20 +37,19 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="mb-10">
-              <button 
-                onClick={() => scrollToSection('calculator')} 
-                className="bg-[#8139f2] flex items-center text-white font-medium px-8 py-4 rounded-full hover:bg-[#7932e0] transition duration-300 text-center shadow-lg max-w-sm w-full"
-              >
-                <CalculatorIcon className="h-5 w-5 mr-2" />
-                <span className="font-bold">РАССЧИТАТЬ СТОИМОСТЬ</span>
-                <span className="text-xs ml-2 text-white/80">(за 1 минуту в подарок!)</span>
-              </button>
-              
-              <div className="flex items-center mt-4">
+            <div className="mt-6 mb-10">
+              <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-start">
                 <button 
-                  onClick={() => scrollToSection('contact')} 
-                  className="flex items-center text-white font-medium hover:underline cursor-pointer"
+                  onClick={() => scrollToSection('calculator')} 
+                  className="bg-[#8139f2] border-2 border-[#8139f2] text-white font-medium px-6 py-3 rounded-full hover:bg-[#7932e0] transition duration-300 text-center shadow-lg"
+                >
+                  <span className="font-bold">РАССЧИТАТЬ СТОИМОСТЬ</span>
+                  <span className="text-xs block mt-1 text-white/80">(за 1 минуту в подарок!)</span>
+                </button>
+                
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="flex items-center justify-center text-white font-medium hover:underline cursor-pointer border border-white/30 rounded-full px-6 py-3 bg-white/5"
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
                   <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
@@ -58,30 +57,47 @@ const HeroSection = () => {
               </div>
             </div>
             
-            <div className="flex items-center space-x-10 mt-6">
+            <div className="mt-14 mb-8">
               <div className="flex items-center">
-                <div className="text-[#9470ff] text-3xl font-bold mr-2">×2.7</div>
-                <div className="text-xs text-white/90 max-w-[100px]">
-                  Средний коэффициент увеличения прибыли бизнеса
+                <div className="text-[#9470ff] text-4xl font-bold mr-3">×2.7</div>
+                <div className="text-xs text-white/90 max-w-[150px]">
+                  <span className="whitespace-nowrap">Средний коэффициент</span><br />
+                  <span className="whitespace-nowrap">увеличения прибыли</span><br />
+                  <span className="whitespace-nowrap">бизнеса</span>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="relative">
-            <div className="relative flex justify-center lg:justify-end items-center h-full">
-              <img 
-                src="./src/assets/images/phone.png" 
-                alt="Телефон с аналитикой" 
-                className="max-h-[550px] md:max-h-[600px] object-contain relative z-20"
-              />
-              
-              <div className="absolute top-[15%] right-[10%] z-30">
-                <div className="flex items-center">
-                  <div className="bg-white rounded-full shadow-xl p-2">
-                    <div className="flex items-center space-x-1">
-                      <img src="./src/assets/icons/google-icon.svg" alt="Google" className="w-7 h-7" />
-                      <img src="./src/assets/icons/yandex-icon.svg" alt="Яндекс" className="w-7 h-7" />
+            <div className="relative flex items-center justify-center lg:justify-end h-full mt-10 lg:mt-0">
+              <div className="relative z-20">
+                <img 
+                  src="./src/assets/images/phone.png" 
+                  alt="Телефон с аналитикой" 
+                  className="max-h-[500px] md:max-h-[600px] object-contain"
+                />
+                
+                <div className="absolute top-1/4 left-0 transform -translate-x-1/2">
+                  <div className="flex items-center">
+                    <div className="bg-white rounded-full shadow-xl p-2">
+                      <div className="flex items-center space-x-1">
+                        <img src="./src/assets/icons/google-icon.svg" alt="Google" className="w-7 h-7" />
+                        <img src="./src/assets/icons/yandex-icon.svg" alt="Яндекс" className="w-7 h-7" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="absolute top-1/3 right-0 transform translate-x-1/3">
+                  <div className="bg-white rounded-lg p-3 shadow-xl flex items-center space-x-2">
+                    <img src="./src/assets/icons/stats-icon.svg" alt="Статистика" className="w-8 h-8" />
+                    <div>
+                      <div className="font-bold text-purple-600">×2.7</div>
+                      <div className="text-xs text-gray-500">
+                        Средний коэффициент<br />
+                        увеличения прибыли
+                      </div>
                     </div>
                   </div>
                 </div>
