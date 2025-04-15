@@ -88,10 +88,6 @@ const HeroSection = () => {
       {/* Features section */}
       <div className="mt-20 relative z-20">
         <div className="container mx-auto px-4 pb-16">
-          <div className="mb-10 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">У ВАС БУДЕТ<br />ЭФФЕКТИВНАЯ РЕКЛАМА</h2>
-          </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-[#8139f2]/90 rounded-xl p-6 text-white shadow-lg overflow-hidden relative">
               <div className="mb-5 flex justify-center">
