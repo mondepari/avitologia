@@ -15,7 +15,8 @@
 @layer components {
   .bg-gradient-purple {
     background-color: #8139f2;
-    background-image: url('./assets/images/bg-pattern.svg'), linear-gradient(to bottom right, #8139f2, #7c33f2, #6928e0);
+    /* Нижний фон - градиент, но основное изображение будет загружено в компоненте */
+    background-image: linear-gradient(to bottom right, #8139f2, #7c33f2, #6928e0);
     background-size: cover;
     background-position: center;
   }
