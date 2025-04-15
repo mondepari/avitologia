@@ -1,5 +1,6 @@
 import { ServiceCardProps } from '@/types';
 import { ChevronRight } from 'lucide-react';
+import { SectionDecoration } from './ui/decorative-elements';
 
 const ServiceCard = ({ icon, title, description, features }: ServiceCardProps) => {
   const scrollToContact = () => {
@@ -76,8 +77,8 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="section-padding bg-gray-50 relative overflow-hidden">
-      {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[20%] right-[-200px] opacity-30"></div>
+      {/* Декоративные элементы */}
+      <SectionDecoration />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

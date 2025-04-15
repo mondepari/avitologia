@@ -8,6 +8,7 @@ import ProcessSection from "@/components/process-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/layout/footer";
 import QuizCalculator from "@/components/quiz-calculator";
+import { DecorativeCircles } from "@/components/ui/decorative-elements";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -16,17 +17,22 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <HeroSection />
-      <QuizCalculator />
-      <ServicesSection />
-      <AboutSection />
-      <PortfolioSection />
-      <TestimonialsSection />
-      <ProcessSection />
-      <ContactSection />
-      <Footer />
+    <div className="min-h-screen bg-white relative overflow-hidden">
+      {/* Декоративные круги на фоне */}
+      <DecorativeCircles />
+      
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection />
+        <QuizCalculator />
+        <ServicesSection />
+        <AboutSection />
+        <PortfolioSection />
+        <TestimonialsSection />
+        <ProcessSection />
+        <ContactSection />
+        <Footer />
+      </div>
     </div>
   );
 };

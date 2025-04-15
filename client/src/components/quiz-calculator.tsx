@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Slider } from "./ui/slider";
+import { SectionDecoration } from "./ui/decorative-elements";
 
 interface QuizStep {
   id: number;
@@ -357,8 +358,11 @@ const QuizCalculator = () => {
   };
   
   return (
-    <section id="calculator" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="calculator" className="py-16 bg-gray-50 relative overflow-hidden">
+      {/* Декоративные элементы */}
+      <SectionDecoration />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold uppercase mb-2">ОЦЕНКА СТОИМОСТИ</h2>
           <p className="text-lg text-gray-600">Ответьте на 9 вопросов. Это бесплатно.</p>
