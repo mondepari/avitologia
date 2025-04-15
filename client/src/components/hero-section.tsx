@@ -56,17 +56,6 @@ const HeroSection = () => {
                 </button>
               </div>
             </div>
-            
-            <div className="mt-14 mb-8">
-              <div className="flex items-center">
-                <div className="text-[#9470ff] text-4xl font-bold mr-3">×2.7</div>
-                <div className="text-xs text-white/90 max-w-[150px]">
-                  <span className="whitespace-nowrap">Средний коэффициент</span><br />
-                  <span className="whitespace-nowrap">увеличения прибыли</span><br />
-                  <span className="whitespace-nowrap">бизнеса</span>
-                </div>
-              </div>
-            </div>
           </div>
           
           <div className="relative">
