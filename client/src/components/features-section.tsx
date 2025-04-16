@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SectionDecoration } from "./ui/decorative-elements";
 import rocketIcon from "../assets/icons/rocket.svg";
 import keyboardIcon from "../assets/icons/keyboard.svg";
@@ -6,6 +6,7 @@ import mapIcon from "../assets/icons/map.svg";
 import monitorIcon from "../assets/icons/monitor.svg";
 import searchExample from "../assets/search-example.svg";
 import rsaExample from "../assets/rsa-example.svg";
+import phoneFrame from "../assets/phone-frame.svg";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -28,6 +29,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 };
 
 const FeaturesSection: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'yandex' | 'google'>('yandex');
   const features = [
     {
       icon: (
@@ -107,52 +109,87 @@ const FeaturesSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row gap-16 mb-20">
-          <div className="w-full md:w-1/2">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8">Как это работает?</h3>
-            <div className="space-y-8">
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold">1</div>
-                <div>
-                  <p className="text-lg">Клиент вводит в поисковую строку запрос, который его волнует</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold">2</div>
-                <div>
-                  <p className="text-lg">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-bold">3</div>
-                <div>
-                  <p className="text-lg">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+        <div className="flex flex-col mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8">Как это работает?</h3>
+              <div className="relative">
+                <div className="absolute right-0 top-0 w-64 h-64 bg-gray-100 rounded-full opacity-10"></div>
+                <div className="space-y-8 relative z-10">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-16 h-16 mr-6">
+                      <div className="w-full h-full flex items-center justify-center">
+                        <div className="text-primary text-6xl font-bold">1</div>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-lg">Клиент вводит в поисковую строку запрос, который его волнует</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-16 h-16 mr-6">
+                      <div className="w-full h-full flex items-center justify-center">
+                        <div className="text-primary text-6xl font-bold">2</div>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-lg">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-16 h-16 mr-6">
+                      <div className="w-full h-full flex items-center justify-center">
+                        <div className="text-primary text-6xl font-bold">3</div>
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-lg">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="w-full md:w-1/2">
-            <h3 className="text-2xl md:text-3xl font-bold mb-8">Как выглядит объявление?</h3>
-            <div className="flex flex-col gap-4">
-              <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
-                <p className="text-center text-lg">Поиск</p>
-                <div className="mt-4 flex justify-center">
-                  <img src={searchExample} alt="Пример поисковой рекламы" className="max-w-full h-auto rounded border border-gray-200" />
-                </div>
+            
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8">Как выглядит объявление?</h3>
+              <div className="flex justify-center gap-4 mb-6">
+                <button 
+                  onClick={() => setActiveTab('yandex')}
+                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'yandex' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                >
+                  Яндекс
+                </button>
+                <button 
+                  onClick={() => setActiveTab('google')}
+                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'google' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                >
+                  Google
+                </button>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-4 border border-gray-200">
-                <p className="text-center text-lg">РСЯ</p>
-                <div className="mt-4 flex justify-center">
-                  <img src={rsaExample} alt="Пример рекламы в РСЯ" className="max-w-full h-auto rounded border border-gray-200" />
+              
+              <div className="flex flex-col gap-8">
+                <div>
+                  <p className="text-center text-lg mb-2">Поиск</p>
+                  <div className="relative flex justify-center">
+                    <div className="relative max-w-[260px]">
+                      <img src={phoneFrame} alt="Телефон" className="w-full" />
+                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden">
+                        <img src={searchExample} alt="Пример поисковой рекламы" className="w-full h-full object-cover" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="flex justify-center gap-4 mt-4">
-                <div className="flex items-center gap-2 px-6 py-2 bg-[#8e3df5] text-white rounded-md">
-                  <span>Яндекс</span>
-                </div>
-                <div className="flex items-center gap-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-md">
-                  <span>Google</span>
+                
+                <div>
+                  <p className="text-center text-lg mb-2">РСЯ</p>
+                  <div className="relative flex justify-center">
+                    <div className="relative max-w-[260px]">
+                      <img src={phoneFrame} alt="Телефон" className="w-full" />
+                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden">
+                        <img src={rsaExample} alt="Пример рекламы в РСЯ" className="w-full h-full object-cover" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
