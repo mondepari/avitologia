@@ -358,51 +358,51 @@ const QuizCalculator = () => {
   };
   
   return (
-    <section id="calculator" className="py-16 bg-gray-50 relative overflow-hidden">
+    <section id="calculator" className="py-16 bg-background relative overflow-hidden">
       {/* Декоративные элементы */}
       <SectionDecoration />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold uppercase mb-2">ОЦЕНКА СТОИМОСТИ</h2>
-          <p className="text-lg text-gray-600">Ответьте на 9 вопросов. Это бесплатно.</p>
+          <h2 className="text-3xl font-bold uppercase mb-2 text-foreground">ОЦЕНКА СТОИМОСТИ</h2>
+          <p className="text-lg text-foreground/70">Ответьте на 9 вопросов. Это бесплатно.</p>
         </div>
         
         <div className="flex flex-wrap -mx-4">
           {/* Преимущества формы */}
           <div className="w-full px-4 mb-8">
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z" clipRule="evenodd"/>
                     <path d="M10 6a1 1 0 011 1v3a1 1 0 01-1 1 1 1 0 01-1-1V7a1 1 0 011-1zm0 6a1 1 0 110 2 1 1 0 010-2z"/>
                   </svg>
                 </div>
-                <div className="text-sm">
+                <div className="text-sm text-foreground">
                   Расчет стоимости настройки рекламы
                 </div>
               </div>
               
-              <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
                   </svg>
                 </div>
-                <div className="text-sm">
+                <div className="text-sm text-foreground">
                   Анализ ниши и стратегии продвижения
                 </div>
               </div>
               
-              <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-3">
+              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 012 2v1a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h1.17A3 3 0 015 5zm4.05-1a.95.95 0 00-.95.95v.5c0 .364.105.706.284.99H7a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-1.384A1.45 1.45 0 0110 5.95v-.5A.95.95 0 009.05 4z" clipRule="evenodd"/>
                     <path d="M4 13a1 1 0 011-1h10a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3z"/>
                   </svg>
                 </div>
-                <div className="text-sm">
+                <div className="text-sm text-foreground">
                   Любой из 3-х подарков на Ваш выбор
                 </div>
               </div>
