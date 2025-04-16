@@ -79,9 +79,6 @@ const FeaturesSection: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-white relative overflow-hidden">
-      {/* Декоративные элементы */}
-      <div className="absolute top-0 right-0 w-1/3 h-32 bg-primary" style={{ clipPath: "polygon(100% 0, 0 0, 100% 100%)" }}></div>
-      
       {/* Анимированные круги */}
       <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-primary/20 animate-float"></div>
       <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-primary/15 animate-float-right"></div>
