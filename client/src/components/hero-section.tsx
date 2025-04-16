@@ -102,9 +102,7 @@ const HeroSection = () => {
                       <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
                       <div className="text-lg font-bold transition-all duration-500">{formatNumber(viewCount)}</div>
                     </div>
-                    <div className="absolute top-[30%] right-[15%] bg-white rounded-xl shadow-lg p-1">
-                      <img src="./src/assets/icons/yandex-red.svg" alt="Яндекс" className="w-12 h-12" />
-                    </div>
+
                     <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
                       <div className="text-sm font-semibold text-gray-700">Конверсия</div>
                       <div className="text-lg font-bold">25,12%</div>
