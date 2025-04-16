@@ -55,9 +55,11 @@ const Navbar = () => {
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
                 Разработка сайтов
               </button>
-              <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary font-medium transition-colors">
-                Кейсы
-              </button>
+              <Link href="/cases">
+                <a className="text-gray-800 hover:text-primary font-medium transition-colors">
+                  Кейсы
+                </a>
+              </Link>
               <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary font-medium transition-colors">
                 Отзывы
               </button>
@@ -113,9 +115,11 @@ const Navbar = () => {
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
                 Разработка сайтов
               </button>
-              <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary py-2 flex items-center">
-                Кейсы
-              </button>
+              <Link href="/cases">
+                <a className="text-gray-800 hover:text-primary py-2 flex items-center">
+                  Кейсы
+                </a>
+              </Link>
               <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary py-2 flex items-center">
                 Отзывы
               </button>

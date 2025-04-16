@@ -1,5 +1,6 @@
 import { CaseStudyProps } from '@/types';
 import { ChevronRight, ExternalLink } from 'lucide-react';
+import { Link } from 'wouter';
 
 const CaseStudyCard = ({ image, category, title, description, results }: CaseStudyProps) => {
   return (
@@ -134,10 +135,12 @@ const PortfolioSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <button className="bg-primary text-white font-medium px-8 py-3 rounded-full hover:bg-primary/90 transition duration-300 shadow-lg inline-flex items-center">
-            Смотреть все кейсы
-            <ChevronRight className="h-5 w-5 ml-1" />
-          </button>
+          <Link href="/cases">
+            <a className="bg-primary text-white font-medium px-8 py-3 rounded-full hover:bg-primary/90 transition duration-300 shadow-lg inline-flex items-center">
+              Смотреть все кейсы
+              <ChevronRight className="h-5 w-5 ml-1" />
+            </a>
+          </Link>
         </div>
       </div>
     </section>
