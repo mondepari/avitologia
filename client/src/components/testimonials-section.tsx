@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 
 const TestimonialCard = ({ quote, author }: TestimonialProps) => {
   return (
-    <div className="bg-white rounded-xl p-8 card-shadow border border-gray-100">
+    <div className="bg-accent rounded-xl p-8 card-shadow border border-border">
       <div className="flex items-center justify-between mb-6">
         <div className="text-primary">
           <svg className="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@ const TestimonialCard = ({ quote, author }: TestimonialProps) => {
         </div>
       </div>
       
-      <p className="text-gray-700 mb-8 italic">
+      <p className="text-foreground/80 mb-8 italic">
         {quote}
       </p>
       
@@ -30,8 +30,8 @@ const TestimonialCard = ({ quote, author }: TestimonialProps) => {
           className="w-14 h-14 rounded-full mr-4 object-cover ring-2 ring-primary/20"
         />
         <div>
-          <div className="font-semibold text-gray-900">{author.name}</div>
-          <div className="text-sm text-gray-500">{author.position}</div>
+          <div className="font-semibold text-foreground">{author.name}</div>
+          <div className="text-sm text-foreground/60">{author.position}</div>
         </div>
       </div>
     </div>

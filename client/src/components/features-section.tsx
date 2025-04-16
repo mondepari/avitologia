@@ -16,13 +16,13 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1">
+    <div className="bg-accent rounded-lg overflow-hidden shadow-md h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1">
       <div className="p-6 flex justify-center">
         {icon}
       </div>
       <div className="p-6 text-center">
-        <h3 className="text-lg font-bold text-gray-800 mb-3">{title}</h3>
-        <p className="text-sm leading-relaxed text-gray-600">{description}</p>
+        <h3 className="text-lg font-bold text-foreground mb-3">{title}</h3>
+        <p className="text-sm leading-relaxed text-foreground/70">{description}</p>
       </div>
     </div>
   );
@@ -82,20 +82,20 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-white relative overflow-hidden">
+    <section id="features" className="py-20 bg-background relative overflow-hidden">
       {/* Анимированные круги */}
-      <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-primary/20 animate-float"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-primary/15 animate-float-right"></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-primary/10 animate-float-left"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-20 h-20 rounded-full bg-primary/15 animate-float"></div>
+      <div className="absolute top-10 left-10 w-24 h-24 rounded-full bg-primary/30 animate-float"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-primary/25 animate-float-right"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-primary/20 animate-float-left"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-20 h-20 rounded-full bg-primary/25 animate-float"></div>
       
       <div className="container mx-auto px-4 pt-12 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase text-foreground">
             ВЫ БУДЕТЕ ЗНАТЬ, СКОЛЬКО СТОИТ ВАШ КЛИЕНТ<br />
             И СКОЛЬКО ПРИНОСИТ КАЖДЫЙ ВЛОЖЕННЫЙ РУБЛЬ
           </h2>
-          <p className="text-lg text-gray-600">Особенности контекстной рекламы</p>
+          <p className="text-lg text-foreground/70">Особенности контекстной рекламы</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
@@ -112,14 +112,14 @@ const FeaturesSection: React.FC = () => {
         <div className="flex flex-col mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-16">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-8">Как это работает?</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как это работает?</h3>
               <div className="relative">
                 <div className="relative z-10">
                   <div>
                     <div className="flex items-start mt-8">
                       <div className="text-primary text-6xl font-bold mr-6">1</div>
                       <div className="mt-2">
-                        <p className="text-lg">Клиент вводит в поисковую строку запрос, который его волнует</p>
+                        <p className="text-lg text-foreground/90">Клиент вводит в поисковую строку запрос, который его волнует</p>
                       </div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ const FeaturesSection: React.FC = () => {
                     <div className="flex items-start">
                       <div className="text-primary text-6xl font-bold mr-6">2</div>
                       <div className="mt-2">
-                        <p className="text-lg">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
+                        <p className="text-lg text-foreground/90">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
                       </div>
                     </div>
                   </div>
@@ -135,30 +135,30 @@ const FeaturesSection: React.FC = () => {
                     <div className="flex items-start">
                       <div className="text-primary text-6xl font-bold mr-6">3</div>
                       <div className="mt-2">
-                        <p className="text-lg">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+                        <p className="text-lg text-foreground/90">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 {/* Фоновые круги с эффектами */}
-                <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-primary/20 animate-float-right -z-10"></div>
-                <div className="absolute bottom-10 left-10 w-24 h-24 rounded-full bg-primary/15 animate-float -z-10"></div>
-                <div className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-primary/10 animate-float-left -z-10"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-primary/30 animate-float-right -z-10"></div>
+                <div className="absolute bottom-10 left-10 w-24 h-24 rounded-full bg-primary/25 animate-float -z-10"></div>
+                <div className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-primary/20 animate-float-left -z-10"></div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-8">Как выглядит объявление?</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как выглядит объявление?</h3>
               <div className="flex justify-center gap-4 mb-6">
                 <button 
                   onClick={() => setActiveTab('yandex')}
-                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'yandex' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'yandex' ? 'bg-primary text-white' : 'bg-accent text-foreground'}`}
                 >
                   Яндекс
                 </button>
                 <button 
                   onClick={() => setActiveTab('google')}
-                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'google' ? 'bg-primary text-white' : 'bg-gray-200 text-gray-700'}`}
+                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'google' ? 'bg-primary text-white' : 'bg-accent text-foreground'}`}
                 >
                   Google
                 </button>
@@ -166,7 +166,7 @@ const FeaturesSection: React.FC = () => {
               
               <div className="flex flex-row gap-4 justify-center">
                 <div className="w-1/2">
-                  <p className="font-medium text-center mb-4">Поиск</p>
+                  <p className="font-medium text-center mb-4 text-foreground">Поиск</p>
                   <div className="relative flex justify-center">
                     <div className="relative max-w-[220px]">
                       <img src={phoneFrame} alt="Телефон" className="w-full" />
@@ -182,7 +182,7 @@ const FeaturesSection: React.FC = () => {
                 </div>
                 
                 <div className="w-1/2">
-                  <p className="font-medium text-center mb-4">РСЯ</p>
+                  <p className="font-medium text-center mb-4 text-foreground">РСЯ</p>
                   <div className="relative flex justify-center">
                     <div className="relative max-w-[220px]">
                       <img src={phoneFrame} alt="Телефон" className="w-full" />

@@ -5,7 +5,7 @@ const ProcessStep = ({ number, title, description, iconSvg }: ProcessStepProps &
   return (
     <div className="flex items-start gap-5 mb-12">
       <div className="relative flex-none">
-        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-4xl font-medium text-gray-400">
+        <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-4xl font-medium text-foreground/50">
           {number}
         </div>
         <div className="absolute -top-3 -left-3 z-10">
@@ -15,8 +15,8 @@ const ProcessStep = ({ number, title, description, iconSvg }: ProcessStepProps &
         </div>
       </div>
       <div>
-        <h3 className="text-lg font-medium mb-2">{title}</h3>
-        <p className="text-gray-600 text-sm max-w-md">
+        <h3 className="text-lg font-medium mb-2 text-foreground">{title}</h3>
+        <p className="text-foreground/70 text-sm max-w-md">
           {description}
         </p>
       </div>
