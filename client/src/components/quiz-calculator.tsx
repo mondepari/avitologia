@@ -411,15 +411,15 @@ const QuizCalculator = () => {
           
           {/* Форма квиза */}
           <div className="w-full lg:w-2/3 px-4 mx-auto">
-            <div className="bg-white rounded-xl shadow-xl overflow-hidden">
+            <div className="bg-accent rounded-xl shadow-xl overflow-hidden">
               <div className="flex flex-wrap">
                 {/* Левая часть с формой */}
                 <div className="w-full lg:w-2/3 p-8">
                   <div className="mb-8">
                     <div className="flex items-center mb-6">
-                      <div className="text-xl font-medium">{step?.title}</div>
+                      <div className="text-xl font-medium text-foreground">{step?.title}</div>
                       <div className="ml-4 flex-grow">
-                        <div className="h-2 bg-gray-200 rounded-full">
+                        <div className="h-2 bg-gray-600/20 rounded-full">
                           <div 
                             className="h-2 bg-primary rounded-full transition-all duration-500 ease-in-out" 
                             style={{ width: `${(currentStep / quizSteps.length) * 100}%` }}
@@ -428,7 +428,7 @@ const QuizCalculator = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl font-bold mb-6">{step?.question}</h3>
+                    <h3 className="text-2xl font-bold mb-6 text-foreground">{step?.question}</h3>
                     
                     {renderStepContent()}
                     {renderLastStep()}
@@ -455,20 +455,20 @@ const QuizCalculator = () => {
                 </div>
                 
                 {/* Правая часть с информацией */}
-                <div className="w-full lg:w-1/3 bg-gray-50 p-8">
+                <div className="w-full lg:w-1/3 bg-background/70 p-8">
                   <div className="flex flex-col h-full">
                     <div className="mb-8">
                       <div className="flex flex-col items-center text-center">
                         <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                           <img src="./src/assets/images/specialist.svg" alt="Алексей Степин" className="w-full h-full object-cover" />
                         </div>
-                        <h4 className="font-bold text-lg mb-1">Алексей Степин</h4>
-                        <p className="text-sm text-gray-600">Опытный и скромный директолог</p>
+                        <h4 className="font-bold text-lg mb-1 text-foreground">Алексей Степин</h4>
+                        <p className="text-sm text-foreground/70">Опытный и скромный директолог</p>
                       </div>
                     </div>
                     
-                    <div className="mb-8 bg-white p-4 rounded-lg shadow-sm">
-                      <p className="text-center text-sm">
+                    <div className="mb-8 bg-accent p-4 rounded-lg shadow-sm">
+                      <p className="text-center text-sm text-foreground/80">
                         {currentStep === 1 && "Для точного расчета и анализа мне нужно знать, чем вы занимаетесь"}
                         {currentStep === 2 && "Мне нужно посмотреть на ваш сайт, чтобы ознакомиться"}
                         {currentStep === 3 && "Мне нужно знать, есть ли у вас опыт в рекламе"}
@@ -481,7 +481,7 @@ const QuizCalculator = () => {
                     
                     <div className="mt-auto">
                       <div className="text-center mb-4">
-                        <p className="text-sm mb-2">
+                        <p className="text-sm mb-2 text-foreground/80">
                           {remainingSteps > 0
                             ? `До открытия осталось ${remainingSteps} вопросов`
                             : "Вы открыли"
@@ -490,12 +490,12 @@ const QuizCalculator = () => {
                       </div>
                       
                       <div className="flex justify-center gap-4">
-                        <div className="w-16 h-16 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center relative">
+                        <div className="w-16 h-16 bg-accent rounded-lg shadow-sm p-2 flex items-center justify-center relative">
                           <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">1</span>
                           <img src="./src/assets/icons/calculator.svg" alt="Калькулятор" className="w-10 h-10" />
                         </div>
                         
-                        <div className="w-16 h-16 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center relative">
+                        <div className="w-16 h-16 bg-accent rounded-lg shadow-sm p-2 flex items-center justify-center relative">
                           <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">2</span>
                           <img src="./src/assets/icons/gift.svg" alt="Подарок" className="w-10 h-10" />
                         </div>
