@@ -10,6 +10,7 @@ import Footer from "@/components/layout/footer";
 import QuizCalculator from "@/components/quiz-calculator";
 import FeaturesSection from "@/components/features-section";
 import PriceSection from "@/components/price-section";
+import TariffPlans from "@/components/tariff-plans";
 import { DecorativeCircles } from "@/components/ui/decorative-elements";
 import { useEffect } from "react";
 
@@ -30,6 +31,7 @@ const Home = () => {
         <ServicesSection />
         <FeaturesSection />
         <PriceSection />
+        <TariffPlans />
         <AboutSection />
         <PortfolioSection />
         <TestimonialsSection />
