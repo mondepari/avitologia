@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Phone, MessageSquare, Mail, X } from "lucide-react";
+import { Phone, MessageSquare, Mail, X, CheckCircle2, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 interface ContactPopupProps {
   children: React.ReactNode;
 }
 
 export function ContactPopup({ children }: ContactPopupProps) {
+  const { toast } = useToast();
   const [phoneNumber, setPhoneNumber] = useState("+7");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [activeTab, setActiveTab] = useState<'phone' | 'form'>('phone');
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -31,6 +35,120 @@ export function ContactPopup({ children }: ContactPopupProps) {
   
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
+  };
+  
+  const handlePhoneSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!phoneNumber || phoneNumber.length < 12) {
+      toast({
+        title: "Ошибка",
+        description: "Пожалуйста, введите корректный номер телефона",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      // Имитация отправки запроса на обратный звонок
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      setSuccess(true);
+      
+      toast({
+        title: "Заявка отправлена",
+        description: "Мы перезвоним вам в ближайшее время",
+      });
+      
+      // Очищаем и закрываем форму через 2 секунды
+      setTimeout(() => {
+        setPhoneNumber("+7");
+        setSuccess(false);
+        setIsOpen(false);
+      }, 2000);
+      
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Пожалуйста, попробуйте еще раз.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  
+  const handleMessageSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Валидация
+    if (!name || !email || !message) {
+      toast({
+        title: "Ошибка",
+        description: "Пожалуйста, заполните все обязательные поля",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast({
+        title: "Ошибка",
+        description: "Пожалуйста, введите корректный email",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      // Отправка данных формы на сервер
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone: "",
+          message,
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Ошибка при отправке сообщения');
+      }
+      
+      setSuccess(true);
+      
+      toast({
+        title: "Сообщение отправлено",
+        description: "Спасибо за ваше сообщение! Я свяжусь с вами в ближайшее время.",
+      });
+      
+      // Очищаем и закрываем форму через 2 секунды
+      setTimeout(() => {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSuccess(false);
+        setIsOpen(false);
+      }, 2000);
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить сообщение. Пожалуйста, попробуйте еще раз.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -124,8 +242,14 @@ export function ContactPopup({ children }: ContactPopupProps) {
                 </button>
               </div>
 
-              {activeTab === 'phone' ? (
-                <>
+              {success ? (
+                <div className="flex flex-col items-center py-8">
+                  <CheckCircle2 className="text-green-500 w-16 h-16 mb-4" />
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">Спасибо!</h3>
+                  <p className="text-gray-600 text-center">Ваша заявка успешно отправлена.</p>
+                </div>
+              ) : activeTab === 'phone' ? (
+                <form onSubmit={handlePhoneSubmit}>
                   <div className="relative mb-4">
                     <input
                       type="tel"
@@ -133,15 +257,27 @@ export function ContactPopup({ children }: ContactPopupProps) {
                       onChange={handlePhoneChange}
                       placeholder="+7 (___) ___-__-__"
                       className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-center"
+                      disabled={isSubmitting}
                     />
                   </div>
                   
-                  <button className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors">
-                    ПОЗВОНИТЕ МНЕ
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-70 flex justify-center items-center"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        ОТПРАВКА...
+                      </>
+                    ) : (
+                      "ПОЗВОНИТЕ МНЕ"
+                    )}
                   </button>
-                </>
+                </form>
               ) : (
-                <>
+                <form onSubmit={handleMessageSubmit}>
                   <div className="space-y-3 mb-4">
                     <div>
                       <input
@@ -150,6 +286,7 @@ export function ContactPopup({ children }: ContactPopupProps) {
                         onChange={handleNameChange}
                         placeholder="Ваше имя"
                         className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
@@ -159,6 +296,7 @@ export function ContactPopup({ children }: ContactPopupProps) {
                         onChange={handleEmailChange}
                         placeholder="Ваш email"
                         className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
@@ -168,14 +306,26 @@ export function ContactPopup({ children }: ContactPopupProps) {
                         placeholder="Ваше сообщение"
                         rows={3}
                         className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
                   
-                  <button className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors">
-                    ОТПРАВИТЬ СООБЩЕНИЕ
+                  <button 
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors disabled:opacity-70 flex justify-center items-center"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        ОТПРАВКА...
+                      </>
+                    ) : (
+                      "ОТПРАВИТЬ СООБЩЕНИЕ"
+                    )}
                   </button>
-                </>
+                </form>
               )}
               
               <p className="text-xs text-gray-500 text-center mt-4">
