@@ -114,38 +114,25 @@ const FeaturesSection: React.FC = () => {
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-8">Как это работает?</h3>
               <div className="relative">
-                <div className="absolute right-0 top-0 w-64 h-64 bg-gray-100 rounded-full opacity-10"></div>
                 <div className="space-y-8 relative z-10">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-16 h-16 mr-6">
-                      <div className="w-full h-full flex items-center justify-center">
-                        <div className="text-primary text-6xl font-bold">1</div>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-lg">Клиент вводит в поисковую строку запрос, который его волнует</p>
-                    </div>
+                  <div className="flex items-center mb-2">
+                    <div className="text-primary text-5xl font-bold mr-6">1</div>
+                    <p className="text-base">Клиент вводит в поисковую строку запрос, который его волнует</p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-16 h-16 mr-6">
-                      <div className="w-full h-full flex items-center justify-center">
-                        <div className="text-primary text-6xl font-bold">2</div>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-lg">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
-                    </div>
+                  <div className="flex items-center mb-2">
+                    <div className="text-primary text-5xl font-bold mr-6">2</div>
+                    <p className="text-base">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
                   </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-16 h-16 mr-6">
-                      <div className="w-full h-full flex items-center justify-center">
-                        <div className="text-primary text-6xl font-bold">3</div>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-lg">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
-                    </div>
+                  <div className="flex items-center mb-2">
+                    <div className="text-primary text-5xl font-bold mr-6">3</div>
+                    <p className="text-base">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
                   </div>
+                </div>
+                <div className="absolute right-0 top-1/4 opacity-10">
+                  <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z" fill="#CCCCCC"/>
+                    <text x="50" y="120" fontSize="120" fontWeight="bold" fill="#DDDDDD">?</text>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -167,26 +154,36 @@ const FeaturesSection: React.FC = () => {
                 </button>
               </div>
               
-              <div className="flex flex-col gap-8">
-                <div>
-                  <p className="text-center text-lg mb-2">Поиск</p>
+              <div className="flex flex-row gap-4 justify-center">
+                <div className="w-1/2">
+                  <p className="font-medium text-center mb-4">Поиск</p>
                   <div className="relative flex justify-center">
-                    <div className="relative max-w-[260px]">
+                    <div className="relative max-w-[220px]">
                       <img src={phoneFrame} alt="Телефон" className="w-full" />
-                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden">
-                        <img src={searchExample} alt="Пример поисковой рекламы" className="w-full h-full object-cover" />
+                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
+                        <img 
+                          src={searchExample} 
+                          alt="Пример поисковой рекламы" 
+                          className="w-full h-auto object-contain"
+                          style={{ maxHeight: '100%', maxWidth: '100%' }}
+                        />
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                <div>
-                  <p className="text-center text-lg mb-2">РСЯ</p>
+                <div className="w-1/2">
+                  <p className="font-medium text-center mb-4">РСЯ</p>
                   <div className="relative flex justify-center">
-                    <div className="relative max-w-[260px]">
+                    <div className="relative max-w-[220px]">
                       <img src={phoneFrame} alt="Телефон" className="w-full" />
-                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden">
-                        <img src={rsaExample} alt="Пример рекламы в РСЯ" className="w-full h-full object-cover" />
+                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
+                        <img 
+                          src={rsaExample} 
+                          alt="Пример рекламы в РСЯ" 
+                          className="w-full h-auto object-contain"
+                          style={{ maxHeight: '100%', maxWidth: '100%' }}
+                        />
                       </div>
                     </div>
                   </div>
