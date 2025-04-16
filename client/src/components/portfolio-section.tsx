@@ -115,15 +115,15 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section id="portfolio" className="section-padding bg-white relative overflow-hidden">
+    <section id="portfolio" className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[10%] right-[-15%] opacity-20"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] top-[10%] right-[-15%] opacity-40"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши кейсы</div>
-          <h2 className="section-title">Реальные результаты</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <div className="inline-block bg-primary/20 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши кейсы</div>
+          <h2 className="section-title text-foreground">Реальные результаты</h2>
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
             Примеры успешных проектов и результаты, которых удалось достичь для клиентов из разных сфер бизнеса.
           </p>
         </div>

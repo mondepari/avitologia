@@ -21,11 +21,15 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Router />
-      <Toaster />
-      <BackToTop />
-    </QueryClientProvider>
+    <div className="dark">
+      <QueryClientProvider client={queryClient}>
+        <div className="bg-background min-h-screen">
+          <Router />
+          <Toaster />
+          <BackToTop />
+        </div>
+      </QueryClientProvider>
+    </div>
   );
 }
 
