@@ -198,10 +198,10 @@ const QuizCalculator = () => {
                 />
                 <label 
                   htmlFor={option.id} 
-                  className={`flex items-center p-4 bg-white border rounded-lg cursor-pointer hover:border-primary transition-all ${
+                  className={`flex items-center p-4 bg-accent border rounded-lg cursor-pointer hover:border-primary transition-all ${
                     answers[currentStep] === option.id 
                       ? "border-2 border-primary" 
-                      : "border border-gray-200"
+                      : "border border-gray-600/30"
                   }`}
                 >
                   <div className={`w-6 h-6 flex-shrink-0 rounded-full border mr-4 flex items-center justify-center ${

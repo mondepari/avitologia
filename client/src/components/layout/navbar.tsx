@@ -33,37 +33,37 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || mobileMenuOpen ? 'bg-white shadow-lg' : 'bg-white'
+      scrolled || mobileMenuOpen ? 'bg-background shadow-lg' : 'bg-background'
     }`}>
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Logo />
-            <div className="ml-6 text-xs font-medium text-gray-600 hidden lg:block">
+            <div className="ml-6 text-xs font-medium text-foreground/70 hidden lg:block">
               <p>Сертифицированный специалист по<br />Яндекс.Директ и Google Ads</p>
             </div>
           </div>
           
           <div className="hidden md:flex items-center justify-between flex-grow">
             <div className="flex items-center space-x-6 ml-8">
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
                 Контекстная реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
                 Авито реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
                 Разработка сайтов
               </button>
               <Link href="/cases">
-                <a className="text-gray-800 hover:text-primary font-medium transition-colors">
+                <a className="text-foreground hover:text-primary font-medium transition-colors">
                   Кейсы
                 </a>
               </Link>
-              <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary font-medium transition-colors">
                 Отзывы
               </button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary font-medium transition-colors">
                 Контакты
               </button>
             </div>
@@ -91,7 +91,7 @@ const Navbar = () => {
             <button 
               type="button" 
               onClick={toggleMobileMenu}
-              className="focus:outline-none text-gray-800"
+              className="focus:outline-none text-foreground"
               aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -102,36 +102,36 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-background border-t border-gray-800">
           <div className="px-4 pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
-              <span className="text-gray-600 mb-2">Навигация:</span>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+              <span className="text-foreground/70 mb-2">Навигация:</span>
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
                 Контекстная реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
                 Авито реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
                 Разработка сайтов
               </button>
               <Link href="/cases">
-                <a className="text-gray-800 hover:text-primary py-2 flex items-center">
+                <a className="text-foreground hover:text-primary py-2 flex items-center">
                   Кейсы
                 </a>
               </Link>
-              <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary py-2 flex items-center">
                 Отзывы
               </button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary py-2 flex items-center">
                 Контакты
               </button>
             </div>
             
             <div className="flex flex-col">
-              <span className="text-gray-600 mb-2">Связаться:</span>
+              <span className="text-foreground/70 mb-2">Связаться:</span>
               <ContactPopup>
-                <button className="flex items-center py-2 w-full text-left">
+                <button className="flex items-center py-2 w-full text-left text-foreground">
                   <Phone className="h-4 w-4 mr-2 text-primary" />
                   <span>+7(937) 343-45-43</span>
                 </button>
