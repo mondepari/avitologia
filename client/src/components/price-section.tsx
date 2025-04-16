@@ -1,6 +1,6 @@
 import React from "react";
 import { Check, Lock } from "lucide-react";
-import wheelImage from "../assets/wheel.png";
+import TariffIcon from "../assets/icons/tariff-icon";
 
 const PriceSection: React.FC = () => {
   return (
@@ -58,9 +58,9 @@ const PriceSection: React.FC = () => {
               <div className="text-3xl font-bold text-gray-800">19 990 ₽</div>
             </div>
             
-            {/* Изображение колеса в правом нижнем углу */}
-            <div className="absolute bottom-0 right-0 w-28 h-28 overflow-hidden opacity-80">
-              <img src={wheelImage} alt="Колесо" className="w-full h-full object-cover" />
+            {/* Иконка тарифа в правом нижнем углу */}
+            <div className="absolute bottom-2 right-2 w-20 h-20 text-primary/70">
+              <TariffIcon className="w-full h-full" />
             </div>
           </div>
           
@@ -87,13 +87,10 @@ const PriceSection: React.FC = () => {
               </div>
             </div>
             
-            <div className="absolute bottom-4 right-4">
-              <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/50">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRyYWl0JTIwbWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                  alt="Менеджер"
-                  className="w-full h-full object-cover"
-                />
+            {/* Дополнительная информация внизу */}
+            <div className="absolute bottom-4 right-4 text-right">
+              <div className="text-sm text-white/90 font-medium">
+                Бесплатная консультация
               </div>
             </div>
           </div>
