@@ -4,8 +4,8 @@ import rocketIcon from "../assets/icons/rocket.svg";
 import keyboardIcon from "../assets/icons/keyboard.svg";
 import mapIcon from "../assets/icons/map.svg";
 import monitorIcon from "../assets/icons/monitor.svg";
-import searchExample from "../assets/search-example.svg";
-import rsaExample from "../assets/rsa-example.svg";
+import searchScreenshot from "../assets/search-screenshot.png";
+import rsaScreenshot from "../assets/rsa-screenshot.png";
 import phoneFrame from "../assets/phone-frame.svg";
 
 interface FeatureCardProps {
@@ -162,10 +162,9 @@ const FeaturesSection: React.FC = () => {
                       <img src={phoneFrame} alt="Телефон" className="w-full" />
                       <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
                         <img 
-                          src={searchExample} 
+                          src={searchScreenshot} 
                           alt="Пример поисковой рекламы" 
-                          className="w-full h-auto object-contain"
-                          style={{ maxHeight: '100%', maxWidth: '100%' }}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     </div>
@@ -179,10 +178,9 @@ const FeaturesSection: React.FC = () => {
                       <img src={phoneFrame} alt="Телефон" className="w-full" />
                       <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
                         <img 
-                          src={rsaExample} 
+                          src={rsaScreenshot} 
                           alt="Пример рекламы в РСЯ" 
-                          className="w-full h-auto object-contain"
-                          style={{ maxHeight: '100%', maxWidth: '100%' }}
+                          className="w-full h-full object-cover"
                         />
                       </div>
                     </div>
