@@ -77,6 +77,28 @@
   }
 }
 
+@layer components {
+  .section-padding {
+    @apply py-14 md:py-16 lg:py-20;
+  }
+  
+  .bg-gradient-purple {
+    @apply bg-gradient-to-br from-primary to-primary/80;
+  }
+  
+  .purple-circle-decoration {
+    @apply absolute rounded-full bg-primary/30 blur-xl;
+  }
+  
+  .card-shadow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4;
+  }
+}
+
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
