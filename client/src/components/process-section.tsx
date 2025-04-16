@@ -99,15 +99,15 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section id="process" className="section-padding bg-gray-50 relative overflow-hidden">
+    <section id="process" className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-20"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-30"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-5">ЗА 6 ШАГОВ СДЕЛАЮ РЕКЛАМУ ПРИБЫЛЬНОЙ</h2>
-            <p className="text-center text-gray-600 text-lg">Настройка занимает только одну шестую часть из всей работы</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-foreground">ЗА 6 ШАГОВ СДЕЛАЮ РЕКЛАМУ ПРИБЫЛЬНОЙ</h2>
+            <p className="text-center text-foreground/70 text-lg">Настройка занимает только одну шестую часть из всей работы</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-16 gap-y-4">

@@ -4,8 +4,8 @@ import { ContactPopup } from "@/components/ui/contact-popup";
 
 const TariffFeature = ({ text }: { text: string }) => (
   <div className="flex items-start mt-2">
-    <Check className="h-4 w-4 text-gray-500 mr-2 flex-shrink-0 mt-0.5" />
-    <span className="text-gray-600 text-sm">{text}</span>
+    <Check className="h-4 w-4 text-primary/80 mr-2 flex-shrink-0 mt-0.5" />
+    <span className="text-foreground/80 text-sm">{text}</span>
   </div>
 );
 

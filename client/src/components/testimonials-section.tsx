@@ -67,16 +67,16 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-purple relative overflow-hidden">
+    <section className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decorations */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-5%] right-[-10%] opacity-30"></div>
-      <div className="purple-circle-decoration w-[350px] h-[350px] bottom-[-10%] left-[-10%] opacity-30"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-5%] right-[-10%] opacity-20"></div>
+      <div className="purple-circle-decoration w-[350px] h-[350px] bottom-[-10%] left-[-10%] opacity-20"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block bg-white/10 text-white font-medium px-4 py-2 rounded-full mb-4">Отзывы клиентов</div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Более 30 успешных проектов</h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto">
+          <div className="inline-block bg-primary/30 text-foreground font-medium px-4 py-2 rounded-full mb-4">Отзывы клиентов</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Более 30 успешных проектов</h2>
+          <p className="text-lg text-foreground/90 max-w-3xl mx-auto">
             Что говорят мои клиенты о результатах нашего сотрудничества.
           </p>
         </div>
@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <button className="bg-white/20 text-white font-medium border border-white/30 px-8 py-3 rounded-full hover:bg-white/30 transition duration-300">
+          <button className="bg-primary/20 text-foreground font-medium border border-primary/30 px-8 py-3 rounded-full hover:bg-primary/30 transition duration-300">
             Смотреть все отзывы
           </button>
         </div>

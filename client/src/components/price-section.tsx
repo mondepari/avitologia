@@ -5,12 +5,9 @@ import { ContactPopup } from "@/components/ui/contact-popup";
 
 const PriceSection: React.FC = () => {
   return (
-    <section id="prices" className="relative py-20 overflow-hidden bg-gray-50">
-      {/* Волнистый фон */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white via-gray-100/80 to-white"></div>
-      
+    <section id="prices" className="relative py-20 overflow-hidden bg-background">
       {/* Фиолетовый круг слева */}
-      <div className="absolute -left-40 top-20 w-96 h-96 rounded-full bg-primary/90 animate-float-slow"></div>
+      <div className="absolute -left-40 top-20 w-96 h-96 rounded-full bg-primary/20 animate-float-slow"></div>
       
       {/* Анимированные круги */}
       <div className="absolute top-1/3 right-10 w-24 h-24 rounded-full bg-primary/20 animate-float"></div>
@@ -19,7 +16,7 @@ const PriceSection: React.FC = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 uppercase">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
             ВЫ НЕ ПЕРЕПЛАЧИВАЕТЕ ЗА ОФИС<br />
             И ЛИШНИХ СОТРУДНИКОВ
           </h2>
@@ -32,19 +29,19 @@ const PriceSection: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
           {/* Первая карточка */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden relative flex-1">
+          <div className="bg-accent rounded-lg shadow-lg overflow-hidden relative flex-1">
             <div className="p-8">
-              <div className="text-gray-600 mb-3">Для тех, кто сомневается!</div>
+              <div className="text-foreground/70 mb-3">Для тех, кто сомневается!</div>
               <h3 className="text-xl font-bold text-primary mb-4">ЛЕГКИЙ СТАРТ</h3>
               
               <div className="space-y-2 mb-8">
                 <div className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700 text-sm">Настройка РСЯ и «Мастер кампаний»</span>
+                  <span className="text-foreground/90 text-sm">Настройка РСЯ и «Мастер кампаний»</span>
                 </div>
                 <div className="flex items-start">
                   <Check className="h-4 w-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700 text-sm">Запуск за 3 дня, бюджет от 20.000</span>
+                  <span className="text-foreground/90 text-sm">Запуск за 3 дня, бюджет от 20.000</span>
                 </div>
               </div>
               
@@ -58,7 +55,7 @@ const PriceSection: React.FC = () => {
             </div>
             
             <div className="absolute top-8 right-8">
-              <div className="text-3xl font-bold text-gray-800">19 990 ₽</div>
+              <div className="text-3xl font-bold text-foreground">19 990 ₽</div>
             </div>
             
             {/* Иконка тарифа в правом нижнем углу */}
