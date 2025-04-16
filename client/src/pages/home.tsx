@@ -16,7 +16,7 @@ import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Сергей Панкратов - Специалист по контекстной рекламе";
+    document.title = "Владислав Волошин - Специалист по контекстной рекламе";
   }, []);
 
   return (
