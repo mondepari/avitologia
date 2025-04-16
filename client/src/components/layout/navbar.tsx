@@ -47,13 +47,19 @@ const Navbar = () => {
           <div className="hidden md:flex items-center justify-between flex-grow">
             <div className="flex items-center space-x-6 ml-8">
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
-                Услуги
+                Контекстная реклама
+              </button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Авито реклама
+              </button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Разработка сайтов
               </button>
               <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary font-medium transition-colors">
-                Портфолио
+                Кейсы
               </button>
-              <button onClick={() => handleNavLinkClick('about')} className="text-gray-800 hover:text-primary font-medium transition-colors">
-                Обо мне
+              <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary font-medium transition-colors">
+                Отзывы
               </button>
               <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary font-medium transition-colors">
                 Контакты
@@ -99,24 +105,23 @@ const Navbar = () => {
             <div className="flex flex-col">
               <span className="text-gray-600 mb-2">Навигация:</span>
               <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
-                Услуги
+                Контекстная реклама
+              </button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Авито реклама
+              </button>
+              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Разработка сайтов
               </button>
               <button onClick={() => handleNavLinkClick('portfolio')} className="text-gray-800 hover:text-primary py-2 flex items-center">
-                Портфолио
+                Кейсы
               </button>
-              <button onClick={() => handleNavLinkClick('about')} className="text-gray-800 hover:text-primary py-2 flex items-center">
-                Обо мне
+              <button onClick={() => handleNavLinkClick('testimonials')} className="text-gray-800 hover:text-primary py-2 flex items-center">
+                Отзывы
               </button>
               <button onClick={() => handleNavLinkClick('contact')} className="text-gray-800 hover:text-primary py-2 flex items-center">
                 Контакты
               </button>
-            </div>
-            
-            <div className="flex flex-col">
-              <span className="text-gray-600 mb-2">Мои услуги:</span>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Яндекс.Директ</button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Google Ads</button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-gray-800 hover:text-primary py-2">Аналитика</button>
             </div>
             
             <div className="flex flex-col">
