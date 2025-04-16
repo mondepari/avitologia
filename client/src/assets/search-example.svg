@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Yandex search background -->
+  <rect width="400" height="250" fill="#FFFFFF"/>
+  
+  <!-- Yandex header -->
+  <rect x="0" y="0" width="400" height="40" fill="#FFFFFF"/>
+  <text x="20" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF0000">Яндекс</text>
+  
+  <!-- Search box -->
+  <rect x="20" y="50" width="360" height="40" rx="8" fill="#F2F2F2" stroke="#E0E0E0"/>
+  <text x="30" y="75" font-family="Arial, sans-serif" font-size="14" fill="#666666">недорогой детский день рождения</text>
+  <circle cx="360" cy="70" r="15" fill="#FF0000"/>
+  <text x="356" y="75" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">🔍</text>
+  
+  <!-- Ad result -->
+  <rect x="20" y="110" width="360" height="120" rx="4" fill="#FFFFFF" stroke="#E0E0E0"/>
+  
+  <text x="25" y="130" font-family="Arial, sans-serif" font-size="12" fill="#999999">Реклама</text>
+  
+  <text x="25" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0055FF">Детский День рождения недорого — В парке развлечений!</text>
+  
+  <text x="25" y="170" font-family="Arial, sans-serif" font-size="12" fill="#006600">mypark.ru • Бесплатно</text>
+  
+  <text x="25" y="190" font-family="Arial, sans-serif" font-size="13" fill="#333333">Незабываемый праздник! Дети будут в восторге! Смешные сценки! В цену включено: Пицца, Торт, Аниматоры и Шарики!</text>
+  
+  <text x="25" y="210" font-family="Arial, sans-serif" font-size="13" fill="#333333">День Рождения — Развлечения в детском саду</text>
+</svg>

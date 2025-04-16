@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="400" height="30" fill="#F6F6F6"/>
+  <text x="10" y="20" font-family="Arial, sans-serif" font-size="12" fill="#666666">Реклама • Яндекс.Директ</text>
+  <text x="380" y="20" font-family="Arial, sans-serif" font-size="12" fill="#666666" text-anchor="end">✕</text>
+  
+  <!-- Content -->
+  <rect x="10" y="40" width="380" height="200" fill="#FFFFFF"/>
+  
+  <!-- Детский день рождения на батуте -->
+  <text x="20" y="60" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0055AA">Детский день рождения на батуте</text>
+  
+  <!-- Image -->
+  <rect x="20" y="70" width="360" height="120" fill="#F2F8FF"/>
+  <!-- Simplified representation of children playing -->
+  <circle cx="120" cy="110" r="30" fill="#FFB6C1"/>
+  <circle cx="200" cy="130" r="25" fill="#ADD8E6"/>
+  <circle cx="280" cy="120" r="28" fill="#98FB98"/>
+  <rect x="60" y="170" width="280" height="10" rx="5" fill="#FFA07A"/>
+  
+  <!-- Footer -->
+  <text x="20" y="220" font-family="Arial, sans-serif" font-size="14" fill="#0055AA">Закажите праздник от 3000₽</text>
+  <rect x="240" y="205" width="140" height="30" rx="15" fill="#FF4500"/>
+  <text x="310" y="225" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Забронировать</text>
+</svg>
