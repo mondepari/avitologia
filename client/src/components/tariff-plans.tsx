@@ -113,14 +113,14 @@ const TariffPlans: React.FC = () => {
           
           {/* Стандарт тариф */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden relative">
-            {/* Хит лента */}
-            <div className="absolute -right-12 top-8 bg-primary text-white py-1 px-10 transform rotate-45 z-10 shadow-md font-bold text-sm">
-              ХИТ
-            </div>
-            
-            <div className="bg-blue-500 p-3 flex items-center">
+            <div className="bg-blue-500 p-3 flex items-center relative">
               <PlanStars count={2} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">СТАНДАРТ</span>
+              
+              {/* Хит лента */}
+              <div className="absolute top-0 right-0 bg-primary text-white py-4 px-4 font-bold text-[10px] rotate-0 shadow-md">
+                ХИТ
+              </div>
             </div>
             
             <div className="p-6">
