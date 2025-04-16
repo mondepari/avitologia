@@ -8,6 +8,7 @@ import ProcessSection from "@/components/process-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/layout/footer";
 import QuizCalculator from "@/components/quiz-calculator";
+import FeaturesSection from "@/components/features-section";
 import { DecorativeCircles } from "@/components/ui/decorative-elements";
 import { useEffect } from "react";
 
@@ -26,6 +27,7 @@ const Home = () => {
         <HeroSection />
         <QuizCalculator />
         <ServicesSection />
+        <FeaturesSection />
         <AboutSection />
         <PortfolioSection />
         <TestimonialsSection />
