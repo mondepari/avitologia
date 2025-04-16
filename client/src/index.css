@@ -1,94 +1,130 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+ 
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+ 
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+ 
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 20% 98%;
+ 
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+ 
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+ 
+    --ring: 262.1 83.3% 57.8%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+ 
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+ 
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+ 
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+ 
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+ 
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
+ 
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+ 
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+ 
+    --ring: 263.4 70% 50.4%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-right 10s ease-in-out infinite;
+}
+
+.animate-float-left {
+  animation: float-left 9s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
+}
 
 @keyframes float {
-  0% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-20px);
   }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 @keyframes float-right {
-  0% {
-    transform: translateX(0);
+  0%, 100% {
+    transform: translate(0, 0);
   }
   50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(0);
+    transform: translate(15px, -15px);
   }
 }
 
 @keyframes float-left {
-  0% {
-    transform: translateX(0);
+  0%, 100% {
+    transform: translate(0, 0);
   }
   50% {
-    transform: translateX(-20px);
-  }
-  100% {
-    transform: translateX(0);
+    transform: translate(-15px, -10px);
   }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-right {
-  animation: float-right 7s ease-in-out infinite;
-}
-
-.animate-float-left {
-  animation: float-left 8s ease-in-out infinite;
-}
-
-@layer base {
-  * {
-    @apply border-border;
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
   }
-
-  body {
-    @apply font-sans antialiased bg-background text-foreground;
-  }
-}
-
-@layer components {
-  .bg-gradient-purple {
-    background-color: #8139f2;
-    background-image: url('./assets/images/bg-pattern.svg'), linear-gradient(to bottom right, #8139f2, #7c33f2, #6928e0);
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .section-padding {
-    @apply py-16 md:py-24;
-  }
-  
-  .heading-lg {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
-  }
-  
-  .heading-md {
-    @apply text-2xl md:text-3xl font-bold;
-  }
-  
-  .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4;
-  }
-  
-  .card-shadow {
-    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
-  }
-  
-  .purple-circle-decoration {
-    @apply absolute rounded-full bg-[#9e62ff]/40 blur-xl;
+  50% {
+    transform: translateY(-10px);
   }
 }
