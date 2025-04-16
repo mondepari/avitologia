@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import CasesPage from "@/pages/cases";
 import CaseDetails from "@/pages/case-details";
 import BackToTop from "@/components/ui/back-to-top";
+import Preloader from "@/components/ui/preloader";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <Preloader />
       <Router />
       <Toaster />
       <BackToTop />
