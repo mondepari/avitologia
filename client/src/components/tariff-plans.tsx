@@ -114,7 +114,7 @@ const TariffPlans: React.FC = () => {
           {/* Стандарт тариф */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden relative">
             {/* Хит лента */}
-            <div className="absolute -right-8 top-7 bg-primary text-white py-1 px-8 transform rotate-45 z-10 shadow-md font-bold">
+            <div className="absolute -right-12 top-8 bg-primary text-white py-1 px-10 transform rotate-45 z-10 shadow-md font-bold text-sm">
               ХИТ
             </div>
             
