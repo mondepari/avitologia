@@ -4,38 +4,38 @@ import { Link } from 'wouter';
 
 const CaseStudyCard = ({ image, category, title, description, results }: CaseStudyProps) => {
   return (
-    <div className="bg-white rounded-xl overflow-hidden card-shadow border border-gray-100">
+    <div className="bg-accent rounded-xl overflow-hidden card-shadow border border-border">
       <div className="relative">
         <img 
           src={image} 
           alt={title} 
           className="w-full h-56 object-cover"
         />
-        <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold text-primary bg-white/90 backdrop-blur-sm rounded-full">{category}</span>
+        <span className="absolute top-4 left-4 px-3 py-1 text-xs font-semibold text-primary bg-background/90 backdrop-blur-sm rounded-full">{category}</span>
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
-        <p className="text-gray-600 mb-6">
+        <h3 className="text-xl font-semibold mb-3 text-foreground">{title}</h3>
+        <p className="text-foreground/70 mb-6">
           {description}
         </p>
         
-        <div className="grid grid-cols-3 gap-2 mb-6 bg-gray-50 p-4 rounded-lg">
+        <div className="grid grid-cols-3 gap-2 mb-6 bg-background p-4 rounded-lg">
           <div className="text-center">
             <div className="text-lg font-semibold text-primary">{results.conversion}</div>
-            <div className="text-xs text-gray-500">конверсии</div>
+            <div className="text-xs text-foreground/60">конверсии</div>
           </div>
           <div className="text-center">
             <div className="text-lg font-semibold text-primary">{results.costReduction}</div>
-            <div className="text-xs text-gray-500">стоимость</div>
+            <div className="text-xs text-foreground/60">стоимость</div>
           </div>
           <div className="text-center">
             <div className="text-lg font-semibold text-primary">{results.roi}</div>
-            <div className="text-xs text-gray-500">ROI</div>
+            <div className="text-xs text-foreground/60">ROI</div>
           </div>
         </div>
         
-        <button className="w-full bg-primary/10 hover:bg-primary/20 text-primary font-medium py-2.5 rounded-full transition duration-300 inline-flex items-center justify-center">
+        <button className="w-full bg-primary/20 hover:bg-primary/30 text-primary font-medium py-2.5 rounded-full transition duration-300 inline-flex items-center justify-center">
           Подробнее о кейсе
           <ExternalLink className="h-4 w-4 ml-2" />
         </button>
