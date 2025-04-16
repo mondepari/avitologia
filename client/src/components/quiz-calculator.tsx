@@ -228,7 +228,7 @@ const QuizCalculator = () => {
               placeholder={step.placeholder}
               value={answers[currentStep] || ""}
               onChange={handleTextChange}
-              className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+              className="w-full p-4 border border-gray-700/30 bg-accent text-foreground rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
             />
           </div>
         );
@@ -238,12 +238,12 @@ const QuizCalculator = () => {
         return (
           <div className="w-full">
             <div className="mb-6 text-center">
-              <div className="inline-block bg-gray-100 rounded-full px-8 py-3 text-lg font-medium border border-gray-200">
+              <div className="inline-block bg-accent rounded-full px-8 py-3 text-lg font-medium border border-gray-700/30 text-foreground">
                 {step.formatValue ? step.formatValue(sliderValue) : sliderValue}
               </div>
             </div>
             <div className="px-6">
-              <div className="flex justify-between mb-2 text-sm text-gray-600">
+              <div className="flex justify-between mb-2 text-sm text-foreground/70">
                 <span>{step.formatValue ? step.formatValue(step.min || 0) : step.min}</span>
                 <span>{step.formatValue ? step.formatValue(step.max || 100) : step.max}</span>
               </div>
@@ -284,22 +284,22 @@ const QuizCalculator = () => {
                   />
                   <label 
                     htmlFor={gift.id} 
-                    className={`flex items-center p-3 bg-white border rounded-lg cursor-pointer hover:border-primary transition-all ${
+                    className={`flex items-center p-3 bg-accent border rounded-lg cursor-pointer hover:border-primary transition-all ${
                       answers[currentStep] === gift.id 
                         ? "border-2 border-primary" 
-                        : "border border-gray-200"
+                        : "border border-gray-700/30"
                     }`}
                   >
                     <div className={`w-5 h-5 flex-shrink-0 rounded-full border mr-3 flex items-center justify-center ${
                       answers[currentStep] === gift.id 
                         ? "border-primary bg-primary/10" 
-                        : "border-gray-300"
+                        : "border-gray-600/30"
                     }`}>
                       {answers[currentStep] === gift.id && (
                         <div className="w-2.5 h-2.5 rounded-full bg-primary"></div>
                       )}
                     </div>
-                    <span className="text-sm">{gift.description}</span>
+                    <span className="text-sm text-foreground/90">{gift.description}</span>
                   </label>
                 </div>
               </div>
@@ -319,7 +319,7 @@ const QuizCalculator = () => {
     
     return (
       <div className="mt-6">
-        <p className="mb-2">Где Вам удобней связаться?</p>
+        <p className="mb-2 text-foreground">Где Вам удобней связаться?</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {quizSteps[8].options?.map(option => (
             <button
@@ -327,7 +327,7 @@ const QuizCalculator = () => {
               className={`px-4 py-2 rounded-full border flex items-center gap-2 ${
                 contactMethod === option.id 
                   ? "bg-primary text-white border-primary" 
-                  : "border-gray-300 hover:border-primary"
+                  : "border-gray-600/30 text-foreground hover:border-primary"
               }`}
               onClick={() => handleOptionSelect(option.id)}
             >
@@ -346,11 +346,11 @@ const QuizCalculator = () => {
             value={phoneNumber}
             onChange={handlePhoneChange}
             placeholder="+7 (___) ___-__-__"
-            className="w-full p-3 bg-gray-100 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/50"
+            className="w-full p-3 bg-accent rounded-full border border-gray-700/30 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
           />
         </div>
         
-        <p className="text-xs text-gray-500 mb-4">
+        <p className="text-xs text-foreground/60 mb-4">
           Оставляя заявку, Вы принимаете <a href="#" className="text-primary underline">политику конфиденциальности</a>
         </p>
       </div>
