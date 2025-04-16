@@ -110,28 +110,40 @@ const FeaturesSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-16">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-8">Как это работает?</h3>
               <div className="relative">
-                <div className="space-y-8 relative z-10">
-                  <div className="flex items-center mb-2">
-                    <div className="text-primary text-5xl font-bold mr-6">1</div>
-                    <p className="text-base">Клиент вводит в поисковую строку запрос, который его волнует</p>
+                <div className="relative z-10">
+                  <div>
+                    <div className="flex items-start mt-8">
+                      <div className="text-primary text-6xl font-bold mr-6">1</div>
+                      <div className="mt-2">
+                        <p className="text-lg">Клиент вводит в поисковую строку запрос, который его волнует</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center mb-2">
-                    <div className="text-primary text-5xl font-bold mr-6">2</div>
-                    <p className="text-base">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
+                  <div className="mt-12">
+                    <div className="flex items-start">
+                      <div className="text-primary text-6xl font-bold mr-6">2</div>
+                      <div className="mt-2">
+                        <p className="text-lg">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center mb-2">
-                    <div className="text-primary text-5xl font-bold mr-6">3</div>
-                    <p className="text-base">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+                  <div className="mt-12">
+                    <div className="flex items-start">
+                      <div className="text-primary text-6xl font-bold mr-6">3</div>
+                      <div className="mt-2">
+                        <p className="text-lg">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="absolute right-0 top-1/4 opacity-10">
-                  <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100Z" fill="#CCCCCC"/>
-                    <text x="50" y="120" fontSize="120" fontWeight="bold" fill="#DDDDDD">?</text>
+                <div className="absolute right-0 top-10 opacity-10 -z-10">
+                  <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M360 180C360 279.411 279.411 360 180 360C80.5889 360 0 279.411 0 180C0 80.5889 80.5889 0 180 0C279.411 0 360 80.5889 360 180Z" fill="#CCCCCC"/>
+                    <text x="100" y="220" fontSize="220" fontWeight="bold" fill="#DDDDDD">?</text>
                   </svg>
                 </div>
               </div>
