@@ -3,13 +3,13 @@ import { ReactNode } from 'react';
 
 const ProcessStep = ({ number, title, description, iconSvg }: ProcessStepProps & { iconSvg: ReactNode }) => {
   return (
-    <div className="flex items-start gap-4 mb-12">
+    <div className="flex items-start gap-5 mb-12">
       <div className="relative flex-none">
-        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-4xl font-medium text-gray-400 mb-4">
+        <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-4xl font-medium text-gray-500">
           {number}
         </div>
-        <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="w-12 h-12 text-primary">
+        <div className="absolute -top-2 -left-2">
+          <div className="w-10 h-10 text-primary">
             {iconSvg}
           </div>
         </div>
@@ -106,18 +106,10 @@ const ProcessSection = () => {
       <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-20"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Процесс работы</div>
-          <h2 className="section-title">Как я работаю с клиентами</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Прозрачный и эффективный процесс работы, который позволяет достигать максимальных результатов.
-          </p>
-        </div>
-        
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
-            <h3 className="text-2xl font-bold text-center mb-3">ЗА 6 ШАГОВ СДЕЛАЮ РЕКЛАМУ ПРИБЫЛЬНОЙ</h3>
-            <p className="text-center text-gray-600">Настройка занимает только одну шестую часть из всей работы</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-5">ЗА 6 ШАГОВ СДЕЛАЮ РЕКЛАМУ ПРИБЫЛЬНОЙ</h2>
+            <p className="text-center text-gray-600 text-lg">Настройка занимает только одну шестую часть из всей работы</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-16 gap-y-4">
@@ -135,7 +127,7 @@ const ProcessSection = () => {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               }
             }} 
-            className="bg-primary text-white font-medium px-8 py-3 rounded-full hover:bg-primary/90 transition duration-300 shadow-lg"
+            className="bg-primary text-white font-semibold px-12 py-4 rounded-full hover:bg-primary/90 transition duration-300 shadow-lg text-lg"
           >
             РАССЧИТАТЬ СТОИМОСТЬ
             <span className="block text-xs mt-1 font-light opacity-90">(за 1 минуту + подарок)</span>
