@@ -140,12 +140,10 @@ const FeaturesSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute right-0 top-10 opacity-10 -z-10">
-                  <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M360 180C360 279.411 279.411 360 180 360C80.5889 360 0 279.411 0 180C0 80.5889 80.5889 0 180 0C279.411 0 360 80.5889 360 180Z" fill="#CCCCCC"/>
-                    <text x="100" y="220" fontSize="220" fontWeight="bold" fill="#DDDDDD">?</text>
-                  </svg>
-                </div>
+                {/* Фоновые круги с эффектами */}
+                <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-primary/20 animate-float-right -z-10"></div>
+                <div className="absolute bottom-10 left-10 w-24 h-24 rounded-full bg-primary/15 animate-float -z-10"></div>
+                <div className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-primary/10 animate-float-left -z-10"></div>
               </div>
             </div>
             
