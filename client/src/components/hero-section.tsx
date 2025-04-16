@@ -26,9 +26,9 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="bg-white min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
+    <header className="bg-background min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-[#8139f2] z-0"></div>
+      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-[#8139f2] z-0 opacity-40"></div>
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
@@ -36,11 +36,11 @@ const HeroSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <div className="text-left mb-4 mt-4">
-                <h2 className="text-xl text-gray-900 font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
+                <h2 className="text-xl text-foreground font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
               </div>
               
               <div className="mb-6">
-                <h1 className="text-4xl md:text-5xl lg:text-[52px] font-black text-gray-900 leading-tight tracking-tight uppercase">
+                <h1 className="text-4xl md:text-5xl lg:text-[52px] font-black text-foreground leading-tight tracking-tight uppercase">
                   ПОЛУЧАЙТЕ СТАБИЛЬНЫЙ<br />
                   ПОТОК ЖИВЫХ КЛИЕНТОВ<br />
                   ЕЖЕНЕДЕЛЬНО
@@ -48,7 +48,7 @@ const HeroSection = () => {
               </div>
               
               <div className="mb-8">
-                <p className="text-lg text-gray-800">
+                <p className="text-lg text-foreground/80">
                   С помощью профессиональной настройки<br />
                   и ведения контекстной рекламы
                 </p>
@@ -67,19 +67,19 @@ const HeroSection = () => {
                     
                     <div 
                       onClick={() => scrollToSection('contact')}
-                      className="flex items-center justify-center text-[#333] hover:text-[#8139f2] transition-all duration-300 cursor-pointer group border-b border-dashed border-[#8139f2]"
+                      className="flex items-center justify-center text-foreground hover:text-primary transition-all duration-300 cursor-pointer group border-b border-dashed border-primary"
                     >
                       <div className="flex items-center">
-                        <MessageCircle className="h-5 w-5 text-[#8139f2] mr-2" />
-                        <span className="text-sm uppercase text-[#333]">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                        <MessageCircle className="h-5 w-5 text-primary mr-2" />
+                        <span className="text-sm uppercase text-foreground">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
                       </div>
                     </div>
                   </div>
                   
                   <div className="mt-8 flex items-center">
                     <div className="flex items-center">
-                      <div className="text-[#8139f2] text-5xl font-bold mr-3">×2.7</div>
-                      <div className="text-sm text-gray-600 max-w-[240px]">
+                      <div className="text-primary text-5xl font-bold mr-3">×2.7</div>
+                      <div className="text-sm text-foreground/70 max-w-[240px]">
                         Средний коэффициент увеличения прибыли бизнеса
                       </div>
                     </div>
@@ -114,46 +114,46 @@ const HeroSection = () => {
           </div>
           
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Выбор стратегии продвижения</h3>
+              <p className="text-sm text-foreground/70 text-center">
                 Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
               </p>
             </div>
             
-            <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Целевые посетители</h3>
+              <p className="text-sm text-foreground/70 text-center">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
-            <div className="bg-white rounded-xl p-6 text-[#8139f2] shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-white border border-[#8139f2]/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Настройка аналитики</h3>
+              <p className="text-sm text-foreground/70 text-center">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* White bottom curve decoration */}
-      <div className="w-full h-12 bg-white rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
+      {/* Bottom curve decoration */}
+      <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
   );
 };
