@@ -158,13 +158,6 @@ export function ContactPopup({ children }: ContactPopupProps) {
       </DialogTrigger>
       <DialogContent className="bg-white p-0 rounded-lg overflow-hidden border-none max-w-md w-[90%]">
         <div className="relative">
-          <button 
-            onClick={() => setIsOpen(false)} 
-            className="absolute right-3 top-3 w-7 h-7 flex items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 transition-colors"
-          >
-            <X className="w-4 h-4" />
-          </button>
-          
           <div className="p-6">
             <DialogHeader className="mb-4">
               <DialogTitle className="text-xl font-bold text-center">
@@ -203,7 +196,7 @@ export function ContactPopup({ children }: ContactPopupProps) {
                 >
                   <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mb-2">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0Zm.055 5.985c.245 0 .492.06.724.178L19.5 9.892c.658.334 1.052.815 1.11 1.353.059.537-.191 1.074-.666 1.496-.058.058-.173.117-.288.191l-5.777 3.883a2.25 2.25 0 0 1-.347.173 1.89 1.89 0 0 1-1.11 0 2.247 2.247 0 0 1-.346-.173L6.3 12.932c-.116-.074-.231-.133-.29-.19-.474-.423-.724-.96-.665-1.497.058-.538.45-1.02 1.11-1.354l6.776-3.728c.233-.118.48-.177.724-.177h.044Z"/>
+                      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zM16.56 8.24c-.16.16-4.2 2.82-4.38 2.92s-.29.08-.39-.04-1.84-1.74-2.02-1.9a.495.495 0 0 0-.22-.1.45.45 0 0 0-.29.18c-.1.14-1.52 1.32-1.75 1.6-.04.04-.08.06-.14.02-.46-.3-.86-.57-1.14-.78-1.11-.82-1.84-1.54-2.43-2.14a.48.48 0 0 1-.13-.32c0-.12.08-.24.2-.32C4.52 7.02 7.33 5 7.77 4.7c1.96-1.36 3.66-1.8 4.47-1.5.28.1.52.32.6.62.18.66.12 1.48-.16 3.04-.16.76-.48 2.16-.66 2.94-.04.16-.14.24-.34.32-.1.04-.48.18-.68.26z"/>
                     </svg>
                   </div>
                   <span className="text-sm">Telegram</span>
