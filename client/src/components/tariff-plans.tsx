@@ -39,18 +39,18 @@ const TariffPlans: React.FC = () => {
   ];
 
   return (
-    <section id="tariff-plans" className="py-20 bg-gray-50">
+    <section id="tariff-plans" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">ТАРИФНЫЕ ПЛАНЫ</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">ТАРИФНЫЕ ПЛАНЫ</h2>
+          <p className="text-foreground/70 max-w-3xl mx-auto">
             Выберите оптимальный тарифный план для вашего бизнеса. Каждый тариф включает набор услуг, которые помогут вам достичь максимальных результатов.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Базовый тариф */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-accent rounded-lg shadow-lg overflow-hidden">
             <div className="bg-green-500 p-3 flex items-center">
               <PlanStars count={1} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">БАЗОВЫЙ</span>
@@ -58,8 +58,8 @@ const TariffPlans: React.FC = () => {
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-gray-400 line-through text-sm">13 500 ₽</div>
-                <div className="text-4xl font-bold text-gray-800">9 500 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">13 500 ₽</div>
+                <div className="text-4xl font-bold text-foreground">9 500 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
@@ -112,7 +112,7 @@ const TariffPlans: React.FC = () => {
           </div>
           
           {/* Стандарт тариф */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden relative">
+          <div className="bg-accent rounded-lg shadow-lg overflow-hidden relative">
             <div className="bg-blue-500 p-3 flex items-center relative">
               <PlanStars count={2} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">СТАНДАРТ</span>
@@ -125,8 +125,8 @@ const TariffPlans: React.FC = () => {
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-gray-400 line-through text-sm">24 200 ₽</div>
-                <div className="text-4xl font-bold text-gray-800">16 000 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">24 200 ₽</div>
+                <div className="text-4xl font-bold text-foreground">16 000 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
@@ -179,7 +179,7 @@ const TariffPlans: React.FC = () => {
           </div>
           
           {/* Премиум тариф */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-accent rounded-lg shadow-lg overflow-hidden">
             <div className="bg-red-500 p-3 flex items-center">
               <PlanStars count={3} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">ПРЕМИУМ</span>
@@ -187,8 +187,8 @@ const TariffPlans: React.FC = () => {
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-gray-400 line-through text-sm">56 500 ₽</div>
-                <div className="text-4xl font-bold text-gray-800">40 500 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">56 500 ₽</div>
+                <div className="text-4xl font-bold text-foreground">40 500 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
