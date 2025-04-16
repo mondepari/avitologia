@@ -86,15 +86,15 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white relative overflow-hidden">
-      {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] right-[-10%] opacity-20"></div>
+    <section id="contact" className="section-padding bg-background relative overflow-hidden">
+      {/* Dark Circle Decoration */}
+      <div className="bg-accent/10 w-[400px] h-[400px] rounded-full absolute bottom-[10%] right-[-10%] opacity-20"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Контакты</div>
-          <h2 className="section-title">Получите бесплатную <br/>консультацию специалиста</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="section-title text-foreground">Получите бесплатную <br/>консультацию специалиста</h2>
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
             Готов помочь вам с настройкой эффективной рекламной кампании. Заполните форму или свяжитесь со мной удобным для вас способом.
           </p>
         </div>
@@ -172,60 +172,60 @@ const ContactSection = () => {
           </div>
           
           <div>
-            <form className="bg-white rounded-xl shadow-xl p-8" onSubmit={handleSubmit}>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Отправить сообщение</h3>
+            <form className="bg-accent rounded-xl shadow-xl p-8" onSubmit={handleSubmit}>
+              <h3 className="text-2xl font-semibold text-foreground mb-6">Отправить сообщение</h3>
               
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Ваше имя *</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-foreground/80 mb-1">Ваше имя *</label>
                   <input 
                     type="text" 
                     id="name" 
                     name="name" 
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    className="w-full px-4 py-2 border border-foreground/20 bg-background/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground" 
                     placeholder="Введите ваше имя" 
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-foreground/80 mb-1">Email *</label>
                   <input 
                     type="email" 
                     id="email" 
                     name="email" 
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    className="w-full px-4 py-2 border border-foreground/20 bg-background/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground" 
                     placeholder="Введите ваш email" 
                     required
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Телефон</label>
+                  <label htmlFor="phone" className="block text-sm font-medium text-foreground/80 mb-1">Телефон</label>
                   <input 
                     type="tel" 
                     id="phone" 
                     name="phone" 
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    className="w-full px-4 py-2 border border-foreground/20 bg-background/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground" 
                     placeholder="Введите ваш телефон" 
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Сообщение *</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground/80 mb-1">Сообщение *</label>
                   <textarea 
                     id="message" 
                     name="message" 
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                    className="w-full px-4 py-2 border border-foreground/20 bg-background/50 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-foreground" 
                     placeholder="Напишите ваше сообщение" 
                     required
                   ></textarea>
@@ -239,7 +239,7 @@ const ContactSection = () => {
                   {isSubmitting ? "Отправка..." : "Отправить сообщение"}
                 </button>
                 
-                <p className="text-sm text-gray-500 mt-4">
+                <p className="text-sm text-foreground/50 mt-4">
                   Нажимая на кнопку, вы соглашаетесь с 
                   <a href="#" className="text-primary hover:underline ml-1">политикой конфиденциальности</a>.
                 </p>
