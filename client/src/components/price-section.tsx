@@ -1,6 +1,7 @@
 import React from "react";
 import { Check, Lock } from "lucide-react";
 import TariffIcon from "../assets/icons/tariff-icon";
+import { ContactPopup } from "@/components/ui/contact-popup";
 
 const PriceSection: React.FC = () => {
   return (
@@ -48,9 +49,11 @@ const PriceSection: React.FC = () => {
               </div>
               
               <div className="mb-2">
-                <button className="bg-primary text-white rounded-full py-2 px-6 text-sm font-medium hover:bg-primary/90 transition-all">
-                  ВЫБРАТЬ ТАРИФ
-                </button>
+                <ContactPopup>
+                  <button className="bg-primary text-white rounded-full py-2 px-6 text-sm font-medium hover:bg-primary/90 transition-all">
+                    ВЫБРАТЬ ТАРИФ
+                  </button>
+                </ContactPopup>
               </div>
             </div>
             
@@ -74,9 +77,11 @@ const PriceSection: React.FC = () => {
               </p>
               
               <div className="mb-2">
-                <button className="bg-white text-primary rounded-full py-2 px-6 text-sm font-medium hover:bg-white/90 transition-all">
-                  ПОЛУЧИТЬ РЕКОМЕНДАЦИИ
-                </button>
+                <ContactPopup>
+                  <button className="bg-white text-primary rounded-full py-2 px-6 text-sm font-medium hover:bg-white/90 transition-all">
+                    ПОЛУЧИТЬ РЕКОМЕНДАЦИИ
+                  </button>
+                </ContactPopup>
               </div>
               
               <div className="text-right mt-2">

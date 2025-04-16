@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Phone, MessageSquare } from "lucide-react";
-import { X } from "lucide-react";
+import { Phone, MessageSquare, Mail, X } from "lucide-react";
 
 interface ContactPopupProps {
   children: React.ReactNode;
@@ -9,6 +8,10 @@ interface ContactPopupProps {
 
 export function ContactPopup({ children }: ContactPopupProps) {
   const [phoneNumber, setPhoneNumber] = useState("+7");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [activeTab, setActiveTab] = useState<'phone' | 'form'>('phone');
   const [isOpen, setIsOpen] = useState(false);
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -16,6 +19,18 @@ export function ContactPopup({ children }: ContactPopupProps) {
     if (value.startsWith("+7") && value.length <= 12) {
       setPhoneNumber(value);
     }
+  };
+  
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  };
+  
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value);
   };
   
   return (
@@ -82,21 +97,86 @@ export function ContactPopup({ children }: ContactPopupProps) {
                   </div>
                   <span className="text-sm">Телефон</span>
                 </button>
+
+                <a 
+                  href="mailto:contact@sergeypankratov.ru" 
+                  className="flex flex-col items-center justify-center rounded-md py-3 px-5 hover:bg-primary/5 transition-colors"
+                >
+                  <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mb-2">
+                    <Mail className="h-5 w-5 text-white" />
+                  </div>
+                  <span className="text-sm">Email</span>
+                </a>
               </div>
               
-              <div className="relative mb-4">
-                <input
-                  type="tel"
-                  value={phoneNumber}
-                  onChange={handlePhoneChange}
-                  placeholder="+7 (___) ___-__-__"
-                  className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-center"
-                />
+              <div className="flex gap-2 mb-4">
+                <button 
+                  className={`flex-1 py-2 px-3 font-medium rounded-md transition-colors ${activeTab === 'phone' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+                  onClick={() => setActiveTab('phone')}
+                >
+                  Звонок
+                </button>
+                <button 
+                  className={`flex-1 py-2 px-3 font-medium rounded-md transition-colors ${activeTab === 'form' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+                  onClick={() => setActiveTab('form')}
+                >
+                  Сообщение
+                </button>
               </div>
-              
-              <button className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors">
-                ПОЗВОНИТЕ МНЕ
-              </button>
+
+              {activeTab === 'phone' ? (
+                <>
+                  <div className="relative mb-4">
+                    <input
+                      type="tel"
+                      value={phoneNumber}
+                      onChange={handlePhoneChange}
+                      placeholder="+7 (___) ___-__-__"
+                      className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-center"
+                    />
+                  </div>
+                  
+                  <button className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors">
+                    ПОЗВОНИТЕ МНЕ
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <input
+                        type="text"
+                        value={name}
+                        onChange={handleNameChange}
+                        placeholder="Ваше имя"
+                        className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={handleEmailChange}
+                        placeholder="Ваш email"
+                        className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      />
+                    </div>
+                    <div>
+                      <textarea
+                        value={message}
+                        onChange={handleMessageChange}
+                        placeholder="Ваше сообщение"
+                        rows={3}
+                        className="w-full py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                      />
+                    </div>
+                  </div>
+                  
+                  <button className="w-full bg-primary text-white font-semibold py-3 px-4 rounded-md hover:bg-primary/90 transition-colors">
+                    ОТПРАВИТЬ СООБЩЕНИЕ
+                  </button>
+                </>
+              )}
               
               <p className="text-xs text-gray-500 text-center mt-4">
                 Оставляя заявку, Вы принимаете {" "}
