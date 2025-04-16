@@ -1,5 +1,9 @@
 import React from "react";
 import { SectionDecoration } from "./ui/decorative-elements";
+import rocketIcon from "../assets/icons/rocket.svg";
+import keyboardIcon from "../assets/icons/keyboard.svg";
+import mapIcon from "../assets/icons/map.svg";
+import monitorIcon from "../assets/icons/monitor.svg";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -9,13 +13,13 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
   return (
-    <div className="bg-black rounded-lg overflow-hidden shadow-lg h-full flex flex-col border border-gray-800">
+    <div className="bg-white rounded-lg overflow-hidden shadow-md h-full flex flex-col transition-all duration-300 hover:shadow-xl hover:transform hover:-translate-y-1">
       <div className="p-6 flex justify-center">
         {icon}
       </div>
-      <div className="p-6 text-gray-400 text-center">
-        <h3 className="text-lg font-bold text-white mb-3">{title}</h3>
-        <p className="text-sm leading-relaxed">{description}</p>
+      <div className="p-6 text-center">
+        <h3 className="text-lg font-bold text-gray-800 mb-3">{title}</h3>
+        <p className="text-sm leading-relaxed text-gray-600">{description}</p>
       </div>
     </div>
   );
@@ -28,10 +32,7 @@ const FeaturesSection: React.FC = () => {
         <div className="w-20 h-20 relative">
           <div className="absolute w-full h-full rounded-full bg-primary/20 animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <img src="./src/assets/icons/rocket.svg" alt="Скорость" className="w-10 h-10 text-primary" onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238139f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z'%3E%3C/path%3E%3Cpath d='m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z'%3E%3C/path%3E%3Cpath d='M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0'%3E%3C/path%3E%3Cpath d='M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5'%3E%3C/path%3E%3C/svg%3E";
-            }} />
+            <img src={rocketIcon} alt="Скорость" className="w-10 h-10 text-primary" />
           </div>
         </div>
       ),
@@ -43,10 +44,7 @@ const FeaturesSection: React.FC = () => {
         <div className="w-20 h-20 relative">
           <div className="absolute w-full h-full rounded-full bg-primary/20 animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <img src="./src/assets/icons/keyboard.svg" alt="Таргетинг" className="w-10 h-10 text-primary" onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238139f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='16' rx='2' ry='2'/%3E%3Cpath d='M6 8h.001'/%3E%3Cpath d='M10 8h.001'/%3E%3Cpath d='M14 8h.001'/%3E%3Cpath d='M18 8h.001'/%3E%3Cpath d='M8 12h.001'/%3E%3Cpath d='M12 12h.001'/%3E%3Cpath d='M16 12h.001'/%3E%3Cpath d='M7 16h10'/%3E%3C/svg%3E";
-            }} />
+            <img src={keyboardIcon} alt="Таргетинг" className="w-10 h-10 text-primary" />
           </div>
         </div>
       ),
@@ -58,10 +56,7 @@ const FeaturesSection: React.FC = () => {
         <div className="w-20 h-20 relative">
           <div className="absolute w-full h-full rounded-full bg-primary/20 animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <img src="./src/assets/icons/map.svg" alt="Аналитика" className="w-10 h-10 text-primary" onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238139f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21'/%3E%3Cline x1='9' y1='3' x2='9' y2='18'/%3E%3Cline x1='15' y1='6' x2='15' y2='21'/%3E%3C/svg%3E";
-            }} />
+            <img src={mapIcon} alt="Аналитика" className="w-10 h-10 text-primary" />
           </div>
         </div>
       ),
@@ -73,10 +68,7 @@ const FeaturesSection: React.FC = () => {
         <div className="w-20 h-20 relative">
           <div className="absolute w-full h-full rounded-full bg-primary/20 animate-pulse"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <img src="/src/assets/icons/monitor.svg" alt="Технологии" className="w-10 h-10" onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%238139f2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='3' width='20' height='14' rx='2'/%3E%3Cline x1='8' y1='21' x2='16' y2='21'/%3E%3Cline x1='12' y1='17' x2='12' y2='21'/%3E%3C/svg%3E";
-            }} />
+            <img src={monitorIcon} alt="Технологии" className="w-10 h-10 text-primary" />
           </div>
         </div>
       ),
