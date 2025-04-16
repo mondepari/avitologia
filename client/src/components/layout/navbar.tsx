@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import Logo from '@/components/ui/logo';
 import { Menu, X, MessageCircle, Phone } from 'lucide-react';
+import { ContactPopup } from '@/components/ui/contact-popup';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -60,18 +61,21 @@ const Navbar = () => {
             </div>
             
             <div className="flex items-center space-x-4">
-              <a href="tel:+73433454343" className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
-                <Phone className="h-4 w-4 mr-2" />
-                <span className="font-medium text-sm">+7(937) 343-45-43</span>
-              </a>
+              <ContactPopup>
+                <button className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <span className="font-medium text-sm">+7(937) 343-45-43</span>
+                </button>
+              </ContactPopup>
               
-              <button 
-                onClick={() => handleNavLinkClick('contact')} 
-                className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
-              >
-                <MessageCircle className="h-4 w-4 mr-2" />
-                <span className="text-sm">Пишите</span>
-              </button>
+              <ContactPopup>
+                <button 
+                  className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
+                >
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  <span className="text-sm">Пишите</span>
+                </button>
+              </ContactPopup>
             </div>
           </div>
           
@@ -117,17 +121,20 @@ const Navbar = () => {
             
             <div className="flex flex-col">
               <span className="text-gray-600 mb-2">Связаться:</span>
-              <a href="tel:+73433454343" className="flex items-center py-2">
-                <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span>+7(937) 343-45-43</span>
-              </a>
-              <button 
-                onClick={() => handleNavLinkClick('contact')} 
-                className="mt-3 w-full bg-primary text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
-              >
-                <MessageCircle className="h-5 w-5 mr-2" />
-                <span>Написать</span>
-              </button>
+              <ContactPopup>
+                <button className="flex items-center py-2 w-full text-left">
+                  <Phone className="h-4 w-4 mr-2 text-primary" />
+                  <span>+7(937) 343-45-43</span>
+                </button>
+              </ContactPopup>
+              <ContactPopup>
+                <button 
+                  className="mt-3 w-full bg-primary text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
+                >
+                  <MessageCircle className="h-5 w-5 mr-2" />
+                  <span>Написать</span>
+                </button>
+              </ContactPopup>
             </div>
           </div>
         </div>
