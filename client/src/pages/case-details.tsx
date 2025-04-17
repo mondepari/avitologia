@@ -187,7 +187,7 @@ const CaseDetails: React.FC = () => {
         <h1 className="text-2xl font-bold mb-4">Кейс не найден</h1>
         <p className="text-gray-600 mb-6">К сожалению, запрашиваемый кейс не существует или был удален.</p>
         <Link href="/cases">
-          <a className="bg-primary text-white px-6 py-3 rounded-full inline-flex items-center">
+          <a className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-6 py-3 rounded-full inline-flex items-center hover:from-[#5500D8] hover:to-[#6A26CF] transition-all">
             <ArrowLeft className="mr-2 h-5 w-5" />
             Вернуться к списку кейсов
           </a>
@@ -207,11 +207,11 @@ const CaseDetails: React.FC = () => {
         <div className="container mx-auto px-4 pt-6">
           <div className="flex items-center text-sm text-gray-500">
             <Link href="/">
-              <a className="hover:text-primary transition-colors">Главная</a>
+              <a className="hover:text-[#6200EE] transition-colors">Главная</a>
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <Link href="/cases">
-              <a className="hover:text-primary transition-colors">Кейсы</a>
+              <a className="hover:text-[#6200EE] transition-colors">Кейсы</a>
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
             <span className="text-gray-800">{caseData.title}</span>
@@ -273,7 +273,7 @@ const CaseDetails: React.FC = () => {
                     <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                       {result.icon}
                     </div>
-                    <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{result.value}</div>
+                    <div className="text-2xl md:text-3xl font-bold text-[#6200EE] mb-1">{result.value}</div>
                     <div className="text-sm text-gray-600">{result.label}</div>
                   </div>
                 ))}

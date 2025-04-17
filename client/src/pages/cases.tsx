@@ -107,7 +107,7 @@ const CaseCard: React.FC<{ caseItem: Case }> = ({ caseItem }) => {
         </div>
         
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+          <h3 className="text-xl font-semibold mb-3 group-hover:text-[#6200EE] transition-colors duration-300">
             {caseItem.title}
           </h3>
           
@@ -118,7 +118,7 @@ const CaseCard: React.FC<{ caseItem: Case }> = ({ caseItem }) => {
           <div className="grid grid-cols-3 gap-2 mb-4">
             {caseItem.results.map((result, index) => (
               <div key={index} className="bg-gray-50 p-3 rounded-lg text-center">
-                <span className="block text-primary font-bold text-lg">{result.value}</span>
+                <span className="block text-[#6200EE] font-bold text-lg">{result.value}</span>
                 <span className="block text-xs text-gray-500">{result.label}</span>
               </div>
             ))}
@@ -154,7 +154,7 @@ const CasesPage: React.FC = () => {
         <section className="py-16 md:py-24 relative">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Кейсы</div>
+              <div className="inline-block bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 text-[#6200EE] font-medium px-4 py-2 rounded-full mb-4">Кейсы</div>
               <h1 className="text-3xl md:text-5xl font-bold mb-6">Успешные проекты</h1>
               <p className="text-lg text-gray-700">
                 Ознакомьтесь с реальными примерами успешного продвижения бизнеса с помощью контекстной рекламы.
