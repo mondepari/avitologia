@@ -24,18 +24,44 @@ const PlanStars = ({ count, color }: { count: number; color: string }) => {
 };
 
 const TariffPlans: React.FC = () => {
-  const features = [
-    "Анализ бизнеса",
-    "Анализ конкурентов",
-    "Анализ сайта + рекомендации",
-    "Разработка УТП",
-    "Настройка Яндекс (Поиск + РСЯ)",
-    "Настройка Авито рекламы",
-    "Ретаргетинг",
-    "Подключение Метрики",
-    "Интеграция с системой Call Tracking",
-    "Полный доступ к аккаунту",
-    "Без ограничений по ключевым словам"
+  const basicFeatures = [
+    "Создание аккаунта",
+    "Настройка адаптивных объявлений",
+    "Настройка UTM-меток",
+    "Заполнение расширений",
+    "Добавление минус-слов",
+    "Оптимизация цены кликов",
+    "Анализ результатов",
+    "Предоставление отчёта",
+    "Аудит и оптимизация",
+    "Оптимизация цены рекламы",
+    "Подключение Яндекс Метрики"
+  ];
+  
+  const standardFeatures = [
+    "Настройка ретаргетинга",
+    "Оптимизация объявлений",
+    "Предоставление отчёта",
+    "Аудит Яндекс Директа",
+    "Перенос кампании",
+    "Добавление минус слов",
+    "Настройка таргетинга",
+    "Оптимизация цены кликов",
+    "Анализ результатов",
+    "Предоставление отчёта"
+  ];
+  
+  const premiumFeatures = [
+    "Оптимизация цены кликов",
+    "Расширение семантики",
+    "Анализ результатов",
+    "Аудит Яндекс Директа",
+    "Анализ ключевых слов",
+    "Рекомендации по объявлениям",
+    "Оптимизация мест размещения",
+    "Оптимизация цены рекламы",
+    "Аудит посадочной страницы",
+    "Подключение бидеров"
   ];
 
   return (
@@ -51,15 +77,15 @@ const TariffPlans: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {/* Базовый тариф */}
           <div className="bg-accent rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-green-500 p-3 flex items-center">
+            <div className="bg-[#0247fe] p-3 flex items-center">
               <PlanStars count={1} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">БАЗОВЫЙ</span>
             </div>
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-foreground/50 line-through text-sm">13 500 ₽</div>
-                <div className="text-4xl font-bold text-foreground">9 500 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">19 500 ₽</div>
+                <div className="text-4xl font-bold text-foreground">15 000 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
@@ -96,7 +122,7 @@ const TariffPlans: React.FC = () => {
               </div>
 
               <div className="space-y-1 mb-8">
-                {features.map((feature, index) => (
+                {basicFeatures.map((feature, index) => (
                   <TariffFeature key={index} text={feature} />
                 ))}
               </div>
@@ -113,20 +139,15 @@ const TariffPlans: React.FC = () => {
           
           {/* Стандарт тариф */}
           <div className="bg-accent rounded-lg shadow-lg overflow-hidden relative">
-            <div className="bg-blue-500 p-3 flex items-center relative">
+            <div className="bg-[#3d01a4] p-3 flex items-center relative">
               <PlanStars count={2} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">СТАНДАРТ</span>
-              
-              {/* Хит лента */}
-              <div className="absolute top-0 right-0 bg-primary text-white py-4 px-4 font-bold text-[10px] rotate-0 shadow-md">
-                ХИТ
-              </div>
             </div>
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-foreground/50 line-through text-sm">24 200 ₽</div>
-                <div className="text-4xl font-bold text-foreground">16 000 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">32 000 ₽</div>
+                <div className="text-4xl font-bold text-foreground">25 000 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
@@ -163,7 +184,7 @@ const TariffPlans: React.FC = () => {
               </div>
 
               <div className="space-y-1 mb-8">
-                {features.map((feature, index) => (
+                {standardFeatures.map((feature, index) => (
                   <TariffFeature key={index} text={feature} />
                 ))}
               </div>
@@ -180,15 +201,15 @@ const TariffPlans: React.FC = () => {
           
           {/* Премиум тариф */}
           <div className="bg-accent rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-red-500 p-3 flex items-center">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] p-3 flex items-center">
               <PlanStars count={3} color="text-white" />
               <span className="text-white font-bold text-xl ml-3">ПРЕМИУМ</span>
             </div>
             
             <div className="p-6">
               <div className="text-center mb-6">
-                <div className="text-foreground/50 line-through text-sm">56 500 ₽</div>
-                <div className="text-4xl font-bold text-foreground">40 500 ₽</div>
+                <div className="text-foreground/50 line-through text-sm">50 000 ₽</div>
+                <div className="text-4xl font-bold text-foreground">40 000 ₽</div>
               </div>
               
               <div className="flex justify-center space-x-6 mb-6">
@@ -225,7 +246,7 @@ const TariffPlans: React.FC = () => {
               </div>
 
               <div className="space-y-1 mb-8">
-                {features.map((feature, index) => (
+                {premiumFeatures.map((feature, index) => (
                   <TariffFeature key={index} text={feature} />
                 ))}
               </div>
