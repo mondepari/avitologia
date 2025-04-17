@@ -117,7 +117,12 @@ const HeroSection = () => {
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 3v18h18"></path>
+                    <path d="M18 17V9"></path>
+                    <path d="M13 17V5"></path>
+                    <path d="M8 17v-3"></path>
+                  </svg>
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
@@ -129,7 +134,9 @@ const HeroSection = () => {
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
@@ -141,7 +148,11 @@ const HeroSection = () => {
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
