@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Logo />
             <div className="ml-6 text-xs font-medium text-foreground/70 hidden lg:block">
-              <p>Сертифицированный специалист по<br />Яндекс.Директ и Google Ads</p>
+              <p>Сертифицированный специалист по<br />Яндекс.Директ</p>
             </div>
           </div>
           

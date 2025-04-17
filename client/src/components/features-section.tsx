@@ -29,7 +29,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 };
 
 const FeaturesSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'yandex' | 'google'>('yandex');
+  const [activeTab, setActiveTab] = useState<'yandex'>('yandex');
   const features = [
     {
       icon: (
@@ -152,15 +152,9 @@ const FeaturesSection: React.FC = () => {
               <div className="flex justify-center gap-4 mb-6">
                 <button 
                   onClick={() => setActiveTab('yandex')}
-                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'yandex' ? 'bg-primary text-white' : 'bg-accent text-foreground'}`}
+                  className="px-8 py-2 rounded-full transition-all bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white"
                 >
                   Яндекс
-                </button>
-                <button 
-                  onClick={() => setActiveTab('google')}
-                  className={`px-8 py-2 rounded-full transition-all ${activeTab === 'google' ? 'bg-primary text-white' : 'bg-accent text-foreground'}`}
-                >
-                  Google
                 </button>
               </div>
               

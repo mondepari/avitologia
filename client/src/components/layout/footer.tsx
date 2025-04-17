@@ -119,15 +119,7 @@ const Footer = () => {
                   <span>Яндекс.Директ</span>
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
-                >
-                  <ArrowRight className="h-4 w-4 mr-2" />
-                  <span>Google Ads</span>
-                </button>
-              </li>
+
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
