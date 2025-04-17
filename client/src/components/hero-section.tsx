@@ -59,7 +59,7 @@ const HeroSection = () => {
                   <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
                     <button 
                       onClick={() => scrollToSection('calculator')} 
-                      className="bg-[#8139f2] text-white font-medium px-8 py-3 rounded-[30px] hover:bg-[#7235d7] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
+                      className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-8 py-3 rounded-[30px] hover:from-[#5500D8] hover:to-[#6A26CF] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
                     >
                       <span className="text-sm uppercase">РАССЧИТАТЬ СТОИМОСТЬ</span>
                       <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>
@@ -114,7 +114,7 @@ const HeroSection = () => {
           </div>
           
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
               <div className="mb-5 flex justify-center">
                 <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
@@ -126,7 +126,7 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
               <div className="mb-5 flex justify-center">
                 <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
@@ -138,7 +138,7 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="bg-accent rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
               <div className="mb-5 flex justify-center">
                 <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
