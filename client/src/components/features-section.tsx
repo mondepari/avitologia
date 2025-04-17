@@ -113,10 +113,10 @@ const FeaturesSection: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-16">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как это работает?</h3>
-              <div className="relative">
+              <div className="relative bg-accent p-8 rounded-xl shadow-lg border border-border">
                 <div className="relative z-10">
                   <div>
-                    <div className="flex items-start mt-8">
+                    <div className="flex items-start mt-4">
                       <div className="text-primary text-6xl font-bold mr-6">1</div>
                       <div className="mt-2">
                         <p className="text-lg text-foreground/90">Клиент вводит в поисковую строку запрос, который его волнует</p>
@@ -149,42 +149,44 @@ const FeaturesSection: React.FC = () => {
             
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как выглядит объявление?</h3>
-              <div className="flex justify-center gap-4 mb-6">
-                <button 
-                  className="px-8 py-2 rounded-full transition-all bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white"
-                >
-                  Яндекс
-                </button>
-              </div>
-              
-              <div className="flex flex-row gap-4 justify-center">
-                <div className="w-1/2">
-                  <p className="font-medium text-center mb-4 text-foreground">Поиск</p>
-                  <div className="relative flex justify-center">
-                    <div className="relative max-w-[220px]">
-                      <img src={phoneFrame} alt="Телефон" className="w-full" />
-                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
-                        <img 
-                          src={searchScreenshot} 
-                          alt="Пример поисковой рекламы" 
-                          className="w-full h-full object-cover"
-                        />
+              <div className="bg-accent p-8 rounded-xl shadow-lg border border-border">
+                <div className="flex justify-center gap-4 mb-6">
+                  <button 
+                    className="px-8 py-2 rounded-full transition-all bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white"
+                  >
+                    Яндекс
+                  </button>
+                </div>
+                
+                <div className="flex flex-row gap-4 justify-center">
+                  <div className="w-1/2">
+                    <p className="font-medium text-center mb-4 text-foreground">Поиск</p>
+                    <div className="relative flex justify-center">
+                      <div className="relative max-w-[220px]">
+                        <img src={phoneFrame} alt="Телефон" className="w-full" />
+                        <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
+                          <img 
+                            src={searchScreenshot} 
+                            alt="Пример поисковой рекламы" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                
-                <div className="w-1/2">
-                  <p className="font-medium text-center mb-4 text-foreground">РСЯ</p>
-                  <div className="relative flex justify-center">
-                    <div className="relative max-w-[220px]">
-                      <img src={phoneFrame} alt="Телефон" className="w-full" />
-                      <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
-                        <img 
-                          src={rsaScreenshot} 
-                          alt="Пример рекламы в РСЯ" 
-                          className="w-full h-full object-cover"
-                        />
+                  
+                  <div className="w-1/2">
+                    <p className="font-medium text-center mb-4 text-foreground">РСЯ</p>
+                    <div className="relative flex justify-center">
+                      <div className="relative max-w-[220px]">
+                        <img src={phoneFrame} alt="Телефон" className="w-full" />
+                        <div className="absolute top-[40px] left-[20px] right-[20px] bottom-[40px] overflow-hidden bg-white">
+                          <img 
+                            src={rsaScreenshot} 
+                            alt="Пример рекламы в РСЯ" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
