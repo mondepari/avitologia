@@ -30,7 +30,7 @@ const TariffPlans: React.FC = () => {
     "Анализ сайта + рекомендации",
     "Разработка УТП",
     "Настройка Яндекс (Поиск + РСЯ)",
-    "Настройка Google (Поиск + КМС)",
+    "Настройка Авито рекламы",
     "Ретаргетинг",
     "Подключение Метрики",
     "Интеграция с системой Call Tracking",
@@ -103,7 +103,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="text-center">
                 <ContactPopup>
-                  <button className="bg-primary text-white rounded-full py-3 px-6 w-full font-medium hover:bg-primary/90 transition-all">
+                  <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white rounded-full py-3 px-6 w-full font-medium hover:from-[#5500D8] hover:to-[#6A26CF] transition-all">
                     ВЫБРАТЬ ТАРИФ
                   </button>
                 </ContactPopup>
@@ -170,7 +170,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="text-center">
                 <ContactPopup>
-                  <button className="bg-primary text-white rounded-full py-3 px-6 w-full font-medium hover:bg-primary/90 transition-all">
+                  <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white rounded-full py-3 px-6 w-full font-medium hover:from-[#5500D8] hover:to-[#6A26CF] transition-all">
                     ВЫБРАТЬ ТАРИФ
                   </button>
                 </ContactPopup>
@@ -232,7 +232,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="text-center">
                 <ContactPopup>
-                  <button className="bg-primary text-white rounded-full py-3 px-6 w-full font-medium hover:bg-primary/90 transition-all">
+                  <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white rounded-full py-3 px-6 w-full font-medium hover:from-[#5500D8] hover:to-[#6A26CF] transition-all">
                     ВЫБРАТЬ ТАРИФ
                   </button>
                 </ContactPopup>
