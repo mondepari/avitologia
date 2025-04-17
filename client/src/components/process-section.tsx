@@ -103,7 +103,7 @@ const ProcessSection = () => {
       {/* Purple Circle Decoration */}
       <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-30"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-foreground">ЗА 6 ШАГОВ СДЕЛАЮ РЕКЛАМУ ПРИБЫЛЬНОЙ</h2>

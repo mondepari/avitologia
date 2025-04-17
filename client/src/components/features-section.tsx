@@ -89,7 +89,7 @@ const FeaturesSection: React.FC = () => {
       <div className="absolute top-1/2 left-1/4 w-16 h-16 rounded-full bg-primary/20 animate-float-left"></div>
       <div className="absolute bottom-1/3 right-1/4 w-20 h-20 rounded-full bg-primary/25 animate-float"></div>
       
-      <div className="container mx-auto px-4 pt-12 relative z-10">
+      <div className="container pt-12 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase text-foreground">
             ВЫ БУДЕТЕ ЗНАТЬ, СКОЛЬКО СТОИТ ВАШ КЛИЕНТ<br />

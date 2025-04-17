@@ -7,7 +7,7 @@ const AboutSection = () => {
       {/* Purple Circle Decoration */}
       <div className="purple-circle-decoration w-[400px] h-[400px] top-[-10%] left-[-15%] opacity-40"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="inline-block bg-primary/20 text-primary font-medium px-4 py-2 rounded-full mb-4">О специалисте</div>
