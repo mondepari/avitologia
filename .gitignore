@@ -1,6 +1,37 @@
-node_modules
-dist
+# Зависимости
+node_modules/
+.npm/
+npm-debug.log
+yarn-error.log
+
+# Сборка и кэши
+dist/
+deploy/
+.vite/
+*.tsbuildinfo
+
+# Данные
+uploads/
+backup_*.sql
+
+# Переменные окружения
+.env
+.env.local
+.env.*.local
+
+# Системные файлы
 .DS_Store
-server/public
-vite.config.ts.*
-*.tar.gz
+Thumbs.db
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+*.tmp
+*.swp
+*.swo
+
+# Папки certbot со сертификатами
+certbot/conf/
+certbot/www/
