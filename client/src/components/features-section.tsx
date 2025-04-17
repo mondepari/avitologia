@@ -29,7 +29,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 };
 
 const FeaturesSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'yandex'>('yandex');
+  const [activeTab] = useState<'yandex'>('yandex');
   const features = [
     {
       icon: (
@@ -151,7 +151,6 @@ const FeaturesSection: React.FC = () => {
               <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как выглядит объявление?</h3>
               <div className="flex justify-center gap-4 mb-6">
                 <button 
-                  onClick={() => setActiveTab('yandex')}
                   className="px-8 py-2 rounded-full transition-all bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white"
                 >
                   Яндекс
