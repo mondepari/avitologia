@@ -80,7 +80,7 @@ const ServicesSection = () => {
       {/* Декоративные элементы */}
       <SectionDecoration />
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block bg-primary/20 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши услуги</div>
           <h2 className="section-title text-foreground">Эффективные решения для <br/>вашего бизнеса</h2>

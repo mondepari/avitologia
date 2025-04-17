@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#6200EE] to-[#7A36DF] z-0 opacity-40"></div>
       
       {/* Hero Content */}
-      <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
+      <div className="container py-10 md:py-16 relative z-10 flex-grow">
         <div className="flex flex-col">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
