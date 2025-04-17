@@ -265,8 +265,8 @@ const QuizCalculator = () => {
             {step.gifts?.map(gift => (
               <div key={gift.id} className="flex flex-col">
                 <div 
-                  className={`h-32 mb-2 p-4 rounded-lg flex items-center justify-center bg-primary text-white text-center font-bold cursor-pointer ${
-                    answers[currentStep] === gift.id ? "ring-4 ring-primary ring-opacity-50" : ""
+                  className={`h-32 mb-2 p-4 rounded-lg flex items-center justify-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white text-center font-bold cursor-pointer shadow-md ${
+                    answers[currentStep] === gift.id ? "ring-4 ring-[#6200EE] ring-opacity-50" : ""
                   }`}
                   onClick={() => handleGiftSelect(gift.id)}
                 >
@@ -326,8 +326,8 @@ const QuizCalculator = () => {
               key={option.id}
               className={`px-4 py-2 rounded-full border flex items-center gap-2 ${
                 contactMethod === option.id 
-                  ? "bg-primary text-white border-primary" 
-                  : "border-gray-600/30 text-foreground hover:border-primary"
+                  ? "bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white border-[#6200EE]" 
+                  : "border-gray-600/30 text-foreground hover:border-[#6200EE]"
               }`}
               onClick={() => handleOptionSelect(option.id)}
             >
@@ -372,37 +372,37 @@ const QuizCalculator = () => {
           {/* Преимущества формы */}
           <div className="w-full px-4 mb-8">
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
+              <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z" clipRule="evenodd"/>
                     <path d="M10 6a1 1 0 011 1v3a1 1 0 01-1 1 1 1 0 01-1-1V7a1 1 0 011-1zm0 6a1 1 0 110 2 1 1 0 010-2z"/>
                   </svg>
                 </div>
-                <div className="text-sm text-foreground">
+                <div className="text-sm text-white">
                   Расчет стоимости настройки рекламы
                 </div>
               </div>
               
-              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
+              <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"/>
                   </svg>
                 </div>
-                <div className="text-sm text-foreground">
+                <div className="text-sm text-white">
                   Анализ ниши и стратегии продвижения
                 </div>
               </div>
               
-              <div className="flex items-center bg-accent rounded-full px-4 py-2 shadow-md">
-                <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary" viewBox="0 0 20 20" fill="currentColor">
+              <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full px-4 py-2 shadow-md">
+                <div className="w-12 h-12 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center mr-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 012 2v1a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h1.17A3 3 0 015 5zm4.05-1a.95.95 0 00-.95.95v.5c0 .364.105.706.284.99H7a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-1.384A1.45 1.45 0 0110 5.95v-.5A.95.95 0 009.05 4z" clipRule="evenodd"/>
                     <path d="M4 13a1 1 0 011-1h10a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3z"/>
                   </svg>
                 </div>
-                <div className="text-sm text-foreground">
+                <div className="text-sm text-white">
                   Любой из 3-х подарков на Ваш выбор
                 </div>
               </div>
@@ -447,7 +447,7 @@ const QuizCalculator = () => {
                     
                     <button 
                       onClick={handleNext}
-                      className="px-8 py-3 rounded-full bg-primary text-white font-medium hover:bg-primary/90 transition-colors"
+                      className="px-8 py-3 rounded-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium hover:from-[#5500D8] hover:to-[#6A26CF] transition-all duration-300 shadow-md"
                     >
                       {currentStep === quizSteps.length ? "ПОЛУЧИТЬ РАСЧЕТ" : "СЛЕДУЮЩИЙ ШАГ"}
                     </button>
@@ -490,14 +490,14 @@ const QuizCalculator = () => {
                       </div>
                       
                       <div className="flex justify-center gap-4">
-                        <div className="w-16 h-16 bg-accent rounded-lg shadow-sm p-2 flex items-center justify-center relative">
-                          <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">1</span>
-                          <img src="./src/assets/icons/calculator.svg" alt="Калькулятор" className="w-10 h-10" />
+                        <div className="w-16 h-16 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-lg shadow-md p-2 flex items-center justify-center relative">
+                          <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white text-primary font-bold text-xs flex items-center justify-center">1</span>
+                          <img src="./src/assets/icons/calculator.svg" alt="Калькулятор" className="w-10 h-10 brightness-200 filter" />
                         </div>
                         
-                        <div className="w-16 h-16 bg-accent rounded-lg shadow-sm p-2 flex items-center justify-center relative">
-                          <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center">2</span>
-                          <img src="./src/assets/icons/gift.svg" alt="Подарок" className="w-10 h-10" />
+                        <div className="w-16 h-16 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-lg shadow-md p-2 flex items-center justify-center relative">
+                          <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white text-primary font-bold text-xs flex items-center justify-center">2</span>
+                          <img src="./src/assets/icons/gift.svg" alt="Подарок" className="w-10 h-10 brightness-200 filter" />
                         </div>
                       </div>
                     </div>
