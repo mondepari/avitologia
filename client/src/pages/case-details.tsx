@@ -100,13 +100,13 @@ const casesDatabase: Record<string, CaseDetailed> = {
     period: 'Март 2023 - Июнь 2023',
     imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     coverImageUrl: 'https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80',
-    problem: 'Компания, предоставляющая B2B-услуги по автоматизации бизнес-процессов, испытывала трудности с привлечением качественных лидов через Google Ads. Основные проблемы: высокая стоимость привлечения лида, низкое качество лидов и недостаточное количество конверсий.',
-    solution: 'Разработали комплексную стратегию продвижения в Google Ads с фокусом на привлечение целевой аудитории. Ключевые элементы стратегии: создание многоступенчатой воронки с использованием поисковой и КМС-рекламы, таргетинг на конкретные должности и размеры компаний, разработка уникальных предложений для разных сегментов бизнеса, и внедрение продвинутой системы отслеживания и квалификации лидов.',
+    problem: 'Компания, предоставляющая B2B-услуги по автоматизации бизнес-процессов, испытывала трудности с привлечением качественных лидов через рекламу на Авито. Основные проблемы: высокая стоимость привлечения лида, низкое качество лидов и недостаточное количество конверсий.',
+    solution: 'Разработали комплексную стратегию продвижения на Авито с фокусом на привлечение целевой аудитории. Ключевые элементы стратегии: создание многоступенчатой воронки с использованием таргетированной рекламы, таргетинг на конкретные должности и размеры компаний, разработка уникальных предложений для разных сегментов бизнеса, и внедрение продвинутой системы отслеживания и квалификации лидов.',
     results: [
-      { label: 'Рост количества лидов', value: '+75%', icon: <Target className="h-6 w-6 text-primary" /> },
-      { label: 'Снижение стоимости лида', value: '-35%', icon: <DollarSign className="h-6 w-6 text-primary" /> },
-      { label: 'Повышение качества лидов', value: '+40%', icon: <TrendingUp className="h-6 w-6 text-primary" /> },
-      { label: 'ROI рекламных кампаний', value: '+125%', icon: <LineChart className="h-6 w-6 text-primary" /> },
+      { label: 'Рост количества лидов', value: '+75%', icon: <Target className="h-6 w-6 text-[#6200EE]" /> },
+      { label: 'Снижение стоимости лида', value: '-35%', icon: <DollarSign className="h-6 w-6 text-[#6200EE]" /> },
+      { label: 'Повышение качества лидов', value: '+40%', icon: <TrendingUp className="h-6 w-6 text-[#6200EE]" /> },
+      { label: 'ROI рекламных кампаний', value: '+125%', icon: <LineChart className="h-6 w-6 text-[#6200EE]" /> },
     ],
     approach: [
       {
@@ -222,7 +222,7 @@ const CaseDetails: React.FC = () => {
         <section className="pt-10 pb-16">
           <div className="container mx-auto px-4">
             <div className="mb-8">
-              <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">
+              <div className="inline-block bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 text-[#6200EE] font-medium px-4 py-2 rounded-full mb-4">
                 {caseData.category}
               </div>
               <h1 className="text-3xl md:text-5xl font-bold mb-6">{caseData.title}</h1>
@@ -270,7 +270,7 @@ const CaseDetails: React.FC = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {caseData.results.map((result, index) => (
                   <div key={index} className="bg-white shadow-md rounded-xl p-5 border border-gray-100">
-                    <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                       {result.icon}
                     </div>
                     <div className="text-2xl md:text-3xl font-bold text-primary mb-1">{result.value}</div>
@@ -287,7 +287,7 @@ const CaseDetails: React.FC = () => {
                 {caseData.approach.map((step, index) => (
                   <div key={index} className="bg-white shadow-md rounded-xl p-6 border border-gray-100">
                     <div className="flex items-center mb-4">
-                      <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold mr-3">
+                      <div className="w-8 h-8 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white rounded-full flex items-center justify-center font-bold mr-3">
                         {index + 1}
                       </div>
                       <h3 className="text-xl font-semibold">{step.title}</h3>
@@ -320,8 +320,8 @@ const CaseDetails: React.FC = () => {
             {/* Отзыв клиента */}
             {caseData.testimonial && (
               <div className="mb-16">
-                <div className="bg-primary/5 rounded-xl p-8 border border-primary/10 relative">
-                  <div className="absolute -top-5 -left-5 text-primary bg-white p-3 rounded-full shadow-md">
+                <div className="bg-gradient-to-r from-[#6200EE]/5 to-[#7A36DF]/5 rounded-xl p-8 border border-[#6200EE]/10 relative">
+                  <div className="absolute -top-5 -left-5 text-[#6200EE] bg-white p-3 rounded-full shadow-md">
                     <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
                     </svg>
@@ -340,7 +340,7 @@ const CaseDetails: React.FC = () => {
             {/* Кнопка возвращения к списку кейсов */}
             <div className="flex justify-center">
               <Link href="/cases">
-                <a className="inline-flex items-center bg-primary text-white px-8 py-3 rounded-full font-medium shadow-md hover:bg-primary/90 transition-colors">
+                <a className="inline-flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium shadow-md hover:from-[#5500D8] hover:to-[#6A26CF] transition-all">
                   <ArrowLeft className="mr-2 h-5 w-5" />
                   Вернуться к списку кейсов
                 </a>
