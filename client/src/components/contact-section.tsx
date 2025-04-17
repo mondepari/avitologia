@@ -90,7 +90,7 @@ const ContactSection = () => {
       {/* Dark Circle Decoration */}
       <div className="bg-accent/10 w-[400px] h-[400px] rounded-full absolute bottom-[10%] right-[-10%] opacity-20"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Контакты</div>
           <h2 className="section-title text-foreground">Получите бесплатную <br/>консультацию специалиста</h2>

@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="absolute w-[400px] h-[400px] top-[-20%] right-[-10%] rounded-full bg-primary/10 blur-3xl"></div>
       <div className="absolute w-[300px] h-[300px] bottom-[-10%] left-[-10%] rounded-full bg-primary/10 blur-3xl"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Logo />
