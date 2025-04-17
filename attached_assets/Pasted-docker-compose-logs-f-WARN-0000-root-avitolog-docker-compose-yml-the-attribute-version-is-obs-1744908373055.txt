@@ -1,0 +1,228 @@
+docker-compose logs -f
+WARN[0000] /root/avitolog/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-db   | The files belonging to this database system will be owned by user "postgres".
+marketing-db   | This user must also own the server process.
+marketing-db   |
+marketing-db   | The database cluster will be initialized with locale "en_US.utf8".
+marketing-db   | The default database encoding has accordingly been set to "UTF8".
+marketing-db   | The default text search configuration will be set to "english".
+marketing-db   |
+marketing-db   | Data page checksums are disabled.
+marketing-db   |
+marketing-db   | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+marketing-db   | creating subdirectories ... ok
+marketing-db   | selecting dynamic shared memory implementation ... posix
+marketing-db   | selecting default max_connections ... 100
+marketing-db   | selecting default shared_buffers ... 128MB
+marketing-db   | selecting default time zone ... UTC
+marketing-db   | creating configuration files ... ok
+marketing-db   | running bootstrap script ... ok
+marketing-db   | sh: locale: not found
+marketing-db   | 2025-04-17 16:42:55.556 UTC [33] WARNING:  no usable system locales were found
+marketing-db   | performing post-bootstrap initialization ... ok
+marketing-db   | syncing data to disk ... ok
+marketing-db   |
+marketing-db   | initdb: warning: enabling "trust" authentication for local connections
+marketing-db   | You can change this by editing pg_hba.conf or using the option -A, or
+marketing-db   | --auth-local and --auth-host, the next time you run initdb.
+marketing-db   |
+marketing-db   | Success. You can now start the database server using:
+marketing-db   |
+marketing-db   |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+marketing-db   |
+marketing-db   | waiting for server to start....2025-04-17 16:42:57.105 UTC [39] LOG:  starting PostgreSQL 14.17 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+marketing-db   | 2025-04-17 16:42:57.107 UTC [39] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+marketing-db   | 2025-04-17 16:42:57.111 UTC [40] LOG:  database system was shut down at 2025-04-17 16:42:56 UTC
+marketing-db   | 2025-04-17 16:42:57.117 UTC [39] LOG:  database system is ready to accept connections
+marketing-db   |  done
+marketing-db   | server started
+marketing-db   | CREATE DATABASE
+marketing-db   |
+marketing-db   |
+marketing-db   | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+marketing-db   |
+marketing-db   | 2025-04-17 16:42:57.294 UTC [39] LOG:  received fast shutdown request
+marketing-db   | waiting for server to shut down....2025-04-17 16:42:57.296 UTC [39] LOG:  aborting any active transactions
+marketing-db   | 2025-04-17 16:42:57.304 UTC [39] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+marketing-db   | 2025-04-17 16:42:57.305 UTC [41] LOG:  shutting down
+marketing-db   | 2025-04-17 16:42:57.315 UTC [39] LOG:  database system is shut down
+marketing-db   |  done
+marketing-db   | server stopped
+marketing-db   |
+marketing-db   | PostgreSQL init process complete; ready for start up.
+marketing-db   |
+marketing-db   | 2025-04-17 16:42:57.455 UTC [1] LOG:  starting PostgreSQL 14.17 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+marketing-db   | 2025-04-17 16:42:57.457 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+marketing-db   | 2025-04-17 16:42:57.457 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+marketing-db   | 2025-04-17 16:42:57.460 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+marketing-db   | 2025-04-17 16:42:57.463 UTC [54] LOG:  database system was shut down at 2025-04-17 16:42:57 UTC
+marketing-db   | 2025-04-17 16:42:57.470 UTC [1] LOG:  database system is ready to accept connections
+marketing-app  | node:internal/modules/cjs/loader:1215
+marketing-app  |   throw err;
+marketing-app  |   ^
+marketing-app  |
+marketing-app  | Error: Cannot find module '/app/deploy/server.js'
+marketing-app  |     at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+marketing-app  |     at Module._load (node:internal/modules/cjs/loader:1043:27)
+marketing-app  |     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+marketing-app  |     at node:internal/main/run_main_module:28:49 {
+marketing-app  |   code: 'MODULE_NOT_FOUND',
+marketing-app  |   requireStack: []
+marketing-app  | }
+marketing-app  |
+marketing-app  | Node.js v20.19.0
+marketing-app exited with code 1
