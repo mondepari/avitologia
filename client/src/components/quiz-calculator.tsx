@@ -57,8 +57,8 @@ const quizSteps: QuizStep[] = [
     type: "radio",
     options: [
       { id: "yandex", label: "Яндекс Директ" },
-      { id: "google", label: "Google Ads" },
-      { id: "both", label: "Яндекс и Google" },
+      { id: "avito", label: "Реклама на Авито" },
+      { id: "both", label: "Яндекс и Авито" },
       { id: "social", label: "Социальные сети" },
       { id: "other", label: "Другие каналы" }
     ]
@@ -105,7 +105,7 @@ const quizSteps: QuizStep[] = [
     gifts: [
       { 
         id: "yandex-audit", 
-        title: "АУДИТ ЯНДЕКС ДИРЕКТ ИЛИ GOOGLE ADS", 
+        title: "АУДИТ ЯНДЕКС ДИРЕКТ ИЛИ РЕКЛАМЫ НА АВИТО", 
         description: "Аудит контекстной рекламы" 
       },
       { 

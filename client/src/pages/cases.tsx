@@ -34,7 +34,7 @@ const cases: Case[] = [
     title: 'Лидогенерация для B2B-компании в сфере услуг',
     category: 'B2B',
     imageUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-    shortDescription: 'Комплексная стратегия Google Ads с фокусом на привлечение целевых клиентов',
+    shortDescription: 'Комплексная стратегия рекламы на Авито с фокусом на привлечение целевых клиентов',
     results: [
       { label: 'Рост количества лидов', value: '+75%' },
       { label: 'Снижение стоимости лида', value: '-35%' },

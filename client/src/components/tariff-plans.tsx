@@ -64,7 +64,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="flex justify-center space-x-6 mb-6">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -73,7 +73,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.5 19.9V4.1C10.5 2.6 9.86 2 8.27 2H4.23C2.64 2 2 2.6 2 4.1V19.9C2 21.4 2.64 22 4.23 22H8.27C9.86 22 10.5 21.4 10.5 19.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M22 10.9V4.1C22 2.6 21.36 2 19.77 2H15.73C14.14 2 13.5 2.6 13.5 4.1V10.9C13.5 12.4 14.14 13 15.73 13H19.77C21.36 13 22 12.4 22 10.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -84,7 +84,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M11.995 13.7H12.005M8.294 13.7H8.304M8.294 16.7H8.304" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -131,7 +131,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="flex justify-center space-x-6 mb-6">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -140,7 +140,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.5 19.9V4.1C10.5 2.6 9.86 2 8.27 2H4.23C2.64 2 2 2.6 2 4.1V19.9C2 21.4 2.64 22 4.23 22H8.27C9.86 22 10.5 21.4 10.5 19.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M22 10.9V4.1C22 2.6 21.36 2 19.77 2H15.73C14.14 2 13.5 2.6 13.5 4.1V10.9C13.5 12.4 14.14 13 15.73 13H19.77C21.36 13 22 12.4 22 10.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -151,7 +151,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M11.995 13.7H12.005M8.294 13.7H8.304M8.294 16.7H8.304" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -193,7 +193,7 @@ const TariffPlans: React.FC = () => {
               
               <div className="flex justify-center space-x-6 mb-6">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -202,7 +202,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M10.5 19.9V4.1C10.5 2.6 9.86 2 8.27 2H4.23C2.64 2 2 2.6 2 4.1V19.9C2 21.4 2.64 22 4.23 22H8.27C9.86 22 10.5 21.4 10.5 19.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M22 10.9V4.1C22 2.6 21.36 2 19.77 2H15.73C14.14 2 13.5 2.6 13.5 4.1V10.9C13.5 12.4 14.14 13 15.73 13H19.77C21.36 13 22 12.4 22 10.9Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -213,7 +213,7 @@ const TariffPlans: React.FC = () => {
                 </div>
                 
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-1">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full flex items-center justify-center mb-1">
                     <svg className="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 2V5M16 2V5M3.5 9.09H20.5M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                       <path d="M11.995 13.7H12.005M8.294 13.7H8.304M8.294 16.7H8.304" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
