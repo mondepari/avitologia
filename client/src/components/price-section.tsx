@@ -14,7 +14,7 @@ const PriceSection: React.FC = () => {
       <div className="absolute bottom-20 left-1/4 w-16 h-16 rounded-full bg-primary/15 animate-float-left"></div>
       <div className="absolute top-20 right-1/3 w-12 h-12 rounded-full bg-primary/25 animate-float-right"></div>
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-14">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground uppercase">
             ВЫ НЕ ПЕРЕПЛАЧИВАЕТЕ ЗА ОФИС<br />
