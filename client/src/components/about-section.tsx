@@ -28,10 +28,7 @@ const AboutSection = () => {
                 <CheckCircle className="h-5 w-5 text-primary mr-3" />
                 <span className="text-foreground/90">Сертифицированный специалист Яндекс.Директ</span>
               </div>
-              <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-primary mr-3" />
-                <span className="text-foreground/90">Сертифицированный специалист Google Ads</span>
-              </div>
+
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-primary mr-3" />
                 <span className="text-foreground/90">Опыт работы более 5 лет</span>
@@ -93,7 +90,7 @@ const AboutSection = () => {
                     </svg>
                   </div>
                   <div className="ml-2">
-                    <div className="text-sm font-semibold text-foreground">Google Partner</div>
+                    <div className="text-sm font-semibold text-foreground">Яндекс.Директ</div>
                     <div className="text-xs text-foreground/60">Сертифицированный специалист</div>
                   </div>
                 </div>

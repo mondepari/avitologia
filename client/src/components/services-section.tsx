@@ -31,7 +31,7 @@ const ServiceCard = ({ icon, title, description, features }: ServiceCardProps) =
       </ul>
       <button 
         onClick={scrollToContact} 
-        className="bg-primary text-white font-medium px-6 py-2.5 rounded-full hover:bg-primary/90 transition duration-300 inline-flex items-center"
+        className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-6 py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 inline-flex items-center"
       >
         Подробнее 
         <ChevronRight className="h-5 w-5 ml-1" />
@@ -59,9 +59,9 @@ const ServicesSection = () => {
           <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      title: 'Настройка Google Ads',
-      description: 'Создание эффективных рекламных кампаний в Google Ads с точным таргетингом на вашу целевую аудиторию.',
-      features: ['Поисковая реклама', 'КМС и Ремаркетинг', 'Performance Max']
+      title: 'Реклама на Авито',
+      description: 'Настройка эффективных рекламных кампаний на Авито для привлечения потенциальных клиентов и увеличения продаж.',
+      features: ['Автоматическое продвижение', 'Индивидуальные стратегии', 'Оптимизация бюджета']
     },
     {
       icon: (
@@ -71,7 +71,7 @@ const ServicesSection = () => {
       ),
       title: 'Аналитика и оптимизация',
       description: 'Настройка систем аналитики и регулярная оптимизация рекламных кампаний для достижения максимальной эффективности.',
-      features: ['Яндекс.Метрика и Google Analytics', 'Отчеты и рекомендации', 'A/B тестирование']
+      features: ['Яндекс.Метрика', 'Отчеты и рекомендации', 'A/B тестирование']
     }
   ];
 
