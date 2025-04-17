@@ -40,7 +40,7 @@ const TariffPlans: React.FC = () => {
 
   return (
     <section id="tariff-plans" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container">
         <div className="text-center mb-14">
           <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">ТАРИФНЫЕ ПЛАНЫ</h2>
           <p className="text-foreground/70 max-w-3xl mx-auto">
