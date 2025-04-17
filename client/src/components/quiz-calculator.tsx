@@ -421,7 +421,7 @@ const QuizCalculator = () => {
                       <div className="ml-4 flex-grow">
                         <div className="h-2 bg-gray-600/20 rounded-full">
                           <div 
-                            className="h-2 bg-primary rounded-full transition-all duration-500 ease-in-out" 
+                            className="h-2 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full transition-all duration-500 ease-in-out" 
                             style={{ width: `${(currentStep / quizSteps.length) * 100}%` }}
                           ></div>
                         </div>
