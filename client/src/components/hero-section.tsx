@@ -114,38 +114,38 @@ const HeroSection = () => {
           </div>
           
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/chart-purple.svg" alt="Аналитика" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Выбор стратегии продвижения</h3>
-              <p className="text-sm text-foreground/70 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+              <p className="text-sm text-white/80 text-center">
                 Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
               </p>
             </div>
             
-            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/shield-purple.svg" alt="Защита" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Целевые посетители</h3>
-              <p className="text-sm text-foreground/70 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
+              <p className="text-sm text-white/80 text-center">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
-            <div className="bg-gradient-to-b from-[#6200EE]/10 to-[#7A36DF]/20 rounded-xl p-6 text-primary shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-[#6200EE]/20">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-background border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
                   <img src="./src/assets/icons/analytics-purple.svg" alt="Отчеты" className="w-8 h-8" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-foreground">Настройка аналитики</h3>
-              <p className="text-sm text-foreground/70 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
+              <p className="text-sm text-white/80 text-center">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
             </div>
