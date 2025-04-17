@@ -362,7 +362,7 @@ const QuizCalculator = () => {
       {/* Декоративные элементы */}
       <SectionDecoration />
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold uppercase mb-2 text-foreground">ОЦЕНКА СТОИМОСТИ</h2>
           <p className="text-lg text-foreground/70">Ответьте на 9 вопросов. Это бесплатно.</p>
