@@ -78,7 +78,7 @@ const Navbar = () => {
               
               <ContactPopup>
                 <button 
-                  className="bg-primary text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:bg-primary/90 transition duration-300"
+                  className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 shadow-sm"
                 >
                   <MessageCircle className="h-4 w-4 mr-2" />
                   <span className="text-sm">Пишите</span>
@@ -138,7 +138,7 @@ const Navbar = () => {
               </ContactPopup>
               <ContactPopup>
                 <button 
-                  className="mt-3 w-full bg-primary text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:bg-primary/90 transition duration-300"
+                  className="mt-3 w-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 shadow-sm"
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
                   <span>Написать</span>

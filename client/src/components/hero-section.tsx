@@ -28,7 +28,7 @@ const HeroSection = () => {
   return (
     <header className="bg-background min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-[#8139f2] z-0 opacity-40"></div>
+      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#6200EE] to-[#7A36DF] z-0 opacity-40"></div>
       
       {/* Hero Content */}
       <div className="container mx-auto px-4 py-10 md:py-16 relative z-10 flex-grow">
