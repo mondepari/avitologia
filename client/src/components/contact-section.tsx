@@ -233,7 +233,7 @@ const ContactSection = () => {
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-primary text-white font-medium px-4 py-3.5 rounded-full hover:bg-primary/90 transition duration-300 disabled:opacity-70"
+                  className="w-full btn-purple text-white font-medium px-4 py-3.5 rounded-full disabled:opacity-70"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Отправка..." : "Отправить сообщение"}

@@ -88,7 +88,7 @@ const TestimonialsSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <button className="bg-primary/20 text-foreground font-medium border border-primary/30 px-8 py-3 rounded-full hover:bg-primary/30 transition duration-300">
+          <button className="btn-purple text-white font-medium px-8 py-3 rounded-full">
             Смотреть все отзывы
           </button>
         </div>
