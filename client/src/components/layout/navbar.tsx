@@ -35,7 +35,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled || mobileMenuOpen ? 'bg-background shadow-lg' : 'bg-background'
     }`}>
-      <div className="container py-3">
+      <div className="w-full px-6 md:px-14 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Logo />
@@ -103,7 +103,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-gray-800">
-          <div className="container pt-4 pb-6 space-y-6">
+          <div className="w-full px-6 md:px-14 pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
               <span className="text-foreground/70 mb-2">Навигация:</span>
               <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
