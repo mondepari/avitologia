@@ -70,7 +70,7 @@ const HeroSection = () => {
                 </p>
               </div>
               
-              <div className="mt-6 mb-10">
+              <div className="mt-6 mb-20 relative">
                 <div className="flex flex-col space-y-6">
                   <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
                     <button 
@@ -88,6 +88,23 @@ const HeroSection = () => {
                       <div className="flex items-center">
                         <MessageCircle className="h-5 w-5 text-primary mr-2" />
                         <span className="text-sm uppercase text-foreground">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Коэффициент x2.7 размещен точно под кнопками на уровне красной линии с референса */}
+                <div className="absolute left-0 w-full pt-14">
+                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 max-w-[280px] shadow-lg">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <div className="text-primary text-3xl font-bold mr-2">×2.7</div>
+                        <div className="text-xs text-foreground/90 max-w-[140px]">
+                          Средний коэффициент увеличения прибыли бизнеса
+                        </div>
+                      </div>
+                      <div className="ml-2">
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-8 w-8" />
                       </div>
                     </div>
                   </div>
@@ -174,26 +191,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      {/* Коэффициент x2.7 внизу по центру, как на референсе */}
-      <div className="container relative z-10 mb-16 mt-4">
-        <div className="relative">
-          <div className="absolute left-0 right-0 -top-12 w-full flex justify-center">
-            <div className="bg-[#111111] border border-white/10 rounded-xl shadow-xl p-4 max-w-[320px] w-full">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <div className="text-primary text-5xl font-bold mr-2">×2.7</div>
-                  <div className="text-sm text-foreground/80 max-w-[180px]">
-                    Средний коэффициент увеличения прибыли бизнеса
-                  </div>
-                </div>
-                <div className="ml-2">
-                  <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-10 w-10" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       
       {/* Bottom curve decoration */}
       <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
