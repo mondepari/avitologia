@@ -117,7 +117,7 @@ const PortfolioSection = () => {
   return (
     <section id="portfolio" className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[10%] right-[-15%] opacity-40"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] top-[10%] right-[-15%] opacity-40 cursor-pointer"></div>
       
       <div className="container relative z-10">
         <div className="text-center mb-16">

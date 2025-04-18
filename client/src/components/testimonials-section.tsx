@@ -69,8 +69,8 @@ const TestimonialsSection = () => {
   return (
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decorations */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-5%] right-[-10%] opacity-20"></div>
-      <div className="purple-circle-decoration w-[350px] h-[350px] bottom-[-10%] left-[-10%] opacity-20"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-5%] right-[-10%] opacity-20 cursor-pointer"></div>
+      <div className="purple-circle-decoration w-[350px] h-[350px] bottom-[-10%] left-[-10%] opacity-20 cursor-pointer"></div>
       
       <div className="container relative z-10">
         <div className="text-center mb-16">

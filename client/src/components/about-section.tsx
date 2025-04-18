@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-10%] left-[-15%] opacity-40"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] top-[-10%] left-[-15%] opacity-40 cursor-pointer"></div>
       
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

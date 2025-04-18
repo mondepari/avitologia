@@ -101,7 +101,7 @@ const ProcessSection = () => {
   return (
     <section id="process" className="section-padding bg-background relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-30"></div>
+      <div className="purple-circle-decoration w-[400px] h-[400px] bottom-[10%] left-[-15%] opacity-30 cursor-pointer"></div>
       
       <div className="container relative z-10">
         <div className="max-w-5xl mx-auto">
