@@ -54,6 +54,23 @@ const HeroSection = () => {
               <div className="text-left mb-4 mt-4">
                 <h2 className="text-xl text-foreground font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
               </div>
+
+              {/* Коэффициент ×2.7 позиционирован в соответствии с красной линией на референсе */}
+              <div className="hidden lg:block absolute left-0 z-20" style={{top: '380px'}}>
+                <div className="bg-black/80 border border-white/15 rounded-xl p-3 max-w-[220px] w-full shadow-xl">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center">
+                      <div className="text-primary text-3xl font-bold mr-2">×2.7</div>
+                      <div className="text-xs text-foreground/90 max-w-[120px]">
+                        Средний коэффициент увеличения прибыли бизнеса
+                      </div>
+                    </div>
+                    <div className="ml-1">
+                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-8 w-8" />
+                    </div>
+                  </div>
+                </div>
+              </div>
               
               <div className="mb-6">
                 <h1 className="text-4xl md:text-5xl lg:text-[52px] font-black text-foreground leading-tight tracking-tight uppercase">
@@ -93,18 +110,18 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Коэффициент x2.7 размещен точно под кнопками на уровне красной линии с референса */}
-                <div className="absolute left-0 w-full pt-14">
-                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 max-w-[280px] shadow-lg">
+                {/* Мобильная версия блока с коэффициентом ×2.7 */}
+                <div className="lg:hidden relative mt-4">
+                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <div className="text-primary text-3xl font-bold mr-2">×2.7</div>
+                        <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
                         <div className="text-xs text-foreground/90 max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
                       <div className="ml-2">
-                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-8 w-8" />
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-7 w-7" />
                       </div>
                     </div>
                   </div>
