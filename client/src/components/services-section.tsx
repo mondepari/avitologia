@@ -29,13 +29,15 @@ const ServiceCard = ({ icon, title, description, features }: ServiceCardProps) =
           </li>
         ))}
       </ul>
-      <button 
-        onClick={scrollToContact} 
-        className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-6 py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 inline-flex items-center"
-      >
-        Подробнее 
-        <ChevronRight className="h-5 w-5 ml-1" />
-      </button>
+      <div className="flex justify-center">
+        <button 
+          onClick={scrollToContact} 
+          className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-6 py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 inline-flex items-center"
+        >
+          Подробнее 
+          <ChevronRight className="h-5 w-5 ml-1" />
+        </button>
+      </div>
     </div>
   );
 };
