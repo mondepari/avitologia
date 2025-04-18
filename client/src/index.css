@@ -87,11 +87,11 @@
   }
   
   .purple-circle-decoration {
-    @apply absolute rounded-full bg-primary/30 blur-xl transition-all duration-700;
+    @apply absolute rounded-full bg-primary/20 blur-xl transition-all duration-700;
   }
   
   .purple-circle-decoration:hover {
-    @apply transform scale-110;
+    @apply transform scale-125 bg-gradient-to-br from-[#8A56FF]/30 to-[#6200EE]/30;
   }
   
   .card-shadow {
