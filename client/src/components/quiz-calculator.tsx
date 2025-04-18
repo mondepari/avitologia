@@ -447,7 +447,7 @@ const QuizCalculator = () => {
                     
                     <button 
                       onClick={handleNext}
-                      className="px-8 py-3 rounded-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium hover:from-[#5500D8] hover:to-[#6A26CF] transition-all duration-300 shadow-md"
+                      className="px-8 py-3 rounded-full btn-purple text-white font-medium shadow-md"
                     >
                       {currentStep === quizSteps.length ? "ПОЛУЧИТЬ РАСЧЕТ" : "СЛЕДУЮЩИЙ ШАГ"}
                     </button>

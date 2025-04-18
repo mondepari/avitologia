@@ -125,7 +125,7 @@ const ProcessSection = () => {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               }
             }} 
-            className="bg-primary text-white font-semibold px-12 py-4 rounded-full hover:bg-primary/90 transition duration-300 shadow-lg text-lg"
+            className="btn-purple text-white font-semibold px-12 py-4 rounded-full shadow-lg text-lg"
           >
             РАССЧИТАТЬ СТОИМОСТЬ
             <span className="block text-xs mt-1 font-light opacity-90">(за 1 минуту + подарок)</span>

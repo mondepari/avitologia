@@ -75,7 +75,7 @@ const HeroSection = () => {
                   <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
                     <button 
                       onClick={() => scrollToSection('calculator')} 
-                      className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-8 py-3 rounded-[30px] hover:from-[#5500D8] hover:to-[#6A26CF] hover:shadow-lg transition-all duration-300 text-center shadow-md flex items-center justify-center"
+                      className="btn-purple text-white font-medium px-8 py-3 rounded-[30px] text-center shadow-md flex items-center justify-center"
                     >
                       <span className="text-sm uppercase">РАССЧИТАТЬ СТОИМОСТЬ</span>
                       <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>

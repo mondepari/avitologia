@@ -35,7 +35,7 @@ const CaseStudyCard = ({ image, category, title, description, results }: CaseStu
           </div>
         </div>
         
-        <button className="w-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 inline-flex items-center justify-center">
+        <button className="w-full btn-purple text-white font-medium py-2.5 rounded-full inline-flex items-center justify-center">
           Подробнее о кейсе
           <ExternalLink className="h-4 w-4 ml-2" />
         </button>
@@ -136,7 +136,7 @@ const PortfolioSection = () => {
         
         <div className="mt-12 text-center">
           <Link href="/cases">
-            <a className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white font-medium px-8 py-3 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 shadow-lg inline-flex items-center">
+            <a className="btn-purple text-white font-medium px-8 py-3 rounded-full shadow-lg inline-flex items-center">
               Смотреть все кейсы
               <ChevronRight className="h-5 w-5 ml-1" />
             </a>
