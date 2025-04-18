@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'wouter';
 import Logo from '@/components/ui/logo';
 import { Menu, X, MessageCircle, Phone } from 'lucide-react';
@@ -17,12 +17,21 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(prevState => !prevState);
-    console.log("Toggle menu clicked, new state:", !mobileMenuOpen);
-  };
+  const toggleMobileMenu = useCallback(() => {
+    // Важно использовать функциональное обновление состояния с prevState
+    setMobileMenuOpen(prevState => {
+      const newState = !prevState;
+      console.log("Toggle menu clicked, new state:", newState);
+      return newState;
+    });
+    
+    // Для диагностики добавим принудительную консоль
+    setTimeout(() => {
+      console.log("Current mobile menu state after toggle:", mobileMenuOpen);
+    }, 50);
+  }, [mobileMenuOpen]);
 
-  const handleNavLinkClick = (id: string) => {
+  const handleNavLinkClick = useCallback((id: string) => {
     setMobileMenuOpen(false);
     
     // Smooth scroll to the section
@@ -30,7 +39,7 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  };
+  }, []);
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -92,7 +101,7 @@ const Navbar = () => {
           <button 
             type="button" 
             onClick={toggleMobileMenu}
-            className="focus:outline-none text-primary p-2 rounded-md bg-accent/20 hover:bg-accent/40 transition-all duration-300 cursor-pointer border border-accent/20"
+            className="focus:outline-none text-primary p-2 rounded-md bg-primary/10 hover:bg-primary/20 transition-all duration-300 cursor-pointer border border-primary/20 flex items-center justify-center"
             aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -100,71 +109,73 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden bg-background shadow-md z-50 absolute left-0 w-full">
-          <div className="container pt-4 pb-6 space-y-6">
-            <div className="flex flex-col">
-              <span className="text-foreground/70 mb-2">Меню:</span>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Контекстная реклама
-              </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Авито реклама
-              </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Разработка сайтов
-              </button>
-              <button onClick={() => handleNavLinkClick('portfolio')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Портфолио
-              </button>
-              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Отзывы
-              </button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
-                Контакты
-              </button>
+      {/* Mobile Menu - Simple version with display classes */}
+      <div 
+        className={`md:hidden bg-background shadow-md z-50 fixed top-[58px] left-0 w-full transition-all duration-300 overflow-hidden ${
+          mobileMenuOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0'
+        }`}
+      >
+        <div className="container pt-4 pb-6 space-y-6">
+          <div className="flex flex-col">
+            <span className="text-foreground/70 mb-2">Меню:</span>
+            <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Контекстная реклама
+            </button>
+            <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Авито реклама
+            </button>
+            <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Разработка сайтов
+            </button>
+            <button onClick={() => handleNavLinkClick('portfolio')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Портфолио
+            </button>
+            <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Отзывы
+            </button>
+            <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary py-3 flex items-center border-b border-gray-800/30">
+              Контакты
+            </button>
+          </div>
+          
+          <div className="flex flex-col">
+            <span className="text-foreground/70 mb-2">Связаться:</span>
+            <div className="flex items-center py-2 border-b border-gray-800/30">
+              <Phone className="h-4 w-4 mr-2 text-primary" />
+              <span className="text-foreground">+7(937) 343-45-43</span>
             </div>
             
-            <div className="flex flex-col">
-              <span className="text-foreground/70 mb-2">Связаться:</span>
-              <div className="flex items-center py-2 border-b border-gray-800/30">
-                <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span className="text-foreground">+7(937) 343-45-43</span>
-              </div>
-              
-              <div className="flex items-center space-x-3 mt-3 mb-2">
-                <a href="https://t.me/username" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                    <path d="M12 0c-6.626 0-12 5.372-12 12 0 6.627 5.374 12 12 12 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12zm3.224 17.871c.188.085.34.157.451.214.719.365 1.314.461 1.694.325.379-.136.654-.511.824-1.122.069-.25.142-.592.221-1.027.079-.436.114-.812.114-1.129 0-.306-.035-.599-.114-.879-.07-.281-.168-.498-.291-.653-.124-.154-.3-.281-.521-.379-.224-.097-.469-.145-.734-.145-.128 0-.428.019-.896.055-.47.037-.836.067-1.096.091-.259.023-.566.055-.918.096-.353.04-.605.072-.755.091-.165.024-.481.067-.947.145-.467.075-.745.12-.835.135-.181.030-.572.111-1.175.24-.603.13-1.053.227-1.35.296-.297.068-.609.177-.936.325-.328.147-.505.294-.531.436.4.544.17.647.361.647.127 0 .313-.046.562-.136.249-.095.457-.142.625-.142.127 0 .217.048.268.144s.089.296.117.6c.031.388.05.793.061 1.212.008.42-.004.797-.044 1.133-.035.343-.127.57-.268.684-.142.114-.406.171-.788.171-.127 0-.249-.018-.361-.053-.112-.035-.181-.078-.209-.127-.026-.05-.039-.196-.039-.438 0-.173.015-.413.044-.717.03-.306.044-.523.044-.654 0-.153-.053-.275-.159-.367-.107-.091-.216-.138-.33-.138-.157 0-.308.07-.452.205-.145.137-.243.302-.296.497-.052.194-.079.51-.079.946 0 .358.056.639.17.84.112.204.215.341.312.416z"/>
-                  </svg>
-                </a>
-                <a href="https://wa.me/7937343453" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                  </svg>
-                </a>
-                <a href="https://avito.ru/profile" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.54 10.757C13.817 10.757 14.854 9.72 14.854 8.443C14.854 7.166 13.817 6.129 12.54 6.129C11.263 6.129 10.226 7.166 10.226 8.443C10.226 9.72 11.263 10.757 12.54 10.757Z" fill="#6200EE"/>
-                    <path d="M5.217 13.35C7.235 13.35 8.87 11.716 8.87 9.697C8.87 7.679 7.235 6.045 5.217 6.045C3.199 6.045 1.564 7.679 1.564 9.697C1.564 11.716 3.199 13.35 5.217 13.35Z" fill="#6200EE"/>
-                    <path d="M12.344 4.809C13.621 4.809 14.658 3.772 14.658 2.495C14.658 1.218 13.621 0.181 12.344 0.181C11.067 0.181 10.03 1.218 10.03 2.495C10.03 3.772 11.067 4.809 12.344 4.809Z" fill="#6200EE"/>
-                    <path d="M5.413 4.613C6.181 4.613 6.802 3.991 6.802 3.223C6.802 2.456 6.181 1.834 5.413 1.834C4.645 1.834 4.023 2.456 4.023 3.223C4.023 3.991 4.645 4.613 5.413 4.613Z" fill="#6200EE"/>
-                  </svg>
-                </a>
-              </div>
-              
-              <ContactPopup>
-                <button 
-                  className="mt-2 w-full btn-purple text-white font-medium py-3 rounded-full"
-                >
-                  <span>Заказать звонок</span>
-                </button>
-              </ContactPopup>
+            <div className="flex items-center space-x-3 mt-3 mb-2">
+              <a href="https://t.me/username" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
+                  <path d="M12 0c-6.626 0-12 5.372-12 12 0 6.627 5.374 12 12 12 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12zm3.224 17.871c.188.085.34.157.451.214.719.365 1.314.461 1.694.325.379-.136.654-.511.824-1.122.069-.25.142-.592.221-1.027.079-.436.114-.812.114-1.129 0-.306-.035-.599-.114-.879-.07-.281-.168-.498-.291-.653-.124-.154-.3-.281-.521-.379-.224-.097-.469-.145-.734-.145-.128 0-.428.019-.896.055-.47.037-.836.067-1.096.091-.259.023-.566.055-.918.096-.353.04-.605.072-.755.091-.165.024-.481.067-.947.145-.467.075-.745.12-.835.135-.181.030-.572.111-1.175.24-.603.13-1.053.227-1.35.296-.297.068-.609.177-.936.325-.328.147-.505.294-.531.436.4.544.17.647.361.647.127 0 .313-.046.562-.136.249-.095.457-.142.625-.142.127 0 .217.048.268.144s.089.296.117.6c.031.388.05.793.061 1.212.008.42-.004.797-.044 1.133-.035.343-.127.57-.268.684-.142.114-.406.171-.788.171-.127 0-.249-.018-.361-.053-.112-.035-.181-.078-.209-.127-.026-.05-.039-.196-.039-.438 0-.173.015-.413.044-.717.03-.306.044-.523.044-.654 0-.153-.053-.275-.159-.367-.107-.091-.216-.138-.33-.138-.157 0-.308.07-.452.205-.145.137-.243.302-.296.497-.052.194-.079.51-.079.946 0 .358.056.639.17.84.112.204.215.341.312.416z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/7937343453" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </a>
+              <a href="https://avito.ru/profile" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.54 10.757C13.817 10.757 14.854 9.72 14.854 8.443C14.854 7.166 13.817 6.129 12.54 6.129C11.263 6.129 10.226 7.166 10.226 8.443C10.226 9.72 11.263 10.757 12.54 10.757Z" fill="#6200EE"/>
+                  <path d="M5.217 13.35C7.235 13.35 8.87 11.716 8.87 9.697C8.87 7.679 7.235 6.045 5.217 6.045C3.199 6.045 1.564 7.679 1.564 9.697C1.564 11.716 3.199 13.35 5.217 13.35Z" fill="#6200EE"/>
+                  <path d="M12.344 4.809C13.621 4.809 14.658 3.772 14.658 2.495C14.658 1.218 13.621 0.181 12.344 0.181C11.067 0.181 10.03 1.218 10.03 2.495C10.03 3.772 11.067 4.809 12.344 4.809Z" fill="#6200EE"/>
+                  <path d="M5.413 4.613C6.181 4.613 6.802 3.991 6.802 3.223C6.802 2.456 6.181 1.834 5.413 1.834C4.645 1.834 4.023 2.456 4.023 3.223C4.023 3.991 4.645 4.613 5.413 4.613Z" fill="#6200EE"/>
+                </svg>
+              </a>
             </div>
+            
+            <ContactPopup>
+              <button 
+                className="mt-2 w-full btn-purple text-white font-medium py-3 rounded-full"
+              >
+                <span>Заказать звонок</span>
+              </button>
+            </ContactPopup>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
