@@ -91,7 +91,7 @@ const Navbar = () => {
           <button 
             type="button" 
             onClick={toggleMobileMenu}
-            className="focus:outline-none text-foreground p-2 rounded-md hover:bg-accent/30 transition-all duration-300"
+            className="focus:outline-none text-foreground p-2 rounded-md hover:bg-accent/30 transition-all duration-300 md:flex"
             aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -101,7 +101,7 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background shadow-md">
+        <div className="md:hidden bg-background shadow-md z-50 absolute left-0 w-full">
           <div className="container pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
               <span className="text-foreground/70 mb-2">Меню:</span>

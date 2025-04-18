@@ -135,11 +135,9 @@ const PortfolioSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Link href="/cases">
-            <a className="btn-purple text-white font-medium px-8 py-3 rounded-full shadow-lg inline-flex items-center">
-              Смотреть все кейсы
-              <ChevronRight className="h-5 w-5 ml-1" />
-            </a>
+          <Link href="/cases" className="btn-purple text-white font-medium px-8 py-3 rounded-full shadow-lg inline-flex items-center">
+            Смотреть все кейсы
+            <ChevronRight className="h-5 w-5 ml-1" />
           </Link>
         </div>
       </div>
