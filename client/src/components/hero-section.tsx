@@ -1,4 +1,4 @@
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const HeroSection = () => {
@@ -42,119 +42,150 @@ const HeroSection = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] pt-[130px] pb-24 flex flex-col justify-between relative overflow-hidden">
-      {/* Left white circular decoration */}
-      <div className="absolute top-[10%] left-[-15%] w-[40%] h-[80%] rounded-full bg-white opacity-5"></div>
-      
-      {/* Right white circular decoration */}
-      <div className="absolute top-[10%] right-[-15%] w-[40%] h-[80%] rounded-full bg-white opacity-5"></div>
+    <header className="bg-background min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
+      {/* Purple Circle Decoration */}
+      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#8A56FF] to-[#7A36DF] z-0 opacity-30 transition-all duration-700 hover:scale-125 hover:from-[#9A66FF] hover:to-[#8A46EF] cursor-pointer"></div>
       
       {/* Hero Content */}
-      <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-14 xl:px-16 max-w-[1400px] relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div>
-            <div className="text-white mb-4">
-              <h2 className="text-xl font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
-            </div>
-            
-            <div className="mb-6">
-              <h1 className="text-4xl md:text-5xl lg:text-[54px] font-black text-white leading-tight">
-                ПОЛУЧАЙТЕ СТАБИЛЬНЫЙ<br />
-                ПОТОК ЖИВЫХ КЛИЕНТОВ<br />
-                ЕЖЕНЕДЕЛЬНО
-              </h1>
-            </div>
-            
-            <div className="mb-10">
-              <p className="text-lg text-white opacity-90">
-                С помощью профессиональной настройки<br />
-                и ведения контекстной рекламы
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row items-center gap-6">
-              <button 
-                onClick={() => scrollToSection('calculator')} 
-                className="w-full sm:w-auto bg-white text-[#6200EE] font-medium px-8 py-3.5 rounded-full shadow-lg hover:bg-opacity-90 transition-all duration-300 text-center text-sm"
-              >
-                РАССЧИТАТЬ СТОИМОСТЬ
-                <span className="block text-[10px] opacity-70 mt-0.5">(за 1 минуту + подарок)</span>
-              </button>
+      <div className="container py-10 md:py-16 relative z-10 flex-grow">
+        <div className="flex flex-col">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="flex flex-col">
+              <div className="text-left mb-4 mt-4">
+                <h2 className="text-xl text-foreground font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
+              </div>
               
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="flex items-center justify-center text-white hover:text-white/80 transition-all duration-300 cursor-pointer group"
-              >
-                <svg className="h-5 w-5 text-white mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                </svg>
-                <span className="font-medium">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
-              </button>
+              <div className="mb-6">
+                <h1 className="text-4xl md:text-5xl lg:text-[52px] font-black text-foreground leading-tight tracking-tight uppercase">
+                  ПОЛУЧАЙТЕ СТАБИЛЬНЫЙ<br />
+                  ПОТОК ЖИВЫХ КЛИЕНТОВ<br />
+                  ЕЖЕНЕДЕЛЬНО
+                </h1>
+              </div>
+              
+              <div className="mb-8">
+                <p className="text-lg text-foreground/80">
+                  С помощью профессиональной настройки<br />
+                  и ведения контекстной рекламы
+                </p>
+              </div>
+              
+              <div className="mt-6 mb-10">
+                <div className="flex flex-col space-y-6">
+                  <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
+                    <button 
+                      onClick={() => scrollToSection('calculator')} 
+                      className="btn-purple text-white font-medium px-8 py-3 rounded-[30px] text-center shadow-md flex items-center justify-center"
+                    >
+                      <span className="text-sm uppercase">РАССЧИТАТЬ СТОИМОСТЬ</span>
+                      <span className="text-[10px] ml-2 opacity-80">(за 1 минуту + подарок)</span>
+                    </button>
+                    
+                    <div 
+                      onClick={() => scrollToSection('contact')}
+                      className="flex items-center justify-center text-foreground hover:text-primary transition-all duration-300 cursor-pointer group border-b border-dashed border-primary"
+                    >
+                      <div className="flex items-center">
+                        <MessageCircle className="h-5 w-5 text-primary mr-2" />
+                        <span className="text-sm uppercase text-foreground">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 flex items-center">
+                    <div className="flex items-center">
+                      <div className="text-primary text-5xl font-bold mr-3">×2.7</div>
+                      <div className="text-sm text-foreground/70 max-w-[240px]">
+                        Средний коэффициент увеличения прибыли бизнеса
+                      </div>
+                    </div>
+                    <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-12 w-12 ml-3" />
+                  </div>
+                </div>
+              </div>
             </div>
             
-            <div className="mt-14 flex items-center">
-              <div className="flex items-center">
-                <div className="text-white text-6xl font-bold">×2.7</div>
-                <img 
-                  src="./src/assets/icons/chart-growth.svg" 
-                  alt="График роста" 
-                  className="h-16 w-16 ml-4" 
-                />
-              </div>
-              <div className="text-sm text-white opacity-80 ml-4 max-w-[240px]">
-                Средний коэффициент увеличения прибыли бизнеса
-              </div>
-            </div>
-          </div>
-          
-          {/* Right Column - Phone Image */}
-          <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <img 
-                src="./src/assets/images/phone.png"
-                alt="Телефон с аналитикой" 
-                className="max-h-[600px] object-contain relative z-10"
-              />
-              
-              {/* Yandex Logo Badge */}
-              <div className="absolute top-1/3 right-0 transform translate-x-1/4 -translate-y-1/2 bg-white rounded-xl p-2 shadow-lg z-20">
-                <svg viewBox="0 0 24 24" fill="#FF0000" width="40" height="40">
-                  <path d="M2.04 12c0-5.523 4.476-10 10-10 5.522 0 10 4.477 10 10s-4.478 10-10 10c-5.524 0-10-4.477-10-10z"/>
-                  <path d="M13.32 16.38h1.1V7.22h-1.82c-2.1 0-3.22 1.05-3.22 2.57 0 1.23.53 1.82 1.44 2.62l-2.34 3.97h1.21l2.24-3.89-.52-.36c-.72-.5-1.13-1-1.13-1.97 0-.83.67-1.44 1.85-1.44h1.19v8.66z" fill="#fff"/>
-                </svg>
-              </div>
-              
-              {/* Metrics Widget */}
-              <div className="absolute top-[30%] right-[10%] bg-white rounded-xl shadow-xl p-2.5">
-                <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
-                <div className="text-lg font-bold text-[#6200EE]">{formatNumber(viewCount)}</div>
-              </div>
-              
-              {/* Avito Logo Badge */}
-              <div className="absolute bottom-1/3 right-0 transform translate-x-1/2 bg-white rounded-xl p-2 shadow-lg z-20">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 91" width="40" height="40">
-                  <path d="M282.3 0c12.5 0 22.7 10.2 22.7 22.7v45.5c0 12.5-10.2 22.7-22.7 22.7h-45.5c-12.5 0-22.7-10.2-22.7-22.7v-45.5c0-12.5 10.2-22.7 22.7-22.7h45.5z" fill="#97CF26"/>
-                  <path d="M259.6 50.4c5.3 0 9.6-4.3 9.6-9.6s-4.3-9.6-9.6-9.6-9.6 4.3-9.6 9.6 4.3 9.6 9.6 9.6z" fill="#FFF"/>
-                  <path d="M244.5 24.1c-2.5 0-4.5 2-4.5 4.5v33.7c0 2.5 2 4.5 4.5 4.5h30.1c2.5 0 4.5-2 4.5-4.5v-33.7c0-2.5-2-4.5-4.5-4.5h-30.1zm30.1 8.2v26.5h-30.1v-26.5h30.1z" fill="#FFF"/>
-                </svg>
-              </div>
-              
-              {/* Conversion Widget */}
-              <div className="absolute bottom-[20%] right-[10%] bg-white rounded-xl shadow-xl p-2.5">
-                <div className="text-sm font-semibold text-gray-700">Конверсия</div>
-                <div className="flex items-center">
-                  <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
-                  {conversionAnimationRef.current && (
-                    <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
-                  )}
+              <div className="relative flex items-center justify-center lg:justify-end h-full mt-0 lg:mt-[-50px]">
+                <div className="relative z-20">
+                  <div className="relative">
+                    <img 
+                      src="./src/assets/images/phone.png"
+                      alt="Телефон с аналитикой" 
+                      className="max-h-[500px] md:max-h-[550px] object-contain"
+                    />
+                    <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
+                      <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
+                      <div className="text-lg font-bold text-[#6200EE] transition-all duration-500">{formatNumber(viewCount)}</div>
+                    </div>
+
+                    <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
+                      <div className="text-sm font-semibold text-gray-700">Конверсия</div>
+                      <div className="flex items-center">
+                        <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
+                        {conversionAnimationRef.current && (
+                          <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 3v18h18"></path>
+                    <path d="M18 17V9"></path>
+                    <path d="M13 17V5"></path>
+                    <path d="M8 17v-3"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+              <p className="text-sm text-white/80 text-center">
+                Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
+              <p className="text-sm text-white/80 text-center">
+                Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
+              </p>
+            </div>
+            
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+              <div className="mb-5 flex justify-center">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
+              <p className="text-sm text-white/80 text-center">
+                Дает максимальную точность отчетов и понимание динамики конверсий
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      {/* Bottom curve decoration */}
+      <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
   );
 };
