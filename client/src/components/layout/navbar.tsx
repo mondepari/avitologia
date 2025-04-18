@@ -18,7 +18,8 @@ const Navbar = () => {
   }, []);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setMobileMenuOpen(prevState => !prevState);
+    console.log("Toggle menu clicked, new state:", !mobileMenuOpen);
   };
 
   const handleNavLinkClick = (id: string) => {
@@ -91,7 +92,7 @@ const Navbar = () => {
           <button 
             type="button" 
             onClick={toggleMobileMenu}
-            className="focus:outline-none text-foreground p-2 rounded-md hover:bg-accent/30 transition-all duration-300 md:flex"
+            className="focus:outline-none text-primary p-2 rounded-md bg-accent/20 hover:bg-accent/40 transition-all duration-300 cursor-pointer border border-accent/20"
             aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
