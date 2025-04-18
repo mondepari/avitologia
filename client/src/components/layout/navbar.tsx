@@ -132,7 +132,7 @@ const Navbar = () => {
         } overflow-y-auto`}
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
-          <div className="text-lg font-semibold text-[#5533EA]">STEP IN CONTEXT</div>
+          <div className="text-lg font-semibold text-[#5533EA]">Логотип сайта</div>
           <button 
             onClick={toggleSideMenu}
             className="p-2 rounded-full hover:bg-gray-100 transition-colors"
@@ -148,7 +148,7 @@ const Navbar = () => {
                 onClick={() => handleNavLinkClick('hero')} 
                 className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
               >
-                <span>Главная</span>
+                <span>Контекстная реклама</span>
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
@@ -156,7 +156,7 @@ const Navbar = () => {
                 onClick={() => handleNavLinkClick('services')}
                 className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
               >
-                <span>Как работает реклама</span>
+                <span>Авито реклама</span>
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
@@ -164,7 +164,7 @@ const Navbar = () => {
                 onClick={() => handleNavLinkClick('portfolio')}
                 className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
               >
-                <span>Готовые работы</span>
+                <span>Разработка сайтов</span>
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
@@ -172,23 +172,7 @@ const Navbar = () => {
                 onClick={() => handleNavLinkClick('about')}
                 className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
               >
-                <span>Обо мне</span>
-                <ChevronRight className="h-4 w-4 text-gray-400" />
-              </button>
-              
-              <button 
-                onClick={() => handleNavLinkClick('pricing')}
-                className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
-              >
-                <span>Тарифы</span>
-                <ChevronRight className="h-4 w-4 text-gray-400" />
-              </button>
-              
-              <button 
-                onClick={() => handleNavLinkClick('steps')}
-                className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
-              >
-                <span>Шаги работы</span>
+                <span>Портфолио</span>
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
@@ -197,14 +181,6 @@ const Navbar = () => {
                 className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
               >
                 <span>Отзывы</span>
-                <ChevronRight className="h-4 w-4 text-gray-400" />
-              </button>
-              
-              <button 
-                onClick={() => handleNavLinkClick('faq')}
-                className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
-              >
-                <span>Гарантии</span>
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
