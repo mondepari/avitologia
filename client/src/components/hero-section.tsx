@@ -120,14 +120,14 @@ const HeroSection = () => {
                 </div>
               </div>
               
-              <div className="absolute bottom-12 left-0 lg:left-[calc(50%-140px)] flex items-center bg-white/5 backdrop-blur-sm border border-white/10 p-4 rounded-xl">
+              <div className="absolute bottom-32 left-0 lg:left-[-20px] flex items-center bg-white/5 backdrop-blur-sm border border-white/10 p-3 rounded-xl max-w-[280px]">
                 <div className="flex items-center">
-                  <div className="text-primary text-5xl font-bold mr-3">×2.7</div>
-                  <div className="text-sm text-foreground/70 max-w-[240px]">
+                  <div className="text-primary text-4xl font-bold mr-2">×2.7</div>
+                  <div className="text-xs text-foreground/70 max-w-[180px]">
                     Средний коэффициент увеличения прибыли бизнеса
                   </div>
                 </div>
-                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-12 w-12 ml-3" />
+                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-10 w-10 ml-2" />
               </div>
             </div>
           </div>
