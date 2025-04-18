@@ -371,7 +371,7 @@ const QuizCalculator = () => {
         <div className="flex flex-wrap -mx-4">
           {/* Преимущества формы */}
           <div className="w-full px-4 mb-8">
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
               <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-full px-4 py-2 shadow-md">
                 <div className="w-12 h-12 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -434,7 +434,7 @@ const QuizCalculator = () => {
                     {renderLastStep()}
                   </div>
                   
-                  <div className="flex justify-between">
+                  <div className="flex justify-center gap-4">
                     <button 
                       onClick={handlePrevious}
                       className={`px-8 py-3 rounded-full border border-primary text-primary font-medium ${
