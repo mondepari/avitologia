@@ -33,115 +33,96 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || mobileMenuOpen ? 'bg-background shadow-lg' : 'bg-background'
+      scrolled || mobileMenuOpen ? 'bg-gradient-to-r from-[#6200EE] to-[#7A36DF] shadow-lg' : 'bg-gradient-to-r from-[#6200EE] to-[#7A36DF]'
     }`}>
-      <div className="w-full px-6 md:px-14 py-3">
+      <div className="container py-3 px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Logo />
-            <div className="ml-6 text-xs font-medium text-foreground/70 hidden lg:block">
-              <p>Сертифицированный специалист по<br />Яндекс.Директ</p>
+            <div className="ml-4 text-xs font-medium text-white/90 hidden lg:block">
+              <p>Сертифицированный специалист по<br />Яндекс.Директ и Google.Ads</p>
             </div>
           </div>
           
-          <div className="hidden md:flex items-center justify-between flex-grow">
-            <div className="flex items-center space-x-6 ml-8">
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
-                Контекстная реклама
-              </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
-                Авито реклама
-              </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary font-medium transition-colors">
-                Разработка сайтов
-              </button>
-              <Link href="/cases">
-                <a className="text-foreground hover:text-primary font-medium transition-colors">
-                  Кейсы
-                </a>
-              </Link>
-              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary font-medium transition-colors">
-                Отзывы
-              </button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary font-medium transition-colors">
-                Контакты
-              </button>
+          <div className="hidden md:flex items-center ml-auto">
+            <div className="text-white flex items-center mr-4">
+              <span className="mr-2 text-white/80 text-sm">Работаем удаленно по всей РФ и СНГ</span>
             </div>
             
             <div className="flex items-center space-x-4">
               <ContactPopup>
-                <button className="bg-primary/10 text-primary flex items-center rounded-full px-4 py-1.5">
-                  <Phone className="h-4 w-4 mr-2" />
-                  <span className="font-medium text-sm">+7(937) 343-45-43</span>
+                <button className="bg-white/10 text-white flex items-center rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300">
+                  <span className="font-medium text-sm">Звоните, мы онлайн!</span>
                 </button>
               </ContactPopup>
               
               <ContactPopup>
-                <button 
-                  className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white flex items-center font-medium px-4 py-1.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 shadow-sm"
-                >
-                  <MessageCircle className="h-4 w-4 mr-2" />
-                  <span className="text-sm">Пишите</span>
+                <button className="bg-white/10 text-white flex items-center rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <span className="font-medium text-sm">+7(937) 343-45-43</span>
                 </button>
               </ContactPopup>
             </div>
           </div>
           
-          <div className="md:hidden">
-            <button 
-              type="button" 
-              onClick={toggleMobileMenu}
-              className="focus:outline-none text-foreground"
-              aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
-            >
-              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
+          <div className="md:hidden ml-auto mr-2">
+            <ContactPopup>
+              <button className="bg-white/10 text-white flex items-center rounded-full px-3 py-1.5 mr-4 hover:bg-white/20 transition-all duration-300">
+                <Phone className="h-4 w-4" />
+              </button>
+            </ContactPopup>
           </div>
+          
+          <button 
+            type="button" 
+            onClick={toggleMobileMenu}
+            className="focus:outline-none text-white bg-white/10 p-2 rounded-md hover:bg-white/20 transition-all duration-300"
+            aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-t border-gray-800">
-          <div className="w-full px-6 md:px-14 pt-4 pb-6 space-y-6">
+        <div className="md:hidden bg-background">
+          <div className="container pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
-              <span className="text-foreground/70 mb-2">Навигация:</span>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
+              <span className="text-foreground/70 mb-2">Меню:</span>
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                 Контекстная реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                 Авито реклама
               </button>
-              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('services')} className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                 Разработка сайтов
               </button>
               <Link href="/cases">
-                <a className="text-foreground hover:text-primary py-2 flex items-center">
+                <a className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                   Кейсы
                 </a>
               </Link>
-              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('testimonials')} className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                 Отзывы
               </button>
-              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary py-2 flex items-center">
+              <button onClick={() => handleNavLinkClick('contact')} className="text-foreground hover:text-primary py-2 flex items-center border-b border-gray-800/30">
                 Контакты
               </button>
             </div>
             
             <div className="flex flex-col">
               <span className="text-foreground/70 mb-2">Связаться:</span>
-              <ContactPopup>
-                <button className="flex items-center py-2 w-full text-left text-foreground">
-                  <Phone className="h-4 w-4 mr-2 text-primary" />
-                  <span>+7(937) 343-45-43</span>
-                </button>
-              </ContactPopup>
+              <div className="flex items-center py-2 border-b border-gray-800/30">
+                <Phone className="h-4 w-4 mr-2 text-primary" />
+                <span className="text-foreground">+7(937) 343-45-43</span>
+              </div>
               <ContactPopup>
                 <button 
-                  className="mt-3 w-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white flex items-center justify-center px-4 py-2.5 rounded-full hover:from-[#5500D8] hover:to-[#6A26CF] transition duration-300 shadow-sm"
+                  className="mt-4 w-full btn-purple text-white font-medium py-3 rounded-full"
                 >
-                  <MessageCircle className="h-5 w-5 mr-2" />
-                  <span>Написать</span>
+                  <span>Заказать звонок</span>
                 </button>
               </ContactPopup>
             </div>

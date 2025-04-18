@@ -49,8 +49,8 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="container py-10 md:py-16 relative z-10 flex-grow">
         <div className="flex flex-col">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
+            <div className="lg:col-span-6 lg:pr-10">
               <div className="text-left mb-4 mt-4">
                 <h2 className="text-xl text-foreground font-normal">Настройка и ведение Яндекс Директ под ключ</h2>
               </div>
@@ -91,50 +91,48 @@ const HeroSection = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="mt-8 flex items-center">
-                    <div className="flex items-center">
-                      <div className="text-primary text-5xl font-bold mr-3">×2.7</div>
-                      <div className="text-sm text-foreground/70 max-w-[240px]">
-                        Средний коэффициент увеличения прибыли бизнеса
-                      </div>
-                    </div>
-                    <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-12 w-12 ml-3" />
-                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="relative">
-              <div className="relative flex items-center justify-center lg:justify-end h-full mt-0 lg:mt-[-50px]">
-                <div className="relative z-20">
-                  <div className="relative">
-                    <img 
-                      src="./src/assets/images/phone.png"
-                      alt="Телефон с аналитикой" 
-                      className="max-h-[500px] md:max-h-[550px] object-contain"
-                    />
-                    <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
-                      <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
-                      <div className="text-lg font-bold text-[#6200EE] transition-all duration-500">{formatNumber(viewCount)}</div>
-                    </div>
+            <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
+              <div className="relative z-20">
+                <div className="relative">
+                  <img 
+                    src="./src/assets/images/phone.png"
+                    alt="Телефон с аналитикой" 
+                    className="max-h-[500px] md:max-h-[550px] object-contain"
+                  />
+                  <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
+                    <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
+                    <div className="text-lg font-bold text-[#6200EE] transition-all duration-500">{formatNumber(viewCount)}</div>
+                  </div>
 
-                    <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
-                      <div className="text-sm font-semibold text-gray-700">Конверсия</div>
-                      <div className="flex items-center">
-                        <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
-                        {conversionAnimationRef.current && (
-                          <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
-                        )}
-                      </div>
+                  <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
+                    <div className="text-sm font-semibold text-gray-700">Конверсия</div>
+                    <div className="flex items-center">
+                      <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
+                      {conversionAnimationRef.current && (
+                        <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
+                      )}
                     </div>
                   </div>
                 </div>
               </div>
+              
+              <div className="absolute bottom-12 left-0 lg:left-[calc(50%-140px)] flex items-center bg-white/5 backdrop-blur-sm border border-white/10 p-4 rounded-xl">
+                <div className="flex items-center">
+                  <div className="text-primary text-5xl font-bold mr-3">×2.7</div>
+                  <div className="text-sm text-foreground/70 max-w-[240px]">
+                    Средний коэффициент увеличения прибыли бизнеса
+                  </div>
+                </div>
+                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-12 w-12 ml-3" />
+              </div>
             </div>
           </div>
           
-          <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
