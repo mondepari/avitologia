@@ -137,18 +137,14 @@ const HeroSection = () => {
                     </div>
                   </div>
                   
-                  {/* Коэффициент ×2.7 размещен точно на нижней части экрана телефона */}
-                  <div className="absolute bottom-[16%] translate-x-[-20%] z-50">
-                    <div className="bg-purple-950/80 border border-white/15 rounded-lg p-2 max-w-[200px] shadow-lg">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                          <div className="text-primary text-lg font-bold mr-1">×2.7</div>
-                          <div className="text-xs text-white/90 max-w-[120px]">
-                            Средний коэффициент увеличения прибыли бизнеса
-                          </div>
-                        </div>
-                        <div className="ml-1">
-                          <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5" />
+                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
+                  <div className="absolute bottom-[7%] left-[15%] z-50">
+                    <div className="flex items-center bg-purple-950 px-4 py-2 rounded-lg">
+                      <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
+                      <div className="flex items-start">
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
+                        <div className="text-xs text-white/90 leading-tight">
+                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
                         </div>
                       </div>
                     </div>
