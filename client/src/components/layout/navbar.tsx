@@ -62,9 +62,11 @@ const Navbar = () => {
                   </svg>
                 </a>
                 <a href="https://avito.ru/profile" target="_blank" rel="noopener" className="flex items-center justify-center w-8 h-8 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                    <path d="M9.5 1c.8 1.3 1.5 2.7 2.3 4h-2.3v6.5c0 4.1 3.4 7.5 7.5 7.5v-4c-1.9 0-3.5-1.6-3.5-3.5v-6.5h6.5v-4h-10.5z"/>
-                    <path d="M5 5v4c-1.9 0-3.5 1.6-3.5 3.5v6.5h-1.5v4h10.5c-.8-1.3-1.5-2.7-2.3-4h2.3v-6.5c0-4.1-3.4-7.5-7.5-7.5z"/>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.54 10.757C13.817 10.757 14.854 9.72 14.854 8.443C14.854 7.166 13.817 6.129 12.54 6.129C11.263 6.129 10.226 7.166 10.226 8.443C10.226 9.72 11.263 10.757 12.54 10.757Z" fill="#6200EE"/>
+                    <path d="M5.217 13.35C7.235 13.35 8.87 11.716 8.87 9.697C8.87 7.679 7.235 6.045 5.217 6.045C3.199 6.045 1.564 7.679 1.564 9.697C1.564 11.716 3.199 13.35 5.217 13.35Z" fill="#6200EE"/>
+                    <path d="M12.344 4.809C13.621 4.809 14.658 3.772 14.658 2.495C14.658 1.218 13.621 0.181 12.344 0.181C11.067 0.181 10.03 1.218 10.03 2.495C10.03 3.772 11.067 4.809 12.344 4.809Z" fill="#6200EE"/>
+                    <path d="M5.413 4.613C6.181 4.613 6.802 3.991 6.802 3.223C6.802 2.456 6.181 1.834 5.413 1.834C4.645 1.834 4.023 2.456 4.023 3.223C4.023 3.991 4.645 4.613 5.413 4.613Z" fill="#6200EE"/>
                   </svg>
                 </a>
               </div>
@@ -89,7 +91,7 @@ const Navbar = () => {
           <button 
             type="button" 
             onClick={toggleMobileMenu}
-            className="focus:outline-none text-foreground bg-accent p-2 rounded-md hover:bg-accent/80 transition-all duration-300"
+            className="focus:outline-none text-foreground p-2 rounded-md hover:bg-accent/30 transition-all duration-300"
             aria-label={mobileMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -99,7 +101,7 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background">
+        <div className="md:hidden bg-background shadow-md">
           <div className="container pt-4 pb-6 space-y-6">
             <div className="flex flex-col">
               <span className="text-foreground/70 mb-2">Меню:</span>
@@ -142,9 +144,11 @@ const Navbar = () => {
                   </svg>
                 </a>
                 <a href="https://avito.ru/profile" target="_blank" rel="noopener" className="flex items-center justify-center w-9 h-9 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                    <path d="M9.5 1c.8 1.3 1.5 2.7 2.3 4h-2.3v6.5c0 4.1 3.4 7.5 7.5 7.5v-4c-1.9 0-3.5-1.6-3.5-3.5v-6.5h6.5v-4h-10.5z"/>
-                    <path d="M5 5v4c-1.9 0-3.5 1.6-3.5 3.5v6.5h-1.5v4h10.5c-.8-1.3-1.5-2.7-2.3-4h2.3v-6.5c0-4.1-3.4-7.5-7.5-7.5z"/>
+                  <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.54 10.757C13.817 10.757 14.854 9.72 14.854 8.443C14.854 7.166 13.817 6.129 12.54 6.129C11.263 6.129 10.226 7.166 10.226 8.443C10.226 9.72 11.263 10.757 12.54 10.757Z" fill="#6200EE"/>
+                    <path d="M5.217 13.35C7.235 13.35 8.87 11.716 8.87 9.697C8.87 7.679 7.235 6.045 5.217 6.045C3.199 6.045 1.564 7.679 1.564 9.697C1.564 11.716 3.199 13.35 5.217 13.35Z" fill="#6200EE"/>
+                    <path d="M12.344 4.809C13.621 4.809 14.658 3.772 14.658 2.495C14.658 1.218 13.621 0.181 12.344 0.181C11.067 0.181 10.03 1.218 10.03 2.495C10.03 3.772 11.067 4.809 12.344 4.809Z" fill="#6200EE"/>
+                    <path d="M5.413 4.613C6.181 4.613 6.802 3.991 6.802 3.223C6.802 2.456 6.181 1.834 5.413 1.834C4.645 1.834 4.023 2.456 4.023 3.223C4.023 3.991 4.645 4.613 5.413 4.613Z" fill="#6200EE"/>
                   </svg>
                 </a>
               </div>

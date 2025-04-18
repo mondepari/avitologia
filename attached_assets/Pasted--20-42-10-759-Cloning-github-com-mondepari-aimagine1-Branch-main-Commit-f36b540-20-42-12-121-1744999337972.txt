@@ -1,0 +1,595 @@
+[20:42:10.759] Cloning github.com/mondepari/aimagine1 (Branch: main, Commit: f36b540)
+[20:42:12.121] Previous build caches not available
+[20:42:18.747] Cloning completed: 7.987s
+[20:42:19.701] Running build in Washington, D.C., USA (East) – iad1
+[20:42:20.407] Running "vercel build"
+[20:42:20.913] Vercel CLI 41.6.0
+[20:42:21.875] Running "install" command: `bun install`...
+[20:42:21.978] bun install v1.2.9 (9a329c04)
+[20:42:22.011] Resolving dependencies
+[20:42:50.879] Resolved, downloaded and extracted [11120]
+[20:42:50.880] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.881] 
+[20:42:50.881] warn: incorrect peer dependency "next@15.2.3"
+[20:42:50.881] 
+[20:42:50.881] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.881] 
+[20:42:50.882] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.882] 
+[20:42:50.882] warn: incorrect peer dependency "stylelint@15.11.0"
+[20:42:50.882] 
+[20:42:50.882] warn: incorrect peer dependency "stylelint@15.11.0"
+[20:42:50.882] 
+[20:42:50.882] warn: incorrect peer dependency "@octokit/core@5.2.1"
+[20:42:50.882] 
+[20:42:50.882] warn: incorrect peer dependency "stylelint@15.11.0"
+[20:42:50.882] 
+[20:42:50.882] warn: incorrect peer dependency "stylelint@15.11.0"
+[20:42:50.882] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:42:50.883] 
+[20:42:50.883] warn: incorrect peer dependency "react-dom@19.1.0"
+[20:43:26.778] Saved lockfile
+[20:43:26.779] 
+[20:43:26.779] $ husky
+[20:43:26.894] 
+[20:43:26.895] + @chromatic-com/storybook@3.2.6
+[20:43:26.895] + @commitlint/cli@19.8.0
+[20:43:26.895] + @edge-runtime/vm@5.0.0
+[20:43:26.895] + @huggingface/tasks@0.15.9 (v0.18.8 available)
+[20:43:26.895] + @lobehub/i18n-cli@1.20.3
+[20:43:26.895] + @lobehub/lint@1.26.1
+[20:43:26.895] + @lobehub/seo-cli@1.4.3
+[20:43:26.895] + @next/bundle-analyzer@15.2.3 (v15.3.1 available)
+[20:43:26.895] + @next/eslint-plugin-next@15.2.3 (v15.3.1 available)
+[20:43:26.896] + @peculiar/webcrypto@1.5.0
+[20:43:26.896] + @semantic-release/exec@6.0.3 (v7.0.3 available)
+[20:43:26.896] + @storybook/addon-essentials@8.6.12
+[20:43:26.896] + @storybook/addon-mdx-gfm@8.6.12
+[20:43:26.897] + @storybook/addon-onboarding@8.6.12
+[20:43:26.897] + @storybook/blocks@8.6.12
+[20:43:26.897] + @storybook/experimental-addon-test@8.6.12
+[20:43:26.897] + @storybook/experimental-nextjs-vite@8.6.12
+[20:43:26.898] + @storybook/react@8.6.12
+[20:43:26.898] + @storybook/test@8.6.12
+[20:43:26.899] + @testing-library/jest-dom@6.6.3
+[20:43:26.899] + @testing-library/react@16.3.0
+[20:43:26.899] + @testing-library/user-event@14.6.1
+[20:43:26.900] + @types/chroma-js@3.1.1
+[20:43:26.900] + @types/crypto-js@4.2.2
+[20:43:26.900] + @types/debug@4.1.12
+[20:43:26.901] + @types/diff@7.0.2
+[20:43:26.901] + @types/fs-extra@11.0.4
+[20:43:26.901] + @types/ip@1.1.3
+[20:43:26.901] + @types/json-schema@7.0.15
+[20:43:26.902] + @types/lodash@4.17.16
+[20:43:26.902] + @types/lodash-es@4.17.12
+[20:43:26.902] + @types/node@22.14.1
+[20:43:26.903] + @types/numeral@2.0.5
+[20:43:26.903] + @types/pg@8.11.13
+[20:43:26.903] + @types/react@19.1.2
+[20:43:26.903] + @types/react-dom@19.1.2
+[20:43:26.904] + @types/rtl-detect@1.0.3
+[20:43:26.904] + @types/semver@7.7.0
+[20:43:26.904] + @types/systemjs@6.15.3
+[20:43:26.904] + @types/ua-parser-js@0.7.39
+[20:43:26.904] + @types/unist@3.0.3
+[20:43:26.905] + @types/uuid@10.0.0
+[20:43:26.905] + @types/ws@8.18.1
+[20:43:26.905] + @vitest/browser@3.1.1
+[20:43:26.905] + @vitest/coverage-v8@3.1.1
+[20:43:26.905] + ajv-keywords@5.1.0
+[20:43:26.905] + commitlint@19.8.0
+[20:43:26.905] + consola@3.4.2
+[20:43:26.905] + crypto-js@4.2.0
+[20:43:26.905] + dbdocs@0.14.4
+[20:43:26.906] + dotenv@16.5.0
+[20:43:26.906] + dpdm-fast@1.0.7
+[20:43:26.906] + drizzle-dbml-generator@0.10.0
+[20:43:26.906] + drizzle-kit@0.30.6 (v0.31.0 available)
+[20:43:26.906] + eslint@8.57.1 (v9.24.0 available)
+[20:43:26.907] + eslint-plugin-mdx@3.4.0
+[20:43:26.907] + eslint-plugin-storybook@0.12.0
+[20:43:26.907] + fake-indexeddb@6.0.0
+[20:43:26.907] + fs-extra@11.3.0
+[20:43:26.907] + glob@11.0.1
+[20:43:26.908] + gray-matter@4.0.3
+[20:43:26.908] + happy-dom@17.4.4
+[20:43:26.908] + husky@9.1.7
+[20:43:26.909] + just-diff@6.0.2
+[20:43:26.909] + lint-staged@15.5.1
+[20:43:26.909] + lodash@4.17.21
+[20:43:26.909] + markdown-table@3.0.4
+[20:43:26.909] + markdown-to-txt@2.0.1
+[20:43:26.909] + mime@4.0.7
+[20:43:26.909] + node-fetch@3.3.2
+[20:43:26.909] + node-gyp@11.2.0
+[20:43:26.909] + openapi-typescript@7.6.1
+[20:43:26.909] + p-map@7.0.3
+[20:43:26.916] + playwright@1.52.0
+[20:43:26.917] + prettier@3.5.3
+[20:43:26.917] + remark-cli@12.0.1
+[20:43:26.917] + remark-frontmatter@5.0.0
+[20:43:26.917] + remark-mdx@3.1.0
+[20:43:26.917] + remark-parse@11.0.0
+[20:43:26.917] + semantic-release@21.1.2 (v24.2.3 available)
+[20:43:26.917] + serwist@9.0.13
+[20:43:26.917] + storybook@8.6.12
+[20:43:26.917] + stylelint@15.11.0 (v16.18.0 available)
+[20:43:26.917] + tsx@4.19.3
+[20:43:26.917] + typescript@5.8.3
+[20:43:26.920] + unified@11.0.5
+[20:43:26.920] + unist-util-visit@5.0.0
+[20:43:26.921] + vite@5.4.18 (v6.3.2 available)
+[20:43:26.921] + vitest@3.1.1
+[20:43:26.921] + vitest-canvas-mock@0.3.3
+[20:43:26.921] + @ant-design/icons@5.6.1 (v6.0.0 available)
+[20:43:26.921] + @ant-design/pro-components@2.8.7
+[20:43:26.921] + @anthropic-ai/sdk@0.39.0
+[20:43:26.922] + @auth/core@0.38.0
+[20:43:26.922] + @aws-sdk/client-bedrock-runtime@3.787.0
+[20:43:26.922] + @aws-sdk/client-s3@3.787.0
+[20:43:26.922] + @aws-sdk/s3-request-presigner@3.787.0
+[20:43:26.922] + @azure-rest/ai-inference@1.0.0-beta.5
+[20:43:26.923] + @azure/core-auth@1.9.0
+[20:43:26.923] + @cfworker/json-schema@4.1.1
+[20:43:26.924] + @clerk/localizations@3.13.12
+[20:43:26.926] + @clerk/nextjs@6.16.0
+[20:43:26.927] + @clerk/themes@2.2.34
+[20:43:26.927] + @codesandbox/sandpack-react@2.20.0
+[20:43:26.927] + @cyntler/react-doc-viewer@1.17.0
+[20:43:26.927] + @electric-sql/pglite@0.2.17
+[20:43:26.927] + @google-cloud/vertexai@1.9.3
+[20:43:26.927] + @google/generative-ai@0.24.0
+[20:43:26.928] + @huggingface/inference@2.8.1 (v3.8.1 available)
+[20:43:26.928] + @icons-pack/react-simple-icons@9.6.0 (v12.6.0 available)
+[20:43:26.928] + @khmyznikov/pwa-install@0.3.9 (v0.5.4 available)
+[20:43:26.928] + @langchain/community@0.3.41
+[20:43:26.928] + @lobechat/web-crawler@workspace:packages/web-crawler
+[20:43:26.928] + @lobehub/charts@1.12.0
+[20:43:26.929] + @lobehub/chat-plugin-sdk@1.32.4
+[20:43:26.929] + @lobehub/chat-plugins-gateway@1.9.0
+[20:43:26.929] + @lobehub/icons@1.97.0
+[20:43:26.929] + @lobehub/tts@1.28.4
+[20:43:26.929] + @lobehub/ui@1.171.0
+[20:43:26.930] + @neondatabase/serverless@1.0.0
+[20:43:26.930] + @next/third-parties@15.2.3 (v15.3.1 available)
+[20:43:26.930] + @react-spring/web@9.7.5
+[20:43:26.930] + @sentry/nextjs@7.120.3 (v9.13.0 available)
+[20:43:26.930] + @serwist/next@9.0.13
+[20:43:26.931] + @t3-oss/env-nextjs@0.12.0
+[20:43:26.931] + @tanstack/react-query@5.74.4
+[20:43:26.931] + @trpc/client@11.0.0 (v11.1.0 available)
+[20:43:26.931] + @trpc/next@11.0.0 (v11.1.0 available)
+[20:43:26.933] + @trpc/react-query@11.0.0 (v11.1.0 available)
+[20:43:26.933] + @trpc/server@11.0.0 (v11.1.0 available)
+[20:43:26.933] + @vercel/analytics@1.5.0
+[20:43:26.934] + @vercel/edge-config@1.4.0
+[20:43:26.934] + @vercel/functions@2.0.0
+[20:43:26.934] + @vercel/speed-insights@1.2.0
+[20:43:26.934] + @wavesurfer/react@1.0.11
+[20:43:26.934] + ahooks@3.8.4
+[20:43:26.935] + ai@3.4.33 (v4.3.9 available)
+[20:43:26.935] + antd@5.24.7
+[20:43:26.935] + antd-style@3.7.1
+[20:43:26.935] + brotli-wasm@3.0.1
+[20:43:26.935] + chroma-js@3.1.2
+[20:43:26.935] + countries-and-timezones@3.8.0
+[20:43:26.936] + dayjs@1.11.13
+[20:43:26.936] + debug@4.4.0
+[20:43:26.936] + dexie@3.2.7 (v4.0.11 available)
+[20:43:26.936] + diff@7.0.0
+[20:43:26.936] + drizzle-orm@0.41.0 (v0.42.0 available)
+[20:43:26.937] + drizzle-zod@0.5.1 (v0.7.1 available)
+[20:43:26.937] + epub2@3.0.2
+[20:43:26.937] + fast-deep-equal@3.1.3
+[20:43:26.937] + file-type@20.4.1
+[20:43:26.937] + framer-motion@12.7.4
+[20:43:26.938] + gpt-tokenizer@2.9.0
+[20:43:26.938] + html-to-text@9.0.5
+[20:43:26.940] + i18next@24.2.3 (v25.0.0 available)
+[20:43:26.940] + i18next-browser-languagedetector@8.0.5
+[20:43:26.940] + i18next-resources-to-backend@1.2.1
+[20:43:26.940] + idb-keyval@6.2.1
+[20:43:26.940] + immer@10.1.1
+[20:43:26.940] + jose@5.10.0 (v6.0.10 available)
+[20:43:26.940] + js-sha256@0.11.0
+[20:43:26.940] + jsonl-parse-stringify@1.0.3
+[20:43:26.940] + langchain@0.3.22
+[20:43:26.940] + langfuse@3.29.1 (v3.37.2 available)
+[20:43:26.940] + langfuse-core@3.29.1 (v3.37.2 available)
+[20:43:26.940] + lodash-es@4.17.21
+[20:43:26.940] + lucide-react@0.485.0 (v0.501.0 available)
+[20:43:26.940] + mammoth@1.9.0
+[20:43:26.940] + mdast-util-to-markdown@2.1.2
+[20:43:26.940] + modern-screenshot@4.6.0
+[20:43:26.940] + nanoid@5.1.5
+[20:43:26.940] + next@15.2.3 (v15.3.1 available)
+[20:43:26.940] + next-auth@5.0.0-beta.25
+[20:43:26.940] + next-mdx-remote@5.0.0
+[20:43:26.940] + nextjs-toploader@3.8.16
+[20:43:26.940] + numeral@2.0.6
+[20:43:26.940] + nuqs@2.4.3
+[20:43:26.940] + officeparser@5.1.1
+[20:43:26.940] + ollama@0.5.15
+[20:43:26.940] + openai@4.95.1
+[20:43:26.940] + openapi-fetch@0.9.8 (v0.13.5 available)
+[20:43:26.948] + partial-json@0.1.7
+[20:43:26.948] + pdf-parse@1.1.1
+[20:43:26.948] + pdfjs-dist@4.8.69 (v5.1.91 available)
+[20:43:26.948] + pg@8.14.1
+[20:43:26.948] + pino@9.6.0
+[20:43:26.948] + plaiceholder@3.0.0
+[20:43:26.948] + polished@4.3.1
+[20:43:26.948] + posthog-js@1.236.2
+[20:43:26.948] + pwa-install-handler@2.6.2
+[20:43:26.948] + query-string@9.1.1
+[20:43:26.948] + random-words@2.0.1
+[20:43:26.949] + react@19.1.0
+[20:43:26.949] + react-confetti@6.4.0
+[20:43:26.949] + react-dom@19.1.0
+[20:43:26.949] + react-fast-marquee@1.6.5
+[20:43:26.949] + react-hotkeys-hook@4.6.2 (v5.0.1 available)
+[20:43:26.949] + react-i18next@15.4.1
+[20:43:26.949] + react-layout-kit@1.9.1
+[20:43:26.949] + react-lazy-load@4.0.1
+[20:43:26.949] + react-pdf@9.2.1
+[20:43:26.949] + react-resizable-panels@2.1.7
+[20:43:26.949] + react-rnd@10.5.2
+[20:43:26.949] + react-scan@0.3.3
+[20:43:26.949] + react-virtuoso@4.12.6
+[20:43:26.949] + react-wrap-balancer@1.1.1
+[20:43:26.949] + remark@15.0.1
+[20:43:26.949] + remark-gfm@4.0.1
+[20:43:26.949] + remark-html@16.0.1
+[20:43:26.949] + request-filtering-agent@2.0.1
+[20:43:26.950] + resolve-accept-language@3.1.11
+[20:43:26.950] + rtl-detect@1.1.2
+[20:43:26.950] + semver@7.7.1
+[20:43:26.950] + sharp@0.33.5 (v0.34.1 available)
+[20:43:26.950] + shiki@3.2.2
+[20:43:26.950] + stripe@16.12.0 (v18.0.0 available)
+[20:43:26.950] + superjson@2.2.2
+[20:43:26.950] + svix@1.64.1
+[20:43:26.950] + swr@2.3.3
+[20:43:26.950] + systemjs@6.15.1
+[20:43:26.950] + ts-md5@1.3.1
+[20:43:26.950] + ua-parser-js@1.0.40 (v2.0.3 available)
+[20:43:26.950] + unstructured-client@0.19.0 (v0.24.1 available)
+[20:43:26.950] + url-join@5.0.0
+[20:43:26.951] + use-merge-value@1.2.0
+[20:43:26.951] + utility-types@3.11.0
+[20:43:26.951] + uuid@11.1.0
+[20:43:26.951] + wavesurfer.js@7.9.4
+[20:43:26.963] + ws@8.18.1
+[20:43:26.963] + y-protocols@1.0.6
+[20:43:26.963] + y-webrtc@10.3.0
+[20:43:26.964] + yaml@2.7.1
+[20:43:26.964] + yjs@13.6.26
+[20:43:26.964] + zod@3.24.3
+[20:43:26.964] + zustand@5.0.3
+[20:43:26.964] + zustand-utils@2.1.0
+[20:43:26.964] 
+[20:43:26.964] 2899 packages installed [64.99s]
+[20:43:26.964] 
+[20:43:26.965] Blocked 8 postinstalls. Run `bun pm untrusted` for details.
+[20:43:27.051] Detected Next.js version: 15.2.3
+[20:43:27.052] Running "NODE_OPTIONS=--max-old-space-size=6144 bun run build"
+[20:43:27.129] $ next build
+[20:43:29.389] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[20:43:29.390] This information is used to shape Next.js' roadmap and prioritize features.
+[20:43:29.390] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[20:43:29.390] https://nextjs.org/telemetry
+[20:43:29.390] 
+[20:43:29.732]    ▲ Next.js 15.2.3
+[20:43:29.734]    - Experiments (use with caution):
+[20:43:29.735]      ✓ webpackMemoryOptimizations
+[20:43:29.735] 
+[20:43:29.859]    Creating an optimized production build ...
+[20:43:30.702]  ○ (serwist) The service worker will not be automatically registered, please call 'window.serwist.register()' in 'componentDidMount' or 'useEffect'.
+[20:43:30.710]  ✓ (serwist) Bundling the service worker script with the URL '/sw.js' and the scope '/'...
+[20:50:08.686] <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (117kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+[20:55:25.032]  ⚠ Compiled with warnings
+[20:55:25.033] 
+[20:55:25.033] /_next/static/media/postgres.f4d4c3f7.wasm is 8.09 MB, and won't be precached. Configure maximumFileSizeToCacheInBytes to change this limit.
+[20:55:25.033] 
+[20:55:25.033] /_next/static/media/postgres.37e5aa16.data is 5.4 MB, and won't be precached. Configure maximumFileSizeToCacheInBytes to change this limit.
+[20:55:25.033] 
+[20:55:25.033] ./src/database/server/index.ts
+[20:55:25.033] export 'serverDB' (reexported as 'serverDB') was not found in '../core/db-adaptor' (possible exports: DBAdaptor)
+[20:55:25.033] 
+[20:55:25.033] Import trace for requested module:
+[20:55:25.033] ./src/database/server/index.ts
+[20:55:25.033] ./src/app/api/music/upload/route.ts
+[20:55:25.033] 
+[20:55:25.033] ./src/libs/swr/index.ts
+[20:55:25.033] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.033] 
+[20:55:25.033] Import trace for requested module:
+[20:55:25.033] ./src/libs/swr/index.ts
+[20:55:25.033] ./src/store/user/slices/common/action.ts
+[20:55:25.034] ./src/store/user/store.ts
+[20:55:25.034] ./src/store/user/index.ts
+[20:55:25.034] ./src/services/_auth.ts
+[20:55:25.034] ./src/libs/trpc/client/lambda.ts
+[20:55:25.034] ./src/libs/trpc/client/index.ts
+[20:55:25.034] ./src/app/api/music/upload/route.ts
+[20:55:25.034] 
+[20:55:25.034] ./src/libs/swr/index.ts
+[20:55:25.034] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.034] 
+[20:55:25.034] Import trace for requested module:
+[20:55:25.034] ./src/libs/swr/index.ts
+[20:55:25.034] ./src/store/user/slices/common/action.ts
+[20:55:25.034] ./src/store/user/store.ts
+[20:55:25.034] ./src/store/user/index.ts
+[20:55:25.034] ./src/services/_auth.ts
+[20:55:25.034] ./src/libs/trpc/client/lambda.ts
+[20:55:25.034] ./src/libs/trpc/client/index.ts
+[20:55:25.034] ./src/app/api/music/upload/route.ts
+[20:55:25.034] 
+[20:55:25.034] ./src/libs/swr/index.ts
+[20:55:25.034] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.035] 
+[20:55:25.035] Import trace for requested module:
+[20:55:25.035] ./src/libs/swr/index.ts
+[20:55:25.035] ./src/store/user/slices/common/action.ts
+[20:55:25.035] ./src/store/user/store.ts
+[20:55:25.035] ./src/store/user/index.ts
+[20:55:25.035] ./src/services/_auth.ts
+[20:55:25.035] ./src/libs/trpc/client/lambda.ts
+[20:55:25.035] ./src/libs/trpc/client/index.ts
+[20:55:25.035] ./src/app/api/music/upload/route.ts
+[20:55:25.035] 
+[20:55:25.035] ./src/store/agent/slices/chat/action.ts
+[20:55:25.035] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.035] 
+[20:55:25.035] Import trace for requested module:
+[20:55:25.036] ./src/store/agent/slices/chat/action.ts
+[20:55:25.036] ./src/store/agent/store.ts
+[20:55:25.036] ./src/store/agent/index.ts
+[20:55:25.036] ./src/services/chat.ts
+[20:55:25.036] ./src/services/models.ts
+[20:55:25.036] ./src/store/user/slices/modelList/action.ts
+[20:55:25.036] ./src/store/user/store.ts
+[20:55:25.036] ./src/store/user/index.ts
+[20:55:25.036] ./src/services/_auth.ts
+[20:55:25.036] ./src/libs/trpc/client/lambda.ts
+[20:55:25.036] ./src/libs/trpc/client/index.ts
+[20:55:25.036] ./src/app/api/music/upload/route.ts
+[20:55:25.036] 
+[20:55:25.036] ./src/store/agent/slices/chat/action.ts
+[20:55:25.036] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.036] 
+[20:55:25.036] Import trace for requested module:
+[20:55:25.036] ./src/store/agent/slices/chat/action.ts
+[20:55:25.036] ./src/store/agent/store.ts
+[20:55:25.051] ./src/store/agent/index.ts
+[20:55:25.052] ./src/services/chat.ts
+[20:55:25.053] ./src/services/models.ts
+[20:55:25.054] ./src/store/user/slices/modelList/action.ts
+[20:55:25.054] ./src/store/user/store.ts
+[20:55:25.055] ./src/store/user/index.ts
+[20:55:25.056] ./src/services/_auth.ts
+[20:55:25.056] ./src/libs/trpc/client/lambda.ts
+[20:55:25.057] ./src/libs/trpc/client/index.ts
+[20:55:25.057] ./src/app/api/music/upload/route.ts
+[20:55:25.057] 
+[20:55:25.057] ./src/store/aiInfra/slices/aiModel/action.ts
+[20:55:25.159] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.159] 
+[20:55:25.159] Import trace for requested module:
+[20:55:25.159] ./src/store/aiInfra/slices/aiModel/action.ts
+[20:55:25.160] ./src/store/aiInfra/slices/aiModel/index.ts
+[20:55:25.160] ./src/store/aiInfra/store.ts
+[20:55:25.160] ./src/store/aiInfra/index.ts
+[20:55:25.160] ./src/services/_auth.ts
+[20:55:25.161] ./src/libs/trpc/client/lambda.ts
+[20:55:25.161] ./src/libs/trpc/client/index.ts
+[20:55:25.161] ./src/app/api/music/upload/route.ts
+[20:55:25.161] 
+[20:55:25.161] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.161] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.161] 
+[20:55:25.161] Import trace for requested module:
+[20:55:25.161] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.161] ./src/store/aiInfra/slices/aiProvider/index.ts
+[20:55:25.162] ./src/store/aiInfra/store.ts
+[20:55:25.162] ./src/store/aiInfra/index.ts
+[20:55:25.162] ./src/services/_auth.ts
+[20:55:25.162] ./src/libs/trpc/client/lambda.ts
+[20:55:25.162] ./src/libs/trpc/client/index.ts
+[20:55:25.162] ./src/app/api/music/upload/route.ts
+[20:55:25.162] 
+[20:55:25.162] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.162] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.162] 
+[20:55:25.162] Import trace for requested module:
+[20:55:25.166] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.166] ./src/store/aiInfra/slices/aiProvider/index.ts
+[20:55:25.167] ./src/store/aiInfra/store.ts
+[20:55:25.167] ./src/store/aiInfra/index.ts
+[20:55:25.168] ./src/services/_auth.ts
+[20:55:25.168] ./src/libs/trpc/client/lambda.ts
+[20:55:25.168] ./src/libs/trpc/client/index.ts
+[20:55:25.169] ./src/app/api/music/upload/route.ts
+[20:55:25.169] 
+[20:55:25.170] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.170] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.170] 
+[20:55:25.170] Import trace for requested module:
+[20:55:25.171] ./src/store/aiInfra/slices/aiProvider/action.ts
+[20:55:25.171] ./src/store/aiInfra/slices/aiProvider/index.ts
+[20:55:25.172] ./src/store/aiInfra/store.ts
+[20:55:25.172] ./src/store/aiInfra/index.ts
+[20:55:25.172] ./src/services/_auth.ts
+[20:55:25.174] ./src/libs/trpc/client/lambda.ts
+[20:55:25.174] ./src/libs/trpc/client/index.ts
+[20:55:25.175] ./src/app/api/music/upload/route.ts
+[20:55:25.175] 
+[20:55:25.175] ./src/store/session/slices/session/action.ts
+[20:55:25.176] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.176] 
+[20:55:25.177] Import trace for requested module:
+[20:55:25.178] ./src/store/session/slices/session/action.ts
+[20:55:25.178] ./src/store/session/store.ts
+[20:55:25.179] ./src/store/session/index.ts
+[20:55:25.179] ./src/services/chat.ts
+[20:55:25.179] ./src/services/models.ts
+[20:55:25.180] ./src/store/user/slices/modelList/action.ts
+[20:55:25.180] ./src/store/user/store.ts
+[20:55:25.180] ./src/store/user/index.ts
+[20:55:25.181] ./src/services/_auth.ts
+[20:55:25.181] ./src/libs/trpc/client/lambda.ts
+[20:55:25.182] ./src/libs/trpc/client/index.ts
+[20:55:25.182] ./src/app/api/music/upload/route.ts
+[20:55:25.182] 
+[20:55:25.182] ./src/store/session/slices/session/action.ts
+[20:55:25.183] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.183] 
+[20:55:25.184] Import trace for requested module:
+[20:55:25.185] ./src/store/session/slices/session/action.ts
+[20:55:25.185] ./src/store/session/store.ts
+[20:55:25.186] ./src/store/session/index.ts
+[20:55:25.186] ./src/services/chat.ts
+[20:55:25.186] ./src/services/models.ts
+[20:55:25.187] ./src/store/user/slices/modelList/action.ts
+[20:55:25.187] ./src/store/user/store.ts
+[20:55:25.189] ./src/store/user/index.ts
+[20:55:25.189] ./src/services/_auth.ts
+[20:55:25.191] ./src/libs/trpc/client/lambda.ts
+[20:55:25.192] ./src/libs/trpc/client/index.ts
+[20:55:25.192] ./src/app/api/music/upload/route.ts
+[20:55:25.196] 
+[20:55:25.196] ./src/store/tool/slices/store/action.ts
+[20:55:25.196] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.197] 
+[20:55:25.197] Import trace for requested module:
+[20:55:25.197] ./src/store/tool/slices/store/action.ts
+[20:55:25.197] ./src/store/tool/slices/store/index.ts
+[20:55:25.198] ./src/store/tool/store.ts
+[20:55:25.198] ./src/store/tool/index.ts
+[20:55:25.198] ./src/services/chat.ts
+[20:55:25.199] ./src/services/models.ts
+[20:55:25.199] ./src/store/user/slices/modelList/action.ts
+[20:55:25.199] ./src/store/user/store.ts
+[20:55:25.200] ./src/store/user/index.ts
+[20:55:25.202] ./src/services/_auth.ts
+[20:55:25.202] ./src/libs/trpc/client/lambda.ts
+[20:55:25.203] ./src/libs/trpc/client/index.ts
+[20:55:25.203] ./src/app/api/music/upload/route.ts
+[20:55:25.204] 
+[20:55:25.204] ./src/store/tool/slices/store/action.ts
+[20:55:25.204] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.205] 
+[20:55:25.205] Import trace for requested module:
+[20:55:25.205] ./src/store/tool/slices/store/action.ts
+[20:55:25.206] ./src/store/tool/slices/store/index.ts
+[20:55:25.206] ./src/store/tool/store.ts
+[20:55:25.206] ./src/store/tool/index.ts
+[20:55:25.206] ./src/services/chat.ts
+[20:55:25.207] ./src/services/models.ts
+[20:55:25.207] ./src/store/user/slices/modelList/action.ts
+[20:55:25.207] ./src/store/user/store.ts
+[20:55:25.208] ./src/store/user/index.ts
+[20:55:25.221] ./src/services/_auth.ts
+[20:55:25.222] ./src/libs/trpc/client/lambda.ts
+[20:55:25.222] ./src/libs/trpc/client/index.ts
+[20:55:25.222] ./src/app/api/music/upload/route.ts
+[20:55:25.222] 
+[20:55:25.222] ./src/store/tool/slices/store/action.ts
+[20:55:25.222] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.222] 
+[20:55:25.222] Import trace for requested module:
+[20:55:25.222] ./src/store/tool/slices/store/action.ts
+[20:55:25.222] ./src/store/tool/slices/store/index.ts
+[20:55:25.222] ./src/store/tool/store.ts
+[20:55:25.222] ./src/store/tool/index.ts
+[20:55:25.222] ./src/services/chat.ts
+[20:55:25.222] ./src/services/models.ts
+[20:55:25.222] ./src/store/user/slices/modelList/action.ts
+[20:55:25.222] ./src/store/user/store.ts
+[20:55:25.229] ./src/store/user/index.ts
+[20:55:25.229] ./src/services/_auth.ts
+[20:55:25.230] ./src/libs/trpc/client/lambda.ts
+[20:55:25.230] ./src/libs/trpc/client/index.ts
+[20:55:25.230] ./src/app/api/music/upload/route.ts
+[20:55:25.231] 
+[20:55:25.231] ./src/store/user/slices/common/action.ts
+[20:55:25.241] Attempted import error: 'mutate' is not exported from 'swr' (imported as 'mutate').
+[20:55:25.242] 
+[20:55:25.242] Import trace for requested module:
+[20:55:25.242] ./src/store/user/slices/common/action.ts
+[20:55:25.242] ./src/store/user/store.ts
+[20:55:25.242] ./src/store/user/index.ts
+[20:55:25.242] ./src/services/_auth.ts
+[20:55:25.242] ./src/libs/trpc/client/lambda.ts
+[20:55:25.242] ./src/libs/trpc/client/index.ts
+[20:55:25.242] ./src/app/api/music/upload/route.ts
+[20:55:25.242] 
+[20:55:25.242] ./src/store/user/slices/common/action.ts
+[20:55:25.242] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.242] 
+[20:55:25.243] Import trace for requested module:
+[20:55:25.243] ./src/store/user/slices/common/action.ts
+[20:55:25.243] ./src/store/user/store.ts
+[20:55:25.243] ./src/store/user/index.ts
+[20:55:25.243] ./src/services/_auth.ts
+[20:55:25.243] ./src/libs/trpc/client/lambda.ts
+[20:55:25.243] ./src/libs/trpc/client/index.ts
+[20:55:25.243] ./src/app/api/music/upload/route.ts
+[20:55:25.243] 
+[20:55:25.243] ./src/store/user/slices/modelList/action.ts
+[20:55:25.243] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.243] 
+[20:55:25.243] Import trace for requested module:
+[20:55:25.243] ./src/store/user/slices/modelList/action.ts
+[20:55:25.243] ./src/store/user/store.ts
+[20:55:25.244] ./src/store/user/index.ts
+[20:55:25.244] ./src/services/_auth.ts
+[20:55:25.244] ./src/libs/trpc/client/lambda.ts
+[20:55:25.244] ./src/libs/trpc/client/index.ts
+[20:55:25.244] ./src/app/api/music/upload/route.ts
+[20:55:25.244] 
+[20:55:25.244] ./src/store/user/slices/sync/action.ts
+[20:55:25.244] Attempted import error: 'swr' does not contain a default export (imported as 'useSWR').
+[20:55:25.244] 
+[20:55:25.244] Import trace for requested module:
+[20:55:25.244] ./src/store/user/slices/sync/action.ts
+[20:55:25.244] ./src/store/user/store.ts
+[20:55:25.244] ./src/store/user/index.ts
+[20:55:25.244] ./src/services/_auth.ts
+[20:55:25.244] ./src/libs/trpc/client/lambda.ts
+[20:55:25.244] ./src/libs/trpc/client/index.ts
+[20:55:25.245] ./src/app/api/music/upload/route.ts
+[20:55:25.245] 
+[20:55:25.496]    Linting and checking validity of types ...
+[20:55:28.647]  ⨯ ESLint: Cannot read config file: /vercel/path0/.eslintrc.js Error: Unexpected token 'extends'
+[20:59:40.346] Failed to compile.
+[20:59:40.347] 
+[20:59:40.347] ./src/app/[variants]/(main)/(mobile)/me/(home)/features/UserBanner.tsx:19:43
+[20:59:40.347] Type error: Property 'openLogin' does not exist on type 'UserStore'.
+[20:59:40.347] 
+[20:59:40.347] [0m [90m 17 |[39m   [36mconst[39m router [33m=[39m useRouter()[33m;[39m[0m
+[20:59:40.347] [0m [90m 18 |[39m   [36mconst[39m isLoginWithAuth [33m=[39m useUserStore(authSelectors[33m.[39misLoginWithAuth)[33m;[39m[0m
+[20:59:40.347] [0m[31m[1m>[22m[39m[90m 19 |[39m   [36mconst[39m [signIn] [33m=[39m useUserStore((s) [33m=>[39m [s[33m.[39mopenLogin])[33m;[39m[0m
+[20:59:40.347] [0m [90m    |[39m                                           [31m[1m^[22m[39m[0m
+[20:59:40.348] [0m [90m 20 |[39m[0m
+[20:59:40.348] [0m [90m 21 |[39m   [36mreturn[39m ([0m
+[20:59:40.348] [0m [90m 22 |[39m     [33m<[39m[33mFlexbox[39m gap[33m=[39m{[35m12[39m} paddingBlock[33m=[39m{[35m8[39m}[33m>[39m[0m
+[20:59:40.703] Next.js build worker exited with code: 1 and signal: null
+[20:59:40.960] error: script "build" exited with code 1
+[20:59:40.984] Error: Command "NODE_OPTIONS=--max-old-space-size=6144 bun run build" exited with 1
+[20:59:48.409] 
