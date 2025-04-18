@@ -120,15 +120,7 @@ const HeroSection = () => {
                 </div>
               </div>
               
-              <div className="absolute bottom-32 left-0 lg:left-[-20px] flex items-center bg-white/5 backdrop-blur-sm border border-white/10 p-3 rounded-xl max-w-[280px]">
-                <div className="flex items-center">
-                  <div className="text-primary text-4xl font-bold mr-2">×2.7</div>
-                  <div className="text-xs text-foreground/70 max-w-[180px]">
-                    Средний коэффициент увеличения прибыли бизнеса
-                  </div>
-                </div>
-                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-10 w-10 ml-2" />
-              </div>
+              {/* Коэффициент ×2.7 перемещен вниз в соответствии с референсом */}
             </div>
           </div>
           
@@ -182,6 +174,27 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      {/* Коэффициент x2.7 внизу по центру, как на референсе */}
+      <div className="container relative z-10 mb-16 mt-4">
+        <div className="relative">
+          <div className="absolute left-0 right-0 -top-12 w-full flex justify-center">
+            <div className="bg-[#111111] border border-white/10 rounded-xl shadow-xl p-4 max-w-[320px] w-full">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <div className="text-primary text-5xl font-bold mr-2">×2.7</div>
+                  <div className="text-sm text-foreground/80 max-w-[180px]">
+                    Средний коэффициент увеличения прибыли бизнеса
+                  </div>
+                </div>
+                <div className="ml-2">
+                  <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-10 w-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       {/* Bottom curve decoration */}
       <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
