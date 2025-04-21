@@ -97,11 +97,11 @@ const HeroSection = () => {
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 shadow-lg max-w-[280px]">
+                  <div className="bg-gray-100 border border-gray-200 rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
                         <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
-                        <div className="text-xs text-foreground/90 max-w-[140px]">
+                        <div className="text-xs text-gray-800 max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
@@ -139,11 +139,11 @@ const HeroSection = () => {
                   
                   {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
                   <div className="absolute bottom-[7%] left-[15%] z-50">
-                    <div className="flex items-center bg-purple-950 px-4 py-2 rounded-lg">
+                    <div className="flex items-center bg-purple-100 border border-purple-200 px-4 py-2 rounded-lg shadow-md">
                       <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
                       <div className="flex items-start">
                         <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                        <div className="text-xs text-white/90 leading-tight">
+                        <div className="text-xs text-gray-800 leading-tight">
                           Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
                         </div>
                       </div>
@@ -209,7 +209,7 @@ const HeroSection = () => {
 
       
       {/* Bottom curve decoration */}
-      <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
+      <div className="w-full h-12 bg-gray-100 rounded-t-[50px] absolute bottom-0 left-0 right-0 border-t border-gray-200"></div>
     </header>
   );
 };
