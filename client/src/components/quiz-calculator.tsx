@@ -484,12 +484,12 @@ const QuizCalculator = () => {
                       <div className="flex justify-center gap-4">
                         <div className="w-16 h-16 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-lg shadow-md p-2 flex items-center justify-center relative">
                           <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white text-primary font-bold text-xs flex items-center justify-center">1</span>
-                          <img src="./src/assets/icons/calculator.svg" alt="Калькулятор" className="w-10 h-10 brightness-200 filter" />
+                          <img src="./src/assets/icons/calculator.svg" alt="Калькулятор" className="w-10 h-10 brightness-0 invert" />
                         </div>
                         
                         <div className="w-16 h-16 bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-lg shadow-md p-2 flex items-center justify-center relative">
                           <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white text-primary font-bold text-xs flex items-center justify-center">2</span>
-                          <img src="./src/assets/icons/gift.svg" alt="Подарок" className="w-10 h-10 brightness-200 filter" />
+                          <img src="./src/assets/icons/gift.svg" alt="Подарок" className="w-10 h-10 brightness-0 invert" />
                         </div>
                       </div>
                     </div>
