@@ -72,7 +72,7 @@ const HeroSection = () => {
                 </p>
               </div>
               
-              <div className="mt-6 mb-8 relative">
+              <div className="mt-6 mb-20 relative">
                 <div className="flex flex-col space-y-6">
                   <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
                     <button 
@@ -95,37 +95,24 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Блок с коэффициентом ×2.7 для desktop - как на референсе */}
-                <div className="hidden lg:block relative mt-10 mb-4">
-                  <div className="bg-white px-6 py-4 rounded-md shadow-md w-full max-w-[450px] border-2 border-red-500 flex items-center">
-                    <div className="text-[#6200EE] text-5xl font-bold mr-5">×2.7</div>
-                    <div className="flex items-center">
-                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-6 w-6 mr-2 text-gray-500" />
-                      <div className="text-sm text-gray-600 leading-tight">
-                        Средний коэффициент увеличения<br/>прибыли бизнеса
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
-                <div className="lg:hidden relative mt-6 mb-4">
-                  <div className="bg-white px-4 py-3 rounded-md shadow-md w-full border-2 border-red-500">
-                    <div className="flex items-center">
-                      <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
+                <div className="lg:hidden relative mt-4">
+                  <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 border border-primary/20 rounded-xl p-3 shadow-lg max-w-[280px]">
+                    <div className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1" />
-                        <div className="text-xs text-gray-600 leading-tight">
+                        <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
+                        <div className="text-xs text-foreground max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
+                      </div>
+                      <div className="ml-2">
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-7 w-7" />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
               <div className="relative z-20">
@@ -149,15 +136,27 @@ const HeroSection = () => {
                       )}
                     </div>
                   </div>
+                  
+                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
+                  <div className="absolute bottom-[7%] left-[15%] z-50">
+                    <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-4 py-2 rounded-lg shadow-lg">
+                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                      <div className="flex items-start">
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
+                        <div className="text-xs text-white/90 leading-tight">
+                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
+              {/* Позиция для коэффициента была здесь */}
             </div>
           </div>
-
-
           
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
