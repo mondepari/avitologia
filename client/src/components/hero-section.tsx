@@ -95,6 +95,19 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
+                {/* Блок с коэффициентом ×2.7 */}
+                <div className="hidden lg:block mt-16">
+                  <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-5 py-3 rounded-lg shadow-lg inline-block">
+                    <div className="text-white text-4xl font-bold mr-4">×2.7</div>
+                    <div className="flex items-start">
+                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1 mt-1" />
+                      <div className="text-sm text-white/90 leading-tight">
+                        Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
                   <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 border border-primary/20 rounded-xl p-3 shadow-lg max-w-[280px]">
@@ -137,18 +150,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   
-                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
-                  <div className="absolute bottom-[7%] left-[15%] z-50">
-                    <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-4 py-2 rounded-lg shadow-lg">
-                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
-                      <div className="flex items-start">
-                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                        <div className="text-xs text-white/90 leading-tight">
-                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {/* Коэффициент размещен на телефоне - уберем, чтобы избежать дублирования */}
                 </div>
               </div>
               
