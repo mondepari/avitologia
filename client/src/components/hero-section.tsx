@@ -113,6 +113,19 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
+
+            {/* Блок с коэффициентом ×2.7 (размещается между колонками) */}
+            <div className="hidden lg:block absolute z-30 transform translate-x-1/2 left-1/2 lg:translate-x-0 lg:left-[45%] top-[70%]">
+              <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-5 py-3 rounded-lg shadow-lg">
+                <div className="text-white text-4xl font-bold mr-3">×2.7</div>
+                <div className="flex items-start">
+                  <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1 mt-1" />
+                  <div className="text-sm text-white leading-tight">
+                    Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                  </div>
+                </div>
+              </div>
+            </div>
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
               <div className="relative z-20">
@@ -136,27 +149,12 @@ const HeroSection = () => {
                       )}
                     </div>
                   </div>
-                  
-                  {/* Коэффициент размещен на телефоне - уберем, чтобы избежать дублирования */}
                 </div>
               </div>
-              
-              {/* Позиция для коэффициента была здесь */}
             </div>
           </div>
 
-          {/* Десктопная версия блока с коэффициентом x2.7 */}
-          <div className="hidden lg:block mt-8 mb-6">
-            <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-6 py-3 rounded-lg shadow-lg inline-flex">
-              <div className="text-white text-4xl font-bold mr-4">×2.7</div>
-              <div className="flex items-start">
-                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-2 mt-1" />
-                <div className="text-sm text-white leading-tight">
-                  Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                </div>
-              </div>
-            </div>
-          </div>
+
           
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
