@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { ArrowRight, Check, CheckCircle, ChevronRight } from "lucide-react";
 import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
+import needsCardsImage from "../assets/avito/needs-cards.svg";
 
 const AvitoPage: React.FC = () => {
   return (
@@ -174,104 +175,46 @@ const AvitoPage: React.FC = () => {
         <section className="py-16 bg-background">
           <div className="container px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black">
-                вам точно нужны мы, если:
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+                Тебе точно нужны мы, если:
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 mb-8 relative">
-                <div className="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-primary/10 -z-10 blur-xl"></div>
-                
-                <div className="col-span-1">
-                  <div className="mb-14">
-                    <div className="flex items-start">
-                      <div className="mr-3 flex-shrink-0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M8 12L11 15L16 10" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">
-                          Хотите <span className="text-primary">сэкономить</span> <br />время, деньги и нервы
-                        </h3>
-                        <p className="text-gray-600 text-sm">
-                          Ведение Авито отнимает большое количество времени у менеджеров, результат слабый, сливается бюджет.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex items-start">
-                      <div className="mr-3 flex-shrink-0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M8 12L11 15L16 10" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">
-                          Хотите <span className="text-primary">выйти на Авито</span>, <br />но не знаете как
-                        </h3>
-                        <p className="text-gray-600 text-sm">
-                          Хотите получать заявки - закажите услугу настройки Авито и обойдите конкурентов.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="col-span-1">
-                  <div className="mb-14">
-                    <div className="flex items-start">
-                      <div className="mr-3 flex-shrink-0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M8 12L11 15L16 10" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">
-                          Нужно больше <br /><span className="text-primary">заявок, продаж</span>
-                        </h3>
-                        <p className="text-gray-600 text-sm">
-                          Нет заявок, объявления не работают. Нет понимания, как работает платное продвижение сервиса.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <div className="flex items-start">
-                      <div className="mr-3 flex-shrink-0">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M8 12L11 15L16 10" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">
-                          Приходит <br /><span className="text-primary">нецелевой клиент</span>
-                        </h3>
-                        <p className="text-gray-600 text-sm">
-                          Приходит только мусорный трафик: нет понимания, как доставать именно вашего клиента.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-primary/10 -z-10 blur-xl"></div>
+              <div className="w-full overflow-hidden mb-8">
+                <img 
+                  src={needsCardsImage} 
+                  alt="Причины обратиться к нам" 
+                  className="w-full h-auto object-contain"
+                />
               </div>
               
-              <div className="flex justify-end">
-                <div className="max-w-[300px]">
-                  <img 
-                    src={astronautImage} 
-                    alt="Космонавт" 
-                    className="w-full h-auto object-contain"
-                  />
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-[#FFECB3] flex items-center justify-center mr-3 text-amber-600">1</span>
+                    Быстрый запуск
+                  </h3>
+                  <p className="text-gray-600 pl-11">
+                    Мы помогаем быстро выйти на Авито и начать получать первые заявки. Настраиваем аккаунт, создаем объявления и запускаем рекламу.
+                  </p>
                 </div>
+                
+                <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-[#E1F5FE] flex items-center justify-center mr-3 text-blue-600">2</span>
+                    Целевые клиенты
+                  </h3>
+                  <p className="text-gray-600 pl-11">
+                    Точно знаем, как привлекать именно вашу целевую аудиторию и уменьшать количество нецелевых обращений.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center mt-10">
+                <ContactPopup>
+                  <button className="bg-primary/10 text-primary border border-primary/30 px-8 py-3 rounded-full font-medium hover:bg-primary/20 transition-all duration-300">
+                    Начать работать с нами
+                  </button>
+                </ContactPopup>
               </div>
             </div>
           </div>

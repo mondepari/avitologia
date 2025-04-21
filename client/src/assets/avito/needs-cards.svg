@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="250" viewBox="0 0 900 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Блок 1 (Серый) -->
+  <g>
+    <rect x="30" y="10" width="180" height="230" rx="20" fill="#F5F5F5"/>
+    <text x="55" y="60" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Попадался</text>
+    <text x="55" y="85" font-family="Arial" font-size="18" fill="#333333">на <tspan fill="#6200EE">блокировке</tspan></text>
+    <text x="55" y="110" font-family="Arial" font-size="18" fill="#333333">объявлений</text>
+    
+    <text x="55" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#FF9500">⚡ 310</text>
+  </g>
+  
+  <!-- Блок 2 (Зеленый) -->
+  <g>
+    <rect x="240" y="10" width="180" height="230" rx="20" fill="#D1FFB3"/>
+    <text x="265" y="60" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Нужно</text>
+    <text x="265" y="85" font-family="Arial" font-size="18" fill="#6200EE">увеличить</text>
+    <text x="265" y="110" font-family="Arial" font-size="18" fill="#6200EE">трафик</text>
+    <text x="265" y="135" font-family="Arial" font-size="18" fill="#333333">заказов</text>
+    
+    <text x="265" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#FF4D4D">🔥 537</text>
+  </g>
+  
+  <!-- Блок 3 (Серый с фиолетовым) -->
+  <g>
+    <rect x="450" y="10" width="180" height="230" rx="20" fill="#F5F5F5"/>
+    <text x="475" y="60" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Хочешь</text>
+    <text x="475" y="85" font-family="Arial" font-size="18" fill="#6200EE">сэкономить</text>
+    <text x="475" y="110" font-family="Arial" font-size="18" fill="#333333">своё время </text>
+    <text x="475" y="135" font-family="Arial" font-size="18" fill="#333333">и нервы</text>
+    
+    <text x="475" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#FFA500">😵 159</text>
+  </g>
+  
+  <!-- Блок 4 (Светло-серый) -->
+  <g>
+    <rect x="660" y="10" width="180" height="230" rx="20" fill="#F5F5F5"/>
+    <text x="685" y="60" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">Объявления</text>
+    <text x="685" y="85" font-family="Arial" font-size="18" fill="#333333">приносят</text>
+    <text x="685" y="110" font-family="Arial" font-size="18" fill="#6200EE">мало продаж</text>
+    
+    <text x="685" y="180" font-family="Arial" font-size="18" font-weight="bold" fill="#FF9500">🍊 213</text>
+  </g>
+</svg>
