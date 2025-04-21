@@ -264,14 +264,6 @@ const QuizCalculator = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {step.gifts?.map(gift => (
               <div key={gift.id} className="flex flex-col">
-                <div 
-                  className={`h-32 mb-2 p-4 rounded-lg flex items-center justify-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white text-center font-bold cursor-pointer shadow-md ${
-                    answers[currentStep] === gift.id ? "ring-4 ring-[#6200EE] ring-opacity-50" : ""
-                  }`}
-                  onClick={() => handleGiftSelect(gift.id)}
-                >
-                  {gift.title}
-                </div>
                 <div className="relative">
                   <input
                     type="radio"
