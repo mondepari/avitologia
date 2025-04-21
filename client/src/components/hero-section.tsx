@@ -95,13 +95,13 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Блок с коэффициентом ×2.7 для desktop - белый с красной рамкой */}
-                <div className="hidden lg:block relative mt-8">
-                  <div className="bg-white border-2 border-red-500 px-5 py-4 rounded-md shadow-lg inline-flex items-center max-w-[400px]">
-                    <div className="text-[#6200EE] text-5xl font-bold mr-4">×2.7</div>
+                {/* Блок с коэффициентом ×2.7 для desktop - как на референсе */}
+                <div className="hidden lg:block relative mt-10 mb-4">
+                  <div className="bg-white px-6 py-4 rounded-md shadow-md w-full max-w-[450px] border-2 border-red-500 flex items-center">
+                    <div className="text-[#6200EE] text-5xl font-bold mr-5">×2.7</div>
                     <div className="flex items-center">
-                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-6 w-6 mr-2" />
-                      <div className="text-sm text-gray-800 leading-tight">
+                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-6 w-6 mr-2 text-gray-500" />
+                      <div className="text-sm text-gray-600 leading-tight">
                         Средний коэффициент увеличения<br/>прибыли бизнеса
                       </div>
                     </div>
@@ -109,13 +109,13 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
-                <div className="lg:hidden relative mt-4">
-                  <div className="bg-white border-2 border-red-500 px-4 py-3 rounded-md shadow-md max-w-[280px]">
+                <div className="lg:hidden relative mt-6 mb-4">
+                  <div className="bg-white px-4 py-3 rounded-md shadow-md w-full border-2 border-red-500">
                     <div className="flex items-center">
                       <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
                       <div className="flex items-center">
                         <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1" />
-                        <div className="text-xs text-gray-800 leading-tight">
+                        <div className="text-xs text-gray-600 leading-tight">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
