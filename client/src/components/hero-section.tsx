@@ -72,7 +72,7 @@ const HeroSection = () => {
                 </p>
               </div>
               
-              <div className="mt-6 mb-20 relative">
+              <div className="mt-6 mb-8 relative">
                 <div className="flex flex-col space-y-6">
                   <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 items-center">
                     <button 
@@ -90,19 +90,6 @@ const HeroSection = () => {
                       <div className="flex items-center">
                         <MessageCircle className="h-5 w-5 text-primary mr-2" />
                         <span className="text-sm uppercase text-foreground">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Блок с коэффициентом ×2.7 */}
-                <div className="hidden lg:block mt-16">
-                  <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-5 py-3 rounded-lg shadow-lg inline-block">
-                    <div className="text-white text-4xl font-bold mr-4">×2.7</div>
-                    <div className="flex items-start">
-                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1 mt-1" />
-                      <div className="text-sm text-white/90 leading-tight">
-                        Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
                       </div>
                     </div>
                   </div>
@@ -157,8 +144,21 @@ const HeroSection = () => {
               {/* Позиция для коэффициента была здесь */}
             </div>
           </div>
+
+          {/* Десктопная версия блока с коэффициентом x2.7 */}
+          <div className="hidden lg:block mt-8 mb-6">
+            <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-6 py-3 rounded-lg shadow-lg inline-flex">
+              <div className="text-white text-4xl font-bold mr-4">×2.7</div>
+              <div className="flex items-start">
+                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-2 mt-1" />
+                <div className="text-sm text-white leading-tight">
+                  Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
                 <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
