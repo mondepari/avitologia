@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SectionDecoration } from "./ui/decorative-elements";
 import rocketIcon from "../assets/icons/rocket.svg";
 import keyboardIcon from "../assets/icons/keyboard.svg";
@@ -7,6 +7,7 @@ import monitorIcon from "../assets/icons/monitor.svg";
 import searchScreenshot from "../assets/search-screenshot.png";
 import rsaScreenshot from "../assets/rsa-screenshot.png";
 import phoneFrame from "../assets/phone-frame.svg";
+import { TypeAnimation } from 'react-type-animation';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -30,6 +31,34 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 
 const FeaturesSection: React.FC = () => {
   const [activeTab] = useState<'yandex'>('yandex');
+  const [typingVisible, setTypingVisible] = useState(false);
+
+  useEffect(() => {
+    // Функция для определения, находится ли элемент в видимой области
+    const checkVisibility = () => {
+      const section = document.getElementById('how-it-works');
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        // Элемент считается видимым, когда он примерно на 1/4 в поле зрения
+        const isVisible = (
+          rect.top < window.innerHeight * 0.75 && 
+          rect.bottom >= 0
+        );
+        if (isVisible && !typingVisible) {
+          setTypingVisible(true);
+        }
+      }
+    };
+
+    // Проверяем видимость при загрузке и прокрутке
+    checkVisibility();
+    window.addEventListener('scroll', checkVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+    };
+  }, [typingVisible]);
+
   const features = [
     {
       icon: (
@@ -111,7 +140,7 @@ const FeaturesSection: React.FC = () => {
 
         <div className="flex flex-col mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 mb-16">
-            <div>
+            <div id="how-it-works">
               <h3 className="text-2xl md:text-3xl font-bold mb-8 text-foreground">Как это работает?</h3>
               <div className="relative bg-accent p-8 rounded-xl shadow-lg border border-border">
                 <div className="relative z-10">
@@ -119,7 +148,23 @@ const FeaturesSection: React.FC = () => {
                     <div className="flex items-start mt-4">
                       <div className="text-primary text-6xl font-bold mr-6">1</div>
                       <div className="mt-2">
-                        <p className="text-lg text-foreground/90">Клиент вводит в поисковую строку запрос, который его волнует</p>
+                        <div className="text-lg text-foreground/90 min-h-[3rem]">
+                          {typingVisible ? (
+                            <TypeAnimation
+                              sequence={[
+                                'Клиент вводит в поисковую строку запрос, который его волнует',
+                                1000
+                              ]}
+                              wrapper="div"
+                              speed={50}
+                              cursor={true}
+                              repeat={0}
+                              style={{ fontSize: '1.125rem', display: 'inline-block' }}
+                            />
+                          ) : (
+                            <div style={{ fontSize: '1.125rem', display: 'inline-block' }}>&nbsp;</div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -127,7 +172,26 @@ const FeaturesSection: React.FC = () => {
                     <div className="flex items-start">
                       <div className="text-primary text-6xl font-bold mr-6">2</div>
                       <div className="mt-2">
-                        <p className="text-lg text-foreground/90">Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению</p>
+                        <div className="text-lg text-foreground/90 min-h-[3rem]">
+                          {typingVisible ? (
+                            <TypeAnimation
+                              sequence={[
+                                // Задержка перед началом печати второго пункта
+                                '',
+                                3000,
+                                'Вы появляетесь в выдаче. Заинтересовавшись, клиент, кликает по Вашему объявлению',
+                                1000
+                              ]}
+                              wrapper="div"
+                              speed={50}
+                              cursor={true}
+                              repeat={0}
+                              style={{ fontSize: '1.125rem', display: 'inline-block' }}
+                            />
+                          ) : (
+                            <div style={{ fontSize: '1.125rem', display: 'inline-block' }}>&nbsp;</div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -135,7 +199,26 @@ const FeaturesSection: React.FC = () => {
                     <div className="flex items-start">
                       <div className="text-primary text-6xl font-bold mr-6">3</div>
                       <div className="mt-2">
-                        <p className="text-lg text-foreground/90">Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку</p>
+                        <div className="text-lg text-foreground/90 min-h-[3rem]">
+                          {typingVisible ? (
+                            <TypeAnimation
+                              sequence={[
+                                // Задержка перед началом печати третьего пункта
+                                '',
+                                6000,
+                                'Заходит на сайт, находит на нём решение своей проблемы и оставляет заявку',
+                                1000
+                              ]}
+                              wrapper="div"
+                              speed={50}
+                              cursor={true}
+                              repeat={0}
+                              style={{ fontSize: '1.125rem', display: 'inline-block' }}
+                            />
+                          ) : (
+                            <div style={{ fontSize: '1.125rem', display: 'inline-block' }}>&nbsp;</div>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>
