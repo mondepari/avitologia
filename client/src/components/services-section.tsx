@@ -11,12 +11,12 @@ const ServiceCard = ({ icon, title, description, features }: ServiceCardProps) =
   };
 
   return (
-    <div className="bg-accent rounded-xl p-8 card-shadow border border-border">
-      <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+    <div className="bg-white rounded-xl p-8 card-shadow border border-gray-200">
+      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold mb-3 text-foreground">{title}</h3>
-      <p className="text-foreground/70 mb-6">
+      <h3 className="text-xl font-semibold mb-3 text-gray-800">{title}</h3>
+      <p className="text-gray-600 mb-6">
         {description}
       </p>
       <ul className="space-y-3 mb-6">
@@ -25,7 +25,7 @@ const ServiceCard = ({ icon, title, description, features }: ServiceCardProps) =
             <svg className="h-5 w-5 text-primary mt-0.5 mr-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="text-foreground/90">{feature}</span>
+            <span className="text-gray-700">{feature}</span>
           </li>
         ))}
       </ul>
@@ -84,9 +84,9 @@ const ServicesSection = () => {
       
       <div className="container relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block bg-primary/20 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши услуги</div>
-          <h2 className="section-title text-foreground">Эффективные решения для <br/>вашего бизнеса</h2>
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
+          <div className="inline-block bg-primary/10 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши услуги</div>
+          <h2 className="section-title text-gray-800">Эффективные решения для <br/>вашего бизнеса</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Предлагаю полный спектр услуг по настройке и оптимизации рекламных кампаний, 
             которые приведут потенциальных клиентов на ваш сайт.
           </p>

@@ -11,96 +11,96 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8 relative overflow-hidden">
+    <footer className="bg-gray-50 text-gray-800 pt-16 pb-8 relative overflow-hidden border-t border-gray-200">
       {/* Purple Circle Decoration */}
-      <div className="absolute w-[400px] h-[400px] top-[-20%] right-[-10%] rounded-full bg-primary/10 blur-3xl"></div>
-      <div className="absolute w-[300px] h-[300px] bottom-[-10%] left-[-10%] rounded-full bg-primary/10 blur-3xl"></div>
+      <div className="absolute w-[400px] h-[400px] top-[-20%] right-[-10%] rounded-full bg-primary/5 blur-3xl"></div>
+      <div className="absolute w-[300px] h-[300px] bottom-[-10%] left-[-10%] rounded-full bg-primary/5 blur-3xl"></div>
       
       <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Logo />
-            <p className="text-gray-400 my-6">
+            <p className="text-gray-600 my-6">
               Профессиональная настройка контекстной рекламы для бизнеса любого масштаба. Увеличение продаж и привлечение клиентов с гарантией результата.
             </p>
             
             <div className="flex space-x-3 mt-6">
               <a 
                 href="#" 
-                className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
+                className="w-9 h-9 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition duration-300"
                 aria-label="Facebook"
               >
-                <Facebook className="h-4 w-4" />
+                <Facebook className="h-4 w-4 text-primary" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
+                className="w-9 h-9 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition duration-300"
                 aria-label="Instagram"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="h-4 w-4 text-primary" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
+                className="w-9 h-9 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition duration-300"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-4 w-4" />
+                <Linkedin className="h-4 w-4 text-primary" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
+                className="w-9 h-9 bg-primary/10 hover:bg-primary/20 rounded-full flex items-center justify-center transition duration-300"
                 aria-label="YouTube"
               >
-                <Youtube className="h-4 w-4" />
+                <Youtube className="h-4 w-4 text-primary" />
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-6">Навигация</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800">Навигация</h4>
             <ul className="space-y-3">
               <li>
                 <button 
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Главная</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Услуги</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('portfolio')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Кейсы</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>О себе</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Контакты</span>
                 </button>
               </li>
@@ -108,14 +108,14 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-6">Услуги</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800">Услуги</h4>
             <ul className="space-y-3">
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Яндекс.Директ</span>
                 </button>
               </li>
@@ -123,27 +123,27 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Аналитика</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Ретаргетинг</span>
                 </button>
               </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                  className="text-gray-600 hover:text-primary transition duration-300 flex items-center"
                 >
-                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <ArrowRight className="h-4 w-4 mr-2 text-primary" />
                   <span>Оптимизация</span>
                 </button>
               </li>
