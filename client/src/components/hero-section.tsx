@@ -96,12 +96,12 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Блок коэффициента ×2.7 - размещен на уровне кнопок согласно референсу */}
-                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(50%-25px)] z-30">
-                  <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-4 py-2 rounded-lg shadow-lg">
-                    <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(80%)] z-30">
+                  <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-8 py-4 rounded-lg shadow-lg w-[270px]">
+                    <div className="text-white text-4xl font-bold mr-4">×2.7</div>
                     <div className="flex items-start">
-                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                      <div className="text-xs text-white/90 leading-tight">
+                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-2 mt-1" />
+                      <div className="text-sm text-white/90 leading-tight">
                         Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
                       </div>
                     </div>
@@ -110,11 +110,11 @@ const HeroSection = () => {
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-3 shadow-lg max-w-[280px]">
+                  <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-4 shadow-lg">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <div className="text-white text-2xl font-bold mr-2">×2.7</div>
-                        <div className="text-xs text-white/90 max-w-[140px]">
+                        <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                        <div className="text-xs text-white/90 max-w-[160px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
