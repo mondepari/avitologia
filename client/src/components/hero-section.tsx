@@ -97,11 +97,11 @@ const HeroSection = () => {
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-gray-100 border border-gray-200 rounded-xl p-3 shadow-lg max-w-[280px]">
+                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
                         <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
-                        <div className="text-xs text-gray-800 max-w-[140px]">
+                        <div className="text-xs text-foreground/90 max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
@@ -139,11 +139,11 @@ const HeroSection = () => {
                   
                   {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
                   <div className="absolute bottom-[7%] left-[15%] z-50">
-                    <div className="flex items-center bg-purple-100 border border-purple-200 px-4 py-2 rounded-lg shadow-md">
+                    <div className="flex items-center bg-purple-950 px-4 py-2 rounded-lg">
                       <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
                       <div className="flex items-start">
                         <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                        <div className="text-xs text-gray-800 leading-tight">
+                        <div className="text-xs text-white/90 leading-tight">
                           Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
                         </div>
                       </div>
@@ -157,10 +157,10 @@ const HeroSection = () => {
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 3v18h18"></path>
                     <path d="M18 17V9"></path>
                     <path d="M13 17V5"></path>
@@ -168,38 +168,38 @@ const HeroSection = () => {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-gray-800">Выбор стратегии продвижения</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Выбор стратегии продвижения</h3>
+              <p className="text-sm text-white/80 text-center">
                 Оптимизирую рекламный бюджет и повышаю эффективность каждого рубля на рекламу
               </p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-gray-800">Целевые посетители</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Целевые посетители</h3>
+              <p className="text-sm text-white/80 text-center">
                 Четко настроенный таргетинг обеспечивает попадание рекламы точно в ЦА
               </p>
             </div>
             
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
-                <div className="bg-primary/10 backdrop-blur-sm border border-primary/20 w-16 h-16 rounded-xl flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6200EE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="bg-white/15 backdrop-blur-sm border border-white/20 w-16 h-16 rounded-xl flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                     <line x1="3" y1="9" x2="21" y2="9"></line>
                     <line x1="9" y1="21" x2="9" y2="9"></line>
                   </svg>
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-center text-gray-800">Настройка аналитики</h3>
-              <p className="text-sm text-gray-600 text-center">
+              <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
+              <p className="text-sm text-white/80 text-center">
                 Дает максимальную точность отчетов и понимание динамики конверсий
               </p>
             </div>
@@ -209,7 +209,7 @@ const HeroSection = () => {
 
       
       {/* Bottom curve decoration */}
-      <div className="w-full h-12 bg-gray-100 rounded-t-[50px] absolute bottom-0 left-0 right-0 border-t border-gray-200"></div>
+      <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
   );
 };

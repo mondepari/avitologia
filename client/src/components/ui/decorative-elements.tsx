@@ -54,7 +54,7 @@ export const PurpleCircle: React.FC<PurpleCircleProps> = ({
   return (
     <div
       ref={circleRef}
-      className={`absolute rounded-full bg-primary/20 transition-transform duration-1000 cursor-pointer hover:scale-110 hover:opacity-80 hover:bg-gradient-to-br hover:from-[#8A56FF]/30 hover:to-[#6200EE]/30 ${className}`}
+      className={`absolute rounded-full bg-primary transition-transform duration-1000 cursor-pointer hover:scale-110 hover:opacity-80 hover:brightness-125 ${className}`}
       style={{
         width: size,
         height: size,
