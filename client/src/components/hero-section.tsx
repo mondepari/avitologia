@@ -95,8 +95,8 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Блок коэффициента ×2.7 - размещен на уровне кнопок согласно референсу */}
-                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(80%)] z-30">
+                {/* Блок коэффициента ×2.7 - размещен точно на уровне кнопок согласно референсу */}
+                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(25%)] z-30">
                   <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-8 py-4 rounded-lg shadow-lg w-[270px]">
                     <div className="text-white text-4xl font-bold mr-4">×2.7</div>
                     <div className="flex items-start">
