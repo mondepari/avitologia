@@ -158,13 +158,12 @@ const Navbar = () => {
                 <ChevronRight className="h-4 w-4 text-gray-400" />
               </button>
               
-              <button 
-                onClick={() => handleNavLinkClick('services')}
-                className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800"
-              >
-                <span>Авито реклама</span>
-                <ChevronRight className="h-4 w-4 text-gray-400" />
-              </button>
+              <Link href="/avito" onClick={toggleSideMenu}>
+                <div className="w-full text-left px-3 py-2 hover:bg-gray-100 rounded-lg flex items-center justify-between text-gray-800">
+                  <span>Авито реклама</span>
+                  <ChevronRight className="h-4 w-4 text-gray-400" />
+                </div>
+              </Link>
               
               <button 
                 onClick={() => handleNavLinkClick('portfolio')}

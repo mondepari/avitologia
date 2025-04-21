@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import CasesPage from "@/pages/cases";
 import CaseDetails from "@/pages/case-details";
+import AvitoPage from "@/pages/avito";
 import BackToTop from "@/components/ui/back-to-top";
 
 function Router() {
@@ -14,6 +15,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/cases" component={CasesPage} />
       <Route path="/cases/:id" component={CaseDetails} />
+      <Route path="/avito" component={AvitoPage} />
       <Route component={NotFound} />
     </Switch>
   );
