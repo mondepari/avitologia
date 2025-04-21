@@ -64,7 +64,7 @@ const Navbar = () => {
             
             <div className="hidden md:flex items-center ml-auto">
               <div className="text-foreground/80 flex items-center mr-4">
-                <span className="mr-2 text-sm">Работаем удаленно по всей РФ и СНГ</span>
+                <span className="mr-2 text-sm">Работаем удаленно по всей России</span>
               </div>
               
               <div className="flex items-center space-x-3">

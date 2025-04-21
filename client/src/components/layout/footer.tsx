@@ -174,9 +174,9 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Где я работаю:</div>
+                  <div className="text-sm text-gray-400 mb-1">Где мы работаем:</div>
                   <div className="text-gray-300">
-                    Удаленно по всей РФ и СНГ
+                    Работаем удаленно по всей России
                   </div>
                 </div>
               </li>
