@@ -1,6 +1,8 @@
 import Logo from "@/components/ui/logo";
 import { Link } from "wouter";
-import { Mail, Phone, Facebook, Instagram, Linkedin, Youtube, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, MessageCircle } from "lucide-react";
+import { SiTelegram, SiWhatsapp } from "react-icons/si";
+import { RiStoreLine } from "react-icons/ri";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -28,30 +30,23 @@ const Footer = () => {
               <a 
                 href="#" 
                 className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
-                aria-label="Facebook"
+                aria-label="Telegram"
               >
-                <Facebook className="h-4 w-4" />
+                <SiTelegram className="h-4 w-4" />
               </a>
               <a 
                 href="#" 
                 className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
-                aria-label="Instagram"
+                aria-label="WhatsApp"
               >
-                <Instagram className="h-4 w-4" />
+                <SiWhatsapp className="h-4 w-4" />
               </a>
               <a 
                 href="#" 
                 className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
-                aria-label="LinkedIn"
+                aria-label="Avito"
               >
-                <Linkedin className="h-4 w-4" />
-              </a>
-              <a 
-                href="#" 
-                className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition duration-300"
-                aria-label="YouTube"
-              >
-                <Youtube className="h-4 w-4" />
+                <RiStoreLine className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -116,17 +111,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition duration-300 flex items-center"
                 >
                   <ArrowRight className="h-4 w-4 mr-2" />
-                  <span>Яндекс.Директ</span>
-                </button>
-              </li>
-
-              <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
-                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
-                >
-                  <ArrowRight className="h-4 w-4 mr-2" />
-                  <span>Аналитика</span>
+                  <span>Контекстная реклама</span>
                 </button>
               </li>
               <li>
@@ -135,7 +120,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition duration-300 flex items-center"
                 >
                   <ArrowRight className="h-4 w-4 mr-2" />
-                  <span>Ретаргетинг</span>
+                  <span>Авито реклама</span>
                 </button>
               </li>
               <li>
@@ -144,7 +129,16 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition duration-300 flex items-center"
                 >
                   <ArrowRight className="h-4 w-4 mr-2" />
-                  <span>Оптимизация</span>
+                  <span>Разработка сайтов</span>
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('services')}
+                  className="text-gray-400 hover:text-white transition duration-300 flex items-center"
+                >
+                  <ArrowRight className="h-4 w-4 mr-2" />
+                  <span>Авитолог</span>
                 </button>
               </li>
             </ul>
@@ -158,10 +152,10 @@ const Footer = () => {
                 <div>
                   <div className="text-sm text-gray-400 mb-1">Email:</div>
                   <a 
-                    href="mailto:contact@sergeypankratov.ru" 
+                    href="mailto:contact@voloshin.ru" 
                     className="text-gray-300 hover:text-white transition duration-300"
                   >
-                    contact@sergeypankratov.ru
+                    contact@voloshin.ru
                   </a>
                 </div>
               </li>
@@ -192,7 +186,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Сергей Панкратов. Все права защищены.
+            © {new Date().getFullYear()} Владислав Волошин. Все права защищены.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white text-sm">Политика конфиденциальности</a>
