@@ -44,7 +44,7 @@ const HeroSection = () => {
   return (
     <header className="bg-background min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="absolute top-[-200px] right-[-200px] w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#8A56FF] to-[#7A36DF] z-0 opacity-30 transition-all duration-700 hover:scale-125 hover:from-[#9A66FF] hover:to-[#8A46EF] cursor-pointer"></div>
+      <div className="absolute top-[-250px] right-[-250px] w-[1000px] h-[1000px] rounded-full bg-gradient-to-br from-[#8A56FF] to-[#7A36DF] z-0 opacity-30 transition-all duration-700 hover:scale-125 hover:from-[#9A66FF] hover:to-[#8A46EF] cursor-pointer"></div>
       
       {/* Hero Content */}
       <div className="container py-10 md:py-16 relative z-10 flex-grow">
@@ -97,11 +97,11 @@ const HeroSection = () => {
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-black/70 border border-white/15 rounded-xl p-3 shadow-lg max-w-[280px]">
+                  <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 border border-primary/20 rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
                         <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
-                        <div className="text-xs text-foreground/90 max-w-[140px]">
+                        <div className="text-xs text-foreground max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
@@ -139,8 +139,8 @@ const HeroSection = () => {
                   
                   {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
                   <div className="absolute bottom-[7%] left-[15%] z-50">
-                    <div className="flex items-center bg-purple-950 px-4 py-2 rounded-lg">
-                      <div className="text-[#6200EE] text-3xl font-bold mr-3">×2.7</div>
+                    <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-4 py-2 rounded-lg shadow-lg">
+                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
                       <div className="flex items-start">
                         <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
                         <div className="text-xs text-white/90 leading-tight">
@@ -209,7 +209,7 @@ const HeroSection = () => {
 
       
       {/* Bottom curve decoration */}
-      <div className="w-full h-12 bg-[#111111] rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
+      <div className="w-full h-12 bg-white shadow-lg rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
     </header>
   );
 };
