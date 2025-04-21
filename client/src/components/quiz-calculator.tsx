@@ -410,7 +410,7 @@ const QuizCalculator = () => {
           </div>
           
           {/* Форма квиза */}
-          <div className="w-full lg:w-2/3 px-4 mx-auto">
+          <div className="w-full lg:w-3/4 px-4 mx-auto">
             <div className="bg-accent rounded-xl shadow-xl overflow-hidden">
               <div className="flex flex-wrap">
                 {/* Левая часть с формой */}
