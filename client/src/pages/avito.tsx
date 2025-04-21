@@ -4,6 +4,7 @@ import Footer from "@/components/layout/footer";
 import { ContactPopup } from "@/components/ui/contact-popup";
 import { Link } from "wouter";
 import { ArrowRight, Check, CheckCircle, ChevronRight } from "lucide-react";
+import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 
 const AvitoPage: React.FC = () => {
   return (
@@ -225,69 +226,113 @@ const AvitoPage: React.FC = () => {
         {/* Магазины на Авито */}
         <section className="py-16 bg-background/50">
           <div className="container px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Ваш магазин на Авито под ключ</h2>
+            <div className="max-w-5xl mx-auto">
+              <div className="mb-10 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3">
+                  <span className="text-primary">ваш магазин</span> на авито
+                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-10">
+                  под ключ
+                </h2>
+              </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border h-full">
-                  <div className="relative z-10">
-                    <div className="absolute -top-2 -left-2 bg-primary text-white text-xs px-2 py-1 rounded">Бизнес-аккаунт</div>
-                    <h3 className="text-xl font-semibold mb-4 mt-6">Создание магазина на Авито</h3>
-                    <p className="text-foreground/70 mb-4">
-                      Мы поможем создать и настроить полноценный магазин на Авито с профессиональным оформлением и оптимизацией для поиска.
-                    </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Профессиональное оформление профиля</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Создание карточек товаров</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Настройка доставки и оплаты</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-xl"></div>
+              <div className="relative mb-12">
+                <div className="aspect-video w-full max-w-4xl mx-auto">
+                  <img 
+                    src={avitoDashboardImage} 
+                    alt="Панель управления Авито" 
+                    className="w-full h-auto object-contain mx-auto mb-8"
+                  />
                 </div>
                 
-                <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border h-full">
+                {/* Декоративные элементы */}
+                <div className="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-primary/10 -z-10 blur-xl"></div>
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-primary/10 -z-10 blur-xl"></div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                {/* Высокий рейтинг */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
                   <div className="relative z-10">
-                    <div className="absolute -top-2 -left-2 bg-primary text-white text-xs px-2 py-1 rounded">Продвижение</div>
-                    <h3 className="text-xl font-semibold mb-4 mt-6">Продвижение магазина</h3>
-                    <p className="text-foreground/70 mb-4">
-                      Комплексное продвижение вашего магазина на Авито для привлечения максимального числа клиентов.
+                    <h3 className="text-xl font-bold mb-3">Высокий рейтинг</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Высокий рейтинг, значки "Надежный продавец" и прочие дадут вам приоритетное количество показов, просмотров и заявок.
                     </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Размещение в топе выдачи</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Работа с отзывами и рейтингом</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Аналитика и отчетность</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-4 w-4 text-primary mr-2 mt-1" />
-                        <span className="text-sm">Постоянная оптимизация</span>
-                      </li>
-                    </ul>
                   </div>
-                  <div className="absolute bottom-0 right-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-xl"></div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
+                </div>
+                
+                {/* Оформленный профиль */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-3">Оформленный профиль</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Баннеры, инфографика, маркетинговая упаковка помогают принять решение о покупке не только в объявлении, но и в профиле.
+                    </p>
+                  </div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
+                </div>
+                
+                {/* Продающие объявления */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-3">Продающие объявления</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Объявления, которые генерируют до 50 заявок в день, дешевле директа в 2-5 раз. Фотографии и УТП - это первое, на что обращает внимание 90% пользователей.
+                    </p>
+                  </div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
                 </div>
               </div>
               
-              <div className="mt-10 text-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                <div className="bg-white rounded-xl shadow-md p-6 border border-border">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 text-primary font-bold mr-3">1</span>
+                    Создание бизнес-профиля
+                  </h3>
+                  <ul className="space-y-2 ml-11">
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Настройка профессионального профиля компании</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Разработка уникальных баннеров и графики</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Оптимизация описания для поисковых алгоритмов</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-md p-6 border border-border">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 text-primary font-bold mr-3">2</span>
+                    Создание продающих объявлений
+                  </h3>
+                  <ul className="space-y-2 ml-11">
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Разработка цепляющих заголовков и описаний</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Подготовка и обработка качественных фотографий</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-sm">Размещение в топовой выдаче с продвижением</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="text-center">
                 <ContactPopup>
                   <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                    Получить консультацию
+                    Получить консультацию по магазину
                   </button>
                 </ContactPopup>
               </div>
