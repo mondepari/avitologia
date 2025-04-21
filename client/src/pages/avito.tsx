@@ -7,6 +7,7 @@ import { ArrowRight, Check, CheckCircle, ChevronRight } from "lucide-react";
 import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
 import needsCardsImage from "../assets/avito/needs-cards.svg";
+import workflowProcessImage from "../assets/avito/workflow-process.svg";
 
 const AvitoPage: React.FC = () => {
   return (
@@ -337,8 +338,71 @@ const AvitoPage: React.FC = () => {
           </div>
         </section>
         
-        {/* Как работает сервис */}
+        {/* Как мы работаем */}
         <section className="py-16 bg-background">
+          <div className="container px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Как мы работаем</h2>
+              
+              <div className="w-full overflow-hidden mb-12">
+                <img 
+                  src={workflowProcessImage} 
+                  alt="Процесс нашей работы" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-3">
+                      <span className="text-primary font-bold">1-2</span>
+                    </div>
+                    <h3 className="text-lg font-bold">Анализ и разработка</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Мы проводим тщательный анализ вашего продукта и рынка, а затем разрабатываем индивидуальную стратегию продвижения на Авито, учитывая особенности вашего бизнеса.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-3">
+                      <span className="text-primary font-bold">3-4</span>
+                    </div>
+                    <h3 className="text-lg font-bold">Запуск и мониторинг</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Запускаем рекламную кампанию и непрерывно отслеживаем результаты. Предоставляем подробные отчеты о конкурентах, геопозиции и целевой аудитории.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mr-3">
+                      <span className="text-primary font-bold">5-6</span>
+                    </div>
+                    <h3 className="text-lg font-bold">Оптимизация и рост</h3>
+                  </div>
+                  <p className="text-gray-600 text-sm">
+                    Разрабатываем план продвижения объявлений на основе полученных данных и вносим корректировки для достижения максимальных результатов.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <ContactPopup>
+                  <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    Начать сотрудничество
+                  </button>
+                </ContactPopup>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Для тех, кто хочет */}
+        <section className="py-16 bg-background/50">
           <div className="container px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">Для тех, кто хочет...</h2>
