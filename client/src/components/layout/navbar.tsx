@@ -64,6 +64,7 @@ const Navbar = () => {
             
             <div className="hidden md:flex items-center ml-auto">
               <div className="text-foreground/80 flex items-center mr-4">
+                <MapPin className="h-4 w-4 mr-1 text-primary" />
                 <span className="mr-2 text-sm">Работаем удаленно по всей России</span>
               </div>
               
