@@ -151,15 +151,15 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-6">Контакты</h4>
+            <h4 className="text-lg font-semibold mb-6 text-gray-800">Контакты</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Email:</div>
+                  <div className="text-sm text-gray-500 mb-1">Email:</div>
                   <a 
                     href="mailto:contact@sergeypankratov.ru" 
-                    className="text-gray-300 hover:text-white transition duration-300"
+                    className="text-gray-700 hover:text-primary transition duration-300"
                   >
                     contact@sergeypankratov.ru
                   </a>
@@ -168,10 +168,10 @@ const Footer = () => {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Телефон:</div>
+                  <div className="text-sm text-gray-500 mb-1">Телефон:</div>
                   <a 
                     href="tel:+79123456789" 
-                    className="text-gray-300 hover:text-white transition duration-300"
+                    className="text-gray-700 hover:text-primary transition duration-300"
                   >
                     +7 (912) 345-67-89
                   </a>
@@ -180,8 +180,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Где я работаю:</div>
-                  <div className="text-gray-300">
+                  <div className="text-sm text-gray-500 mb-1">Где я работаю:</div>
+                  <div className="text-gray-700">
                     Удаленно по всей РФ и СНГ
                   </div>
                 </div>
@@ -190,13 +190,13 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} Сергей Панкратов. Все права защищены.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white text-sm">Политика конфиденциальности</a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm">Условия использования</a>
+            <a href="#" className="text-gray-500 hover:text-primary text-sm">Политика конфиденциальности</a>
+            <a href="#" className="text-gray-500 hover:text-primary text-sm">Условия использования</a>
           </div>
         </div>
       </div>
