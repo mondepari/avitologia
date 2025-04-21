@@ -95,6 +95,19 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
+                {/* Блок коэффициента ×2.7 - размещен на уровне кнопок согласно референсу */}
+                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(50%-25px)] z-30">
+                  <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-4 py-2 rounded-lg shadow-lg">
+                    <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                    <div className="flex items-start">
+                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
+                      <div className="text-xs text-white/90 leading-tight">
+                        Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
                   <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-3 shadow-lg max-w-[280px]">
@@ -115,18 +128,7 @@ const HeroSection = () => {
             </div>
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
-              {/* Блок коэффициента ×2.7 вынесен отдельно, чтобы разместить его левее телефона согласно референсу */}
-              <div className="absolute lg:block hidden left-[-15%] bottom-[40%] z-30">
-                <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-4 py-2 rounded-lg shadow-lg">
-                  <div className="text-white text-3xl font-bold mr-3">×2.7</div>
-                  <div className="flex items-start">
-                    <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                    <div className="text-xs text-white/90 leading-tight">
-                      Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Удалим блок коэффициента ×2.7 отсюда */}
 
               <div className="relative z-20">
                 <div className="relative">
