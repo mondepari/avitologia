@@ -1,6 +1,38 @@
 import { MessageCircle } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 
 const HeroSection = () => {
+  const [viewCount, setViewCount] = useState(349286);
+  const [conversionCount, setConversionCount] = useState(25.12);
+  const conversionAnimationRef = useRef<boolean>(false);
+  
+  useEffect(() => {
+    // Увеличиваем счетчик просмотров каждые 2 секунды
+    const viewInterval = setInterval(() => {
+      setViewCount(prevCount => prevCount + Math.floor(Math.random() * 15) + 1);
+    }, 2000);
+    
+    // Увеличиваем счетчик конверсии на +1 каждые 5 секунд
+    const conversionInterval = setInterval(() => {
+      setConversionCount(prevCount => {
+        conversionAnimationRef.current = true;
+        setTimeout(() => {
+          conversionAnimationRef.current = false;
+        }, 1000);
+        return +(prevCount + 0.01).toFixed(2); // Увеличиваем на 0.01 и округляем до 2 знаков
+      });
+    }, 5000);
+    
+    return () => {
+      clearInterval(viewInterval);
+      clearInterval(conversionInterval);
+    };
+  }, []);
+  
+  // Форматируем число с пробелами между тысячами
+  const formatNumber = (num: number): string => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -63,26 +95,13 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                {/* Блок коэффициента ×2.7 - размещен точно на уровне кнопок согласно референсу */}
-                <div className="hidden lg:block absolute left-[calc(100%+20px)] top-[calc(25%)] z-30">
-                  <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-8 py-4 rounded-lg shadow-lg w-[270px]">
-                    <div className="text-white text-4xl font-bold mr-4">×2.7</div>
-                    <div className="flex items-start">
-                      <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-2 mt-1" />
-                      <div className="text-sm text-white/90 leading-tight">
-                        Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-4 shadow-lg">
+                  <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 border border-primary/20 rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <div className="text-white text-3xl font-bold mr-3">×2.7</div>
-                        <div className="text-xs text-white/90 max-w-[160px]">
+                        <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
+                        <div className="text-xs text-foreground max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
@@ -96,15 +115,40 @@ const HeroSection = () => {
             </div>
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
-              {/* Удалим блок коэффициента ×2.7 отсюда */}
-
               <div className="relative z-20">
                 <div className="relative">
                   <img 
-                    src="./src/assets/images/Телефон с аналитикой.png"
+                    src="./src/assets/images/phone.png"
                     alt="Телефон с аналитикой" 
-                    className="max-h-[580px] md:max-h-[650px] object-contain"
+                    className="max-h-[500px] md:max-h-[550px] object-contain"
                   />
+                  <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
+                    <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
+                    <div className="text-lg font-bold text-[#6200EE] transition-all duration-500">{formatNumber(viewCount)}</div>
+                  </div>
+
+                  <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
+                    <div className="text-sm font-semibold text-gray-700">Конверсия</div>
+                    <div className="flex items-center">
+                      <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
+                      {conversionAnimationRef.current && (
+                        <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
+                      )}
+                    </div>
+                  </div>
+                  
+                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
+                  <div className="absolute bottom-[7%] left-[15%] z-50">
+                    <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-4 py-2 rounded-lg shadow-lg">
+                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                      <div className="flex items-start">
+                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
+                        <div className="text-xs text-white/90 leading-tight">
+                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
