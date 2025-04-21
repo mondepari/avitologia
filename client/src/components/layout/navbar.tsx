@@ -71,8 +71,10 @@ const Navbar = () => {
               <div className="flex items-center space-x-3">
                 <div className="flex items-center space-x-2">
                   <a href="https://t.me/username" target="_blank" rel="noopener" className="flex items-center justify-center w-8 h-8 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-primary">
-                      <path d="M12 0c-6.626 0-12 5.372-12 12 0 6.627 5.374 12 12 12 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12zm3.224 17.871c.188.085.34.157.451.214.719.365 1.314.461 1.694.325.379-.136.654-.511.824-1.122.069-.25.142-.592.221-1.027.079-.436.114-.812.114-1.129 0-.306-.035-.599-.114-.879-.07-.281-.168-.498-.291-.653-.124-.154-.3-.281-.521-.379-.224-.097-.469-.145-.734-.145-.128 0-.428.019-.896.055-.47.037-.836.067-1.096.091-.259.023-.566.055-.918.096-.353.04-.605.072-.755.091-.165.024-.481.067-.947.145-.467.075-.745.12-.835.135-.181.030-.572.111-1.175.24-.603.13-1.053.227-1.35.296-.297.068-.609.177-.936.325-.328.147-.505.294-.531.436.4.544.17.647.361.647.127 0 .313-.046.562-.136.249-.095.457-.142.625-.142.127 0 .217.048.268.144s.089.296.117.6c.031.388.05.793.061 1.212.008.42-.004.797-.044 1.133-.035.343-.127.57-.268.684-.142.114-.406.171-.788.171-.127 0-.249-.018-.361-.053-.112-.035-.181-.078-.209-.127-.026-.05-.039-.196-.039-.438 0-.173.015-.413.044-.717.03-.306.044-.523.044-.654 0-.153-.053-.275-.159-.367-.107-.091-.216-.138-.33-.138-.157 0-.308.07-.452.205-.145.137-.243.302-.296.497-.052.194-.079.51-.079.946 0 .358.056.639.17.84.112.204.215.341.312.416z"/>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
+                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M17 8.5L13.5 17.5L11 12.5L6 10L17 8.5Z" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M17 8.5L11 12.5" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </a>
                   <a href="https://wa.me/7937343453" target="_blank" rel="noopener" className="flex items-center justify-center w-8 h-8 bg-accent/80 rounded-full hover:bg-accent transition-all duration-300">
@@ -264,8 +266,10 @@ const Navbar = () => {
                       </svg>
                     </a>
                     <a href="#" className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors">
-                      <svg width="18" height="18" fill="currentColor" className="text-primary" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0c-6.626 0-12 5.372-12 12 0 6.627 5.374 12 12 12 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12zm3.224 17.871c.188.085.34.157.451.214.719.365 1.314.461 1.694.325.379-.136.654-.511.824-1.122.069-.25.142-.592.221-1.027.079-.436.114-.812.114-1.129 0-.306-.035-.599-.114-.879-.07-.281-.168-.498-.291-.653-.124-.154-.3-.281-.521-.379-.224-.097-.469-.145-.734-.145-.128 0-.428.019-.896.055-.47.037-.836.067-1.096.091-.259.023-.566.055-.918.096-.353.04-.605.072-.755.091-.165.024-.481.067-.947.145-.467.075-.745.12-.835.135-.181.030-.572.111-1.175.24-.603.13-1.053.227-1.35.296-.297.068-.609.177-.936.325-.328.147-.505.294-.531.436.4.544.17.647.361.647.127 0 .313-.046.562-.136.249-.095.457-.142.625-.142.127 0 .217.048.268.144s.089.296.117.6c.031.388.05.793.061 1.212.008.42-.004.797-.044 1.133-.035.343-.127.57-.268.684-.142.114-.406.171-.788.171-.127 0-.249-.018-.361-.053-.112-.035-.181-.078-.209-.127-.026-.05-.039-.196-.039-.438 0-.173.015-.413.044-.717.03-.306.044-.523.044-.654 0-.153-.053-.275-.159-.367-.107-.091-.216-.138-.33-.138-.157 0-.308.07-.452.205-.145.137-.243.302-.296.497-.052.194-.079.51-.079.946 0 .358.056.639.17.84.112.204.215.341.312.416z"/>
+                      <svg width="18" height="18" fill="none" stroke="currentColor" className="text-primary" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M17 8.5L13.5 17.5L11 12.5L6 10L17 8.5Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M17 8.5L11 12.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </a>
                     <a href="https://avito.ru/profile" target="_blank" className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors">

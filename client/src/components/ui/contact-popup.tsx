@@ -195,8 +195,10 @@ export function ContactPopup({ children }: ContactPopupProps) {
                   className="flex flex-col items-center justify-center rounded-md py-3 px-5 hover:bg-primary/5 transition-colors"
                 >
                   <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mb-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zM16.56 8.24c-.16.16-4.2 2.82-4.38 2.92s-.29.08-.39-.04-1.84-1.74-2.02-1.9a.495.495 0 0 0-.22-.1.45.45 0 0 0-.29.18c-.1.14-1.52 1.32-1.75 1.6-.04.04-.08.06-.14.02-.46-.3-.86-.57-1.14-.78-1.11-.82-1.84-1.54-2.43-2.14a.48.48 0 0 1-.13-.32c0-.12.08-.24.2-.32C4.52 7.02 7.33 5 7.77 4.7c1.96-1.36 3.66-1.8 4.47-1.5.28.1.52.32.6.62.18.66.12 1.48-.16 3.04-.16.76-.48 2.16-.66 2.94-.04.16-.14.24-.34.32-.1.04-.48.18-.68.26z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-5 w-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                      <path d="M17 8.5L13.5 17.5L11 12.5L6 10L17 8.5Z" />
+                      <path d="M17 8.5L11 12.5" />
                     </svg>
                   </div>
                   <span className="text-sm">Telegram</span>
