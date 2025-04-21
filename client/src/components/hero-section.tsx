@@ -1,38 +1,6 @@
 import { MessageCircle } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
 
 const HeroSection = () => {
-  const [viewCount, setViewCount] = useState(349286);
-  const [conversionCount, setConversionCount] = useState(25.12);
-  const conversionAnimationRef = useRef<boolean>(false);
-  
-  useEffect(() => {
-    // Увеличиваем счетчик просмотров каждые 2 секунды
-    const viewInterval = setInterval(() => {
-      setViewCount(prevCount => prevCount + Math.floor(Math.random() * 15) + 1);
-    }, 2000);
-    
-    // Увеличиваем счетчик конверсии на +1 каждые 5 секунд
-    const conversionInterval = setInterval(() => {
-      setConversionCount(prevCount => {
-        conversionAnimationRef.current = true;
-        setTimeout(() => {
-          conversionAnimationRef.current = false;
-        }, 1000);
-        return +(prevCount + 0.01).toFixed(2); // Увеличиваем на 0.01 и округляем до 2 знаков
-      });
-    }, 5000);
-    
-    return () => {
-      clearInterval(viewInterval);
-      clearInterval(conversionInterval);
-    };
-  }, []);
-  
-  // Форматируем число с пробелами между тысячами
-  const formatNumber = (num: number): string => {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  };
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -133,24 +101,10 @@ const HeroSection = () => {
               <div className="relative z-20">
                 <div className="relative">
                   <img 
-                    src="./src/assets/images/phone.png"
+                    src="./src/assets/images/Телефон с аналитикой.png"
                     alt="Телефон с аналитикой" 
-                    className="max-h-[500px] md:max-h-[550px] object-contain"
+                    className="max-h-[580px] md:max-h-[650px] object-contain"
                   />
-                  <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
-                    <div className="text-sm font-semibold text-gray-700">Просмотры <span className="text-green-500">+8%</span></div>
-                    <div className="text-lg font-bold text-[#6200EE] transition-all duration-500">{formatNumber(viewCount)}</div>
-                  </div>
-
-                  <div className="absolute bottom-[30%] right-[5%] bg-white rounded-xl shadow-lg py-1 px-3">
-                    <div className="text-sm font-semibold text-gray-700">Конверсия</div>
-                    <div className="flex items-center">
-                      <div className="text-lg font-bold text-[#6200EE]">{conversionCount.toFixed(2).replace('.', ',')}%</div>
-                      {conversionAnimationRef.current && (
-                        <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
-                      )}
-                    </div>
-                  </div>
                 </div>
               </div>
               
