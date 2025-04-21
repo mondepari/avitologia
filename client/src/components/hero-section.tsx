@@ -114,18 +114,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Блок с коэффициентом ×2.7 (размещается между колонками) */}
-            <div className="hidden lg:block absolute z-30 transform translate-x-1/2 left-1/2 lg:translate-x-0 lg:left-[45%] top-[70%]">
-              <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-5 py-3 rounded-lg shadow-lg">
-                <div className="text-white text-4xl font-bold mr-3">×2.7</div>
-                <div className="flex items-start">
-                  <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1 mt-1" />
-                  <div className="text-sm text-white leading-tight">
-                    Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                  </div>
-                </div>
-              </div>
-            </div>
+
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
               <div className="relative z-20">
@@ -156,6 +145,19 @@ const HeroSection = () => {
 
 
           
+          {/* Блок с коэффициентом ×2.7 - он должен быть выше трех фиолетовых блоков */}
+          <div className="relative hidden lg:block mb-8">
+            <div className="inline-flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-5 py-3 rounded-lg shadow-lg">
+              <div className="text-white text-4xl font-bold mr-3">×2.7</div>
+              <div className="flex items-start">
+                <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-5 w-5 mr-1 mt-1" />
+                <div className="text-sm text-white leading-tight">
+                  Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white shadow-lg overflow-hidden relative hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
               <div className="mb-5 flex justify-center">
