@@ -8,6 +8,7 @@ import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
 import needsCardsImage from "../assets/avito/needs-cards.svg";
 import workflowProcessImage from "../assets/avito/workflow-process.svg";
+import avitologInfoImage from "../assets/avito/avitolog-info.svg";
 
 const AvitoPage: React.FC = () => {
   return (
@@ -172,8 +173,82 @@ const AvitoPage: React.FC = () => {
           </div>
         </section>
         
-        {/* Объяснение услуг */}
+        {/* Авитолог и преимущества */}
         <section className="py-16 bg-background">
+          <div className="container px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="w-full overflow-hidden mb-6">
+                <img 
+                  src={avitologInfoImage} 
+                  alt="Авитолог: кто это и зачем нужен" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div className="prose prose-lg max-w-none">
+                  <h3 className="text-2xl font-bold mb-6">Эффективное продвижение от авитологов</h3>
+                  <p className="text-gray-600">
+                    Авитолог или Avitolog — специалист, который выполняет комплексную работу по продвижению на Авито, чтобы увеличить продажи на платформе.
+                  </p>
+                  <p className="text-gray-600">
+                    Эффективное продвижение авитологом включает в себя работу с текстами, изображениями, рекламным бюджетом и аккаунтом клиента.
+                  </p>
+                  <p className="font-bold text-black">
+                    AVI MAGNIT предоставляет полный цикл услуг, начиная от написания продающих текстов и заканчивая разработкой визуала под ключ.
+                  </p>
+                  <p className="text-gray-600">
+                    Наша команда будет работать с вами на протяжении месяца, чтобы обеспечить вас стабильным потоком клиентов.
+                  </p>
+                </div>
+                
+                <div className="bg-gradient-to-br from-[#6200EE] to-[#D900FA] rounded-xl p-8 text-white relative overflow-hidden">
+                  <div className="absolute -top-5 -left-5 w-24 h-24 bg-white/10 rounded-full"></div>
+                  <div className="relative z-10">
+                    <div className="inline-block px-4 py-1 bg-white/20 rounded-full mb-6 border border-white/30">
+                      <span className="text-white font-bold">1 КОМПАНИЯ = ЭФФЕКТИВНОЕ СОТРУДНИЧЕСТВО</span>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-4">Что вы получаете, работая с нами:</h3>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Профессиональный анализ конкурентов</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Разработка стратегии продвижения</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Создание продающих объявлений</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Оптимизация бюджета</span>
+                      </li>
+                      <li className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-white mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Аналитика и отчеты</span>
+                      </li>
+                    </ul>
+                    
+                    <div className="mt-6">
+                      <ContactPopup>
+                        <button className="bg-white text-primary px-6 py-2 rounded-full font-medium hover:bg-white/90 transition-all duration-300">
+                          Стать нашим клиентом
+                        </button>
+                      </ContactPopup>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-5 -right-5 w-28 h-28 bg-white/10 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Тебе точно нужны мы, если */}
+        <section className="py-16 bg-background/50">
           <div className="container px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">

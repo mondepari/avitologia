@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="500" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Заголовок -->
+  <text x="105" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#111111">Тебе точно нужны мы, если:</text>
+  
+  <!-- Карточки -->
+  <g>
+    <!-- Карточка 1 -->
+    <rect x="105" y="80" width="170" height="100" rx="10" fill="#F5F5F5"/>
+    <text x="125" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Нужно привлечь</text>
+    <text x="125" y="140" font-family="Arial" font-size="16" fill="#333333">больше клиентов</text>
+  </g>
+  
+  <!-- Карточка 2 -->
+  <g>
+    <rect x="320" y="80" width="230" height="100" rx="10" fill="#D900FA"/>
+    <text x="340" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">Существующий</text>
+    <text x="340" y="140" font-family="Arial" font-size="16" fill="#FFFFFF">аккаунт и менеджер не</text>
+    <text x="340" y="165" font-family="Arial" font-size="16" fill="#FFFFFF">запросы на продвижение</text>
+  </g>
+  
+  <!-- Карточка 3 -->
+  <g>
+    <rect x="595" y="80" width="170" height="100" rx="10" fill="#F5F5F5"/>
+    <text x="615" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Объявления не</text>
+    <text x="615" y="140" font-family="Arial" font-size="16" fill="#333333">приносят продаж</text>
+  </g>
+  
+  <!-- Карточка 4 -->
+  <g>
+    <rect x="595" y="80" width="170" height="100" rx="10" fill="#F5F5F5"/>
+    <text x="615" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Объявления не</text>
+    <text x="615" y="140" font-family="Arial" font-size="16" fill="#333333">приносят продаж</text>
+  </g>
+  
+  <!-- Карточка 5 -->
+  <g>
+    <rect x="810" y="80" width="230" height="100" rx="10" fill="#D900FA"/>
+    <text x="830" y="115" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">Слабые рекламные</text>
+    <text x="830" y="140" font-family="Arial" font-size="16" fill="#FFFFFF">тексты или копирайтинг</text>
+    <text x="830" y="165" font-family="Arial" font-size="16" fill="#FFFFFF">непонятны клиентам</text>
+  </g>
+
+  <!-- Заголовок Авитолог -->
+  <text x="105" y="250" font-family="Arial" font-size="24" font-weight="bold" fill="#111111">Авитолог: кто это и зачем нужен?</text>
+  
+  <!-- Описание Авитолога -->
+  <text x="105" y="290" font-family="Arial" font-size="16" fill="#333333">Авитолог или Avitolog — специалист, который выполняет</text>
+  <text x="105" y="315" font-family="Arial" font-size="16" fill="#333333">комплексную работу по продвижению на Авито, чтобы</text>
+  <text x="105" y="340" font-family="Arial" font-size="16" fill="#333333">увеличить продажи на платформе. Эффективное</text>
+  <text x="105" y="365" font-family="Arial" font-size="16" fill="#333333">продвижение авитологом включает в себя работу с</text>
+  <text x="105" y="390" font-family="Arial" font-size="16" fill="#333333">текстами, изображениями, рекламным бюджетом и</text>
+  <text x="105" y="415" font-family="Arial" font-size="16" fill="#333333">аккаунтом клиента.</text>
+  
+  <!-- AVI MAGNIT -->
+  <text x="105" y="455" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">AVI MAGNIT</text>
+  <text x="220" y="455" font-family="Arial" font-size="16" fill="#333333">предоставляет полный цикл услуг, начиная от</text>
+  <text x="105" y="480" font-family="Arial" font-size="16" fill="#333333">написания продающих текстов и заканчивая</text>
+  
+  <!-- Круг с текстом -->
+  <circle cx="760" cy="380" r="120" fill="#D900FA"/>
+  <rect x="695" y="325" width="130" height="30" rx="15" fill="#D900FA" stroke="white" stroke-width="2"/>
+  <text x="715" y="345" font-family="Arial" font-size="16" font-weight="bold" fill="white">1 КОМПАНИЯ</text>
+  <text x="695" y="385" font-family="Arial" font-size="20" font-weight="bold" fill="white">ЭФФЕКТИВНОЕ</text>
+  <text x="680" y="415" font-family="Arial" font-size="20" font-weight="bold" fill="white">СОТРУДНИЧЕСТВО</text>
+  <text x="720" y="445" font-family="Arial" font-size="20" font-weight="bold" fill="white">НА ГОДЫ</text>
+  
+  <!-- Равно -->
+  <text x="770" y="365" font-family="Arial" font-size="36" font-weight="bold" fill="white">=</text>
+</svg>
