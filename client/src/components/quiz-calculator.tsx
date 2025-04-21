@@ -198,7 +198,7 @@ const QuizCalculator = () => {
                 />
                 <label 
                   htmlFor={option.id} 
-                  className={`flex items-center p-4 bg-accent border rounded-lg cursor-pointer hover:border-primary transition-all ${
+                  className={`flex items-center p-4 bg-accent border rounded-lg cursor-pointer transition-all duration-300 hover:shadow-md relative before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-transparent before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-r before:from-[#6200EE]/0 before:to-[#7A36DF]/0 before:hover:from-[#6200EE]/30 before:hover:to-[#7A36DF]/30 ${
                     answers[currentStep] === option.id 
                       ? "border-2 border-primary" 
                       : "border border-gray-600/30"
@@ -276,7 +276,7 @@ const QuizCalculator = () => {
                   />
                   <label 
                     htmlFor={gift.id} 
-                    className={`flex items-center p-3 bg-accent border rounded-lg cursor-pointer hover:border-primary transition-all ${
+                    className={`flex items-center p-3 bg-accent border rounded-lg cursor-pointer transition-all duration-300 hover:shadow-md relative before:absolute before:inset-0 before:rounded-lg before:border-2 before:border-transparent before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-r before:from-[#6200EE]/0 before:to-[#7A36DF]/0 before:hover:from-[#6200EE]/30 before:hover:to-[#7A36DF]/30 ${
                       answers[currentStep] === gift.id 
                         ? "border-2 border-primary" 
                         : "border border-gray-700/30"
@@ -316,10 +316,10 @@ const QuizCalculator = () => {
           {quizSteps[8].options?.map(option => (
             <button
               key={option.id}
-              className={`px-4 py-2 rounded-full border flex items-center gap-2 ${
+              className={`px-4 py-2 rounded-full border flex items-center gap-2 transition-all duration-300 relative ${
                 contactMethod === option.id 
                   ? "bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white border-[#6200EE]" 
-                  : "border-gray-600/30 text-foreground hover:border-[#6200EE]"
+                  : "border-gray-600/30 text-foreground before:absolute before:inset-0 before:rounded-full before:border-2 before:border-transparent before:opacity-0 hover:before:opacity-100 before:transition-all before:duration-300 before:bg-gradient-to-r before:from-[#6200EE]/0 before:to-[#7A36DF]/0 before:hover:from-[#6200EE]/30 before:hover:to-[#7A36DF]/30"
               }`}
               onClick={() => handleOptionSelect(option.id)}
             >
@@ -338,7 +338,7 @@ const QuizCalculator = () => {
             value={phoneNumber}
             onChange={handlePhoneChange}
             placeholder="+7 (___) ___-__-__"
-            className="w-full p-3 bg-accent rounded-full border border-gray-700/30 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground"
+            className="w-full p-3 bg-accent rounded-full border border-gray-700/30 focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground transition-all duration-300 hover:shadow-md relative focus:border-primary"
           />
         </div>
         
