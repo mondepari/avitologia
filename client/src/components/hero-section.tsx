@@ -97,11 +97,11 @@ const HeroSection = () => {
                 
                 {/* Мобильная версия блока с коэффициентом ×2.7 */}
                 <div className="lg:hidden relative mt-4">
-                  <div className="bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 border border-primary/20 rounded-xl p-3 shadow-lg max-w-[280px]">
+                  <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-3 shadow-lg max-w-[280px]">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center">
-                        <div className="text-primary text-2xl font-bold mr-2">×2.7</div>
-                        <div className="text-xs text-foreground max-w-[140px]">
+                        <div className="text-white text-2xl font-bold mr-2">×2.7</div>
+                        <div className="text-xs text-white/90 max-w-[140px]">
                           Средний коэффициент увеличения прибыли бизнеса
                         </div>
                       </div>
@@ -115,6 +115,19 @@ const HeroSection = () => {
             </div>
             
             <div className="lg:col-span-6 relative flex justify-center lg:justify-end">
+              {/* Блок коэффициента ×2.7 вынесен отдельно, чтобы разместить его левее телефона согласно референсу */}
+              <div className="absolute lg:block hidden left-[-15%] bottom-[40%] z-30">
+                <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-4 py-2 rounded-lg shadow-lg">
+                  <div className="text-white text-3xl font-bold mr-3">×2.7</div>
+                  <div className="flex items-start">
+                    <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
+                    <div className="text-xs text-white/90 leading-tight">
+                      Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="relative z-20">
                 <div className="relative">
                   <img 
@@ -134,19 +147,6 @@ const HeroSection = () => {
                       {conversionAnimationRef.current && (
                         <span className="ml-1 text-xs font-bold text-green-500 animate-pulse">+1</span>
                       )}
-                    </div>
-                  </div>
-                  
-                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
-                  <div className="absolute bottom-[35%] left-[-5%] z-50">
-                    <div className="flex items-center bg-gradient-to-r from-[#6200EE] to-[#7A36DF] px-4 py-2 rounded-lg shadow-lg">
-                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
-                      <div className="flex items-start">
-                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                        <div className="text-xs text-white/90 leading-tight">
-                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
