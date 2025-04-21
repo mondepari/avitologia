@@ -452,9 +452,9 @@ const QuizCalculator = () => {
                     <div className="mb-8">
                       <div className="flex flex-col items-center text-center">
                         <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
-                          <img src="./src/assets/images/specialist.svg" alt="Алексей Степин" className="w-full h-full object-cover" />
+                          <img src="./src/assets/images/specialist.svg" alt="Владислав Волошин" className="w-full h-full object-cover" />
                         </div>
-                        <h4 className="font-bold text-lg mb-1 text-foreground">Алексей Степин</h4>
+                        <h4 className="font-bold text-lg mb-1 text-foreground">Владислав Волошин</h4>
                         <p className="text-sm text-foreground/70">Опытный и скромный директолог</p>
                       </div>
                     </div>
