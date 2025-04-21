@@ -78,12 +78,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-background relative overflow-hidden">
+    <section id="services" className="pt-2 pb-16 bg-background relative overflow-hidden">
       {/* Декоративные элементы */}
       <SectionDecoration />
       
       <div className="container relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="inline-block bg-primary/20 text-primary font-medium px-4 py-2 rounded-full mb-4">Наши услуги</div>
           <h2 className="section-title text-foreground">Эффективные решения для <br/>вашего бизнеса</h2>
           <p className="text-lg text-foreground/70 max-w-3xl mx-auto">

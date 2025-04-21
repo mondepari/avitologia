@@ -350,7 +350,7 @@ const QuizCalculator = () => {
   };
   
   return (
-    <section id="calculator" className="py-16 bg-background relative overflow-hidden">
+    <section id="calculator" className="py-10 bg-background relative overflow-hidden">
       {/* Декоративные элементы */}
       <SectionDecoration />
       
