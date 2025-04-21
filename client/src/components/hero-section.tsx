@@ -44,7 +44,7 @@ const HeroSection = () => {
   return (
     <header className="bg-background min-h-screen pt-16 flex flex-col justify-between relative overflow-hidden">
       {/* Purple Circle Decoration */}
-      <div className="absolute top-[-250px] right-[-250px] w-[1000px] h-[1000px] rounded-full bg-gradient-to-br from-[#6200EE] to-[#8A46EF] z-0 opacity-50 transition-all duration-700 hover:scale-125 hover:from-[#6200EE] hover:to-[#9A66FF] hover:opacity-60 cursor-pointer"></div>
+      <div className="absolute top-[-250px] right-[-250px] w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-[#6200EE] to-[#7A36DF] z-0 opacity-70 transition-all duration-700 hover:scale-125 hover:opacity-80 cursor-pointer"></div>
       
       {/* Hero Content */}
       <div className="container py-10 md:py-16 relative z-10 flex-grow">
