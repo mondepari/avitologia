@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'wouter';
 import Logo from '@/components/ui/logo';
-import logoImage from "@/assets/logo.png";
 import { Menu, X, MessageCircle, Phone, ChevronRight, MapPin, Mail } from 'lucide-react';
 import { ContactPopup } from '@/components/ui/contact-popup';
 
@@ -137,7 +136,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <div className="flex items-center">
-            <img src={logoImage} alt="Логотип сайта" className="h-8" />
+            <img src="/src/assets/logo.png" alt="Логотип сайта" className="h-8" />
           </div>
           <button 
             onClick={toggleSideMenu}
