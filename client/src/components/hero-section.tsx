@@ -137,18 +137,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                   
-                  {/* Коэффициент ×2.7 размещен точно в соответствии с референсом */}
-                  <div className="absolute bottom-[7%] left-[15%] z-50">
-                    <div className="flex items-center bg-gradient-to-r from-[#6200EE]/90 to-[#7A36DF]/90 px-4 py-2 rounded-lg shadow-lg">
-                      <div className="text-white text-3xl font-bold mr-3">×2.7</div>
-                      <div className="flex items-start">
-                        <img src="./src/assets/icons/chart-growth.svg" alt="График роста" className="h-4 w-4 mr-1 mt-1" />
-                        <div className="text-xs text-white/90 leading-tight">
-                          Средний коэффициент<br/>увеличения прибыли<br/>бизнеса
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {/* Коэффициент ×2.7 был удален по запросу */}
                 </div>
               </div>
               
