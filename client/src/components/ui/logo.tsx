@@ -1,28 +1,28 @@
 import { Link } from "wouter";
+import logoPath from "../../assets/logo.png"; // Импортируем файл изображения
 
 const Logo = () => {
   return (
     <Link href="/">
       <div className="flex items-center cursor-pointer">
-        {/* Встроенный SVG логотип, чтобы избежать проблем с импортом */}
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="text-purple-700"
-        >
-          <path
-            d="M8 8H32V12H22V32H18V12H8V8Z"
-            fill="currentColor"
-          />
-          <path
-            d="M26 18H36V22H26V18Z"
-            fill="currentColor"
-          />
-        </svg>
-        <span className="ml-1 font-bold text-purple-700 text-xl">TF</span>
+        {/* Используем импортированное изображение */}
+        <img 
+          src={logoPath} 
+          alt="TF Logo" 
+          className="h-9" 
+          onError={(e) => {
+            // Если изображение не загрузилось, показываем резервный SVG
+            const target = e.currentTarget as HTMLImageElement;
+            target.style.display = 'none';
+            const parent = target.parentNode as HTMLElement;
+            if (parent) {
+              const backupElement = document.createElement('div');
+              backupElement.className = 'text-purple-700 font-bold text-xl';
+              backupElement.textContent = 'TF';
+              parent.appendChild(backupElement);
+            }
+          }}
+        />
       </div>
     </Link>
   );
