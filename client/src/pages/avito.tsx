@@ -135,8 +135,8 @@ const AvitoPage: React.FC = () => {
                   <div className="relative z-20">
                     <div className="relative">
                       <img 
-                        src="/src/assets/images/phone.png"
-                        alt="Телефон с аналитикой" 
+                        src="/src/assets/images/avitophone.png"
+                        alt="Телефон с аналитикой Авито" 
                         className="max-h-[500px] md:max-h-[550px] object-contain"
                       />
                       <div className="absolute top-[15%] right-[10%] bg-white rounded-xl shadow-lg py-1 px-3">
