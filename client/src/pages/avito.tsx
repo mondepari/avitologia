@@ -468,15 +468,15 @@ const AvitoPage: React.FC = () => {
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Тебе точно нужны мы, если:</h2>
                 </motion.div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
                   {/* Карточка 1 */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="bg-gray-100 rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                    className="bg-gray-100 rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
                   >
-                    <p className="text-gray-800 font-medium text-center">Нужно привлечь больше клиентов</p>
+                    <p className="text-gray-800 font-medium text-center text-lg">Нужно привлечь больше клиентов</p>
                   </motion.div>
                   
                   {/* Карточка 2 */}
@@ -484,9 +484,9 @@ const AvitoPage: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
                   >
-                    <p className="text-white font-medium text-center">Нужно сэкономить время и оптимизировать затраты на продвижение</p>
+                    <p className="text-white font-semibold text-center text-lg">Нужно сэкономить время и оптимизировать затраты на продвижение</p>
                   </motion.div>
                   
                   {/* Карточка 3 */}
@@ -494,9 +494,9 @@ const AvitoPage: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="bg-gray-100 rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                    className="bg-gray-100 rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
                   >
-                    <p className="text-gray-800 font-medium text-center">Объявления не приносят продаж</p>
+                    <p className="text-gray-800 font-medium text-center text-lg">Объявления не приносят продаж</p>
                   </motion.div>
                   
                   {/* Карточка 4 */}
@@ -504,9 +504,9 @@ const AvitoPage: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
                   >
-                    <p className="text-white font-medium text-center">Хочется увеличить позицию в выдаче и получить преимущество</p>
+                    <p className="text-white font-semibold text-center text-lg">Хочется увеличить позицию в выдаче и получить преимущество</p>
                   </motion.div>
                 </div>
               </div>
@@ -543,15 +543,18 @@ const AvitoPage: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="w-full lg:w-2/5 flex justify-center items-center"
                 >
-                  <div className="relative">
-                    <div className="bg-purple-100 rounded-full p-2 absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                      <span className="bg-[#7A00FF] text-white px-4 py-1 rounded-full text-sm font-medium">1 КОМПАНИЯ = </span>
+                  <div className="relative max-w-md mx-auto">
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 bg-white shadow-md rounded-full px-4 py-2">
+                      <div className="font-bold text-lg text-center text-[#7A00FF]">1 КОМПАНИЯ</div>
+                      <div className="text-lg text-gray-700 font-semibold text-center">=</div>
                     </div>
-                    <div className="bg-gradient-to-b from-[#7A00FF] to-[#BC49FF] rounded-full h-64 w-64 flex items-center justify-center text-center p-10">
+                    <div className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-2xl h-72 w-72 flex items-center justify-center text-center p-6 shadow-xl">
                       <div className="text-white">
-                        <h3 className="text-xl font-bold mb-2">ЭФФЕКТИВНОЕ СОТРУДНИЧЕСТВО НА ГОДЫ</h3>
+                        <h3 className="text-2xl font-bold">ЭФФЕКТИВНОЕ СОТРУДНИЧЕСТВО НА ГОДЫ</h3>
                       </div>
                     </div>
+                    <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-br from-[#7A00FF]/30 to-[#BC49FF]/30 rounded-full blur-lg z-10"></div>
+                    <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-[#7A00FF]/20 to-[#BC49FF]/20 rounded-full blur-lg z-10"></div>
                   </div>
                 </motion.div>
               </div>
