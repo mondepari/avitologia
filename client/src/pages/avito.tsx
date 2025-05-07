@@ -3,7 +3,19 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { ContactPopup } from "@/components/ui/contact-popup";
 import { Link } from "wouter";
-import { ArrowRight, Check, CheckCircle, ChevronRight, MessageCircle } from "lucide-react";
+import { 
+  ArrowRight, 
+  Check, 
+  CheckCircle, 
+  ChevronRight, 
+  MessageCircle, 
+  Mail, 
+  Phone, 
+  Facebook, 
+  Instagram, 
+  Linkedin, 
+  Youtube 
+} from "lucide-react";
 import { motion } from "framer-motion";
 import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
@@ -635,6 +647,184 @@ const AvitoPage: React.FC = () => {
                 </div>
               </div>
             </div>
+          </section>
+          
+          {/* Секция с формой обратной связи */}
+          <section className="py-20 bg-white relative overflow-hidden">
+            <div className="container px-4">
+              <div className="max-w-4xl mx-auto text-center mb-12">
+                <motion.h2 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-3xl md:text-4xl font-bold mb-4"
+                >
+                  Получите бесплатную <br /> консультацию специалиста
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="text-gray-600 max-w-2xl mx-auto"
+                >
+                  Готов помочь вам с настройкой эффективной рекламной кампании. Заполните форму или 
+                  свяжитесь со мной удобным для вас способом.
+                </motion.p>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Левая часть - контактная информация */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-gradient-to-r from-[#7A00FF] to-[#9B30FF] rounded-2xl p-8 text-white relative overflow-hidden"
+                >
+                  <h3 className="text-2xl font-bold mb-8">Контактная информация</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mr-4">
+                        <Mail className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="text-white/80 text-sm">Email</div>
+                        <div className="font-medium">contact@sergeypankratov.ru</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mr-4">
+                        <Phone className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="text-white/80 text-sm">Телефон</div>
+                        <div className="font-medium">+7 (912) 345-67-89</div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mr-4">
+                          <MessageCircle className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <div className="text-white/80 text-sm">Мессенджеры</div>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-center gap-3 pl-16">
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                          <MessageCircle className="h-5 w-5 text-white" />
+                        </a>
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                          <MessageCircle className="h-5 w-5 text-white" />
+                        </a>
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                          <MessageCircle className="h-5 w-5 text-white" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-12 flex items-center gap-3">
+                    <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Facebook className="h-5 w-5 text-white" />
+                    </a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Instagram className="h-5 w-5 text-white" />
+                    </a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Linkedin className="h-5 w-5 text-white" />
+                    </a>
+                    <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
+                      <Youtube className="h-5 w-5 text-white" />
+                    </a>
+                  </div>
+                  
+                  <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-white/5"></div>
+                  <div className="absolute top-1/2 -left-10 w-32 h-32 rounded-full bg-white/5"></div>
+                </motion.div>
+                
+                {/* Правая часть - форма обратной связи */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="bg-gray-50 rounded-2xl p-8 shadow-sm"
+                >
+                  <h3 className="text-2xl font-bold mb-6">Отправить сообщение</h3>
+                  
+                  <form className="space-y-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                        Ваше имя <span className="text-primary">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Введите ваше имя"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        Email <span className="text-primary">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Введите ваш email"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                        Телефон
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Введите ваш телефон"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                        Сообщение <span className="text-primary">*</span>
+                      </label>
+                      <textarea
+                        id="message"
+                        rows={5}
+                        placeholder="Напишите ваше сообщение"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                        required
+                      ></textarea>
+                    </div>
+                    
+                    <button
+                      type="submit"
+                      className="w-full py-3 px-4 bg-gradient-to-r from-[#7A00FF] to-[#9B30FF] text-white font-medium rounded-lg transition-transform transform hover:translate-y-[-2px] hover:shadow-lg"
+                    >
+                      Отправить сообщение
+                    </button>
+                    
+                    <div className="text-sm text-gray-500 text-center mt-4">
+                      Нажимая на кнопку, вы соглашаетесь с <a href="#" className="text-primary hover:underline">политикой конфиденциальности</a>.
+                    </div>
+                  </form>
+                </motion.div>
+              </div>
+            </div>
+            
+            {/* Декоративные элементы */}
+            <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-primary/5 animate-float-slow"></div>
+            <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-[#BC49FF]/10 animate-float"></div>
           </section>
           
           {/* Остальные секции страницы */}
