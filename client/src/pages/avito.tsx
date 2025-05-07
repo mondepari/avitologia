@@ -253,49 +253,57 @@ const AvitoPage: React.FC = () => {
                 </div>
               </div>
               
-              <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-4 mt-12 relative">
-                {/* Ноутбук "Было" */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="w-full max-w-[260px] px-2"
-                >
-                  <img 
-                    src="/src/assets/images/avito/laptop-before.svg" 
-                    alt="Статистика до оптимизации" 
-                    className="w-full object-contain"
-                  />
-                </motion.div>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-16 mt-12 mb-4 relative">
+                {/* Было */}
+                <div className="relative">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
+                  >
+                    <div className="text-lg font-semibold text-gray-800 border-b border-gray-100 pb-2 mb-2">10 мая, среда</div>
+                    <img 
+                      src="/src/assets/images/avito/stats/before.png" 
+                      alt="Статистика до оптимизации" 
+                      className="w-full object-contain max-w-[300px]"
+                    />
+                  </motion.div>
+                  <div className="text-center mt-2 font-medium">Было</div>
+                </div>
                 
-                {/* Стрелка - новый дизайн по референсу */}
+                {/* Стрелка из референса */}
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  whileHover={{ scale: 1.05 }}
-                  className="z-10 w-20 h-20 flex items-center justify-center my-0 md:my-20"
+                  whileHover={{ scale: 1.1 }}
+                  className="flex items-center justify-center -my-4 md:my-8"
                 >
                   <img 
-                    src="/src/assets/images/avito/arrow-curved.svg" 
+                    src="/src/assets/images/avito/stats/arrow.png" 
                     alt="Направление роста" 
-                    className="w-20 h-20 object-contain"
+                    className="w-20 md:w-24 h-20 md:h-24 object-contain"
                   />
                 </motion.div>
                 
-                {/* Ноутбук "Стало" */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  className="w-full max-w-[260px] px-2"
-                >
-                  <img 
-                    src="/src/assets/images/avito/laptop-after.svg" 
-                    alt="Статистика после оптимизации" 
-                    className="w-full object-contain"
-                  />
-                </motion.div>
+                {/* После */}
+                <div className="relative">
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
+                  >
+                    <div className="text-lg font-semibold text-gray-800 border-b border-gray-100 pb-2 mb-2">12 мая, пятница</div>
+                    <img 
+                      src="/src/assets/images/avito/stats/after.png" 
+                      alt="Статистика после оптимизации" 
+                      className="w-full object-contain max-w-[300px]"
+                    />
+                  </motion.div>
+                  <div className="text-center mt-2 font-medium">Через 2 дня</div>
+                </div>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
