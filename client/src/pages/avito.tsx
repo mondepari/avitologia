@@ -262,7 +262,6 @@ const AvitoPage: React.FC = () => {
                     transition={{ duration: 0.5 }}
                     className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
                   >
-                    <div className="text-lg font-semibold text-gray-800 border-b border-gray-100 pb-2 mb-2">10 мая, среда</div>
                     <img 
                       src="/src/assets/images/avito/stats/before.png" 
                       alt="Статистика до оптимизации" 
@@ -295,7 +294,6 @@ const AvitoPage: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
                   >
-                    <div className="text-lg font-semibold text-gray-800 border-b border-gray-100 pb-2 mb-2">12 мая, пятница</div>
                     <img 
                       src="/src/assets/images/avito/stats/after.png" 
                       alt="Статистика после оптимизации" 
