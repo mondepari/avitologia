@@ -253,13 +253,13 @@ const AvitoPage: React.FC = () => {
                 </div>
               </div>
               
-              <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mt-12 relative">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-20 lg:gap-24 mt-12 relative">
                 {/* Ноутбук "Было" */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="w-full max-w-sm shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                  className="w-full max-w-sm hover:shadow-xl transition-all duration-300"
                 >
                   <img 
                     src="/src/assets/images/avito/laptop-before.svg" 
@@ -268,17 +268,17 @@ const AvitoPage: React.FC = () => {
                   />
                 </motion.div>
                 
-                {/* Стрелка между ноутбуками */}
+                {/* Стрелка между ноутбуками - теперь правильно позиционирована */}
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.7, delay: 0.3 }}
-                  className="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 z-10 md:w-16 md:h-16"
+                  className="z-10 w-32 h-24 flex items-center justify-center transform rotate-0 -mt-4 md:mt-0"
                 >
                   <img 
                     src="/src/assets/images/avito/arrow-curved.svg" 
                     alt="Направление роста" 
-                    className="w-16 h-16 object-contain"
+                    className="w-32 h-24 object-contain"
                   />
                 </motion.div>
                 
@@ -287,7 +287,7 @@ const AvitoPage: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
-                  className="w-full max-w-sm shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                  className="w-full max-w-sm hover:shadow-xl transition-all duration-300"
                 >
                   <img 
                     src="/src/assets/images/avito/laptop-after.svg" 
