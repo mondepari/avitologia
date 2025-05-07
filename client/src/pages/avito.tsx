@@ -3,7 +3,7 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import { ContactPopup } from "@/components/ui/contact-popup";
 import { Link } from "wouter";
-import { ArrowRight, Check, CheckCircle, ChevronRight, MessageCircle } from "lucide-react";
+import { ArrowRight, Check, CheckCircle, ChevronRight, MessageCircle, Mail, Phone, MessageSquare, Instagram, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
 import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
@@ -11,6 +11,7 @@ import needsCardsImage from "../assets/avito/needs-cards.svg";
 import workflowProcessImage from "../assets/avito/workflow-process.svg";
 import QuizCalculator from "@/components/quiz-calculator";
 import { DecorativeCircles } from "@/components/ui/decorative-elements";
+import ContactSection from "@/components/contact-section";
 
 const AvitoPage: React.FC = () => {
   // Для Hero секции с главной страницы
@@ -201,9 +202,9 @@ const AvitoPage: React.FC = () => {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-center">Настройка аналитики</h3>
+                  <h3 className="text-xl font-bold mb-3 text-center">Аналитика и отчеты</h3>
                   <p className="text-sm text-white/80 text-center">
-                    Дает максимальную точность отчетов и понимание динамики конверсий
+                    Регулярные отчеты о результатах рекламы позволяют вносить улучшения
                   </p>
                 </div>
               </div>
@@ -213,332 +214,189 @@ const AvitoPage: React.FC = () => {
           {/* Bottom curve decoration */}
           <div className="w-full h-12 bg-white shadow-lg rounded-t-[50px] absolute bottom-0 left-0 right-0"></div>
         </header>
-
-        {/* Квиз калькулятор */}
-        <QuizCalculator />
         
-        {/* Существующий контент страницы */}
-        <main className="pt-10">
-          {/* Hero Section - доработано согласно референсу */}
-          <section className="bg-background py-16 md:py-20 relative overflow-hidden">
-            <div className="container px-4 relative z-10">
-              <div className="max-w-4xl mx-auto text-center mb-10">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                  <span className="text-primary">Вы получите</span> стабильный поток из целевых клиентов!
-                </h1>
-                
-                <div className="flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-24 mt-12 mb-10">
-                  <div className="text-center">
-                    <div className="text-primary text-3xl md:text-4xl font-bold">Min</div>
-                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Минимальный вложения от 10 000 р.</div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-primary text-3xl md:text-4xl font-bold">1 день</div>
-                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Минимальный срок на первые сделки</div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="text-primary text-3xl md:text-4xl font-bold">Max</div>
-                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Высокий средний чек</div>
-                  </div>
-                </div>
-                
-                <div className="flex justify-center mt-6 mb-8">
-                  <ContactPopup>
-                    <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      Заказать рекламу на Авито
-                    </button>
-                  </ContactPopup>
-                </div>
+        <main className="bg-white relative">
+          {/* Секция "До/После" с реальными скриншотами */}
+          <section className="pt-16 pb-20 relative">
+            <div className="container">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#7A00FF] mb-4">
+                  Результаты наших клиентов — <br className="md:hidden" />
+                  <span className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] bg-clip-text text-transparent">говорят сами за себя</span>
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-3xl mx-auto">
+                  Мы увеличиваем количество целевых клиентов и снижаем стоимость лида на 30-40%
+                </p>
               </div>
               
-              <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-10 lg:gap-16 mt-12 mb-4 relative">
-                {/* Было */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
                 <div className="relative">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
-                  >
-                    <img 
-                      src="/src/assets/images/avito/stats/before.png" 
-                      alt="Статистика до оптимизации" 
-                      className="w-full object-contain max-w-[300px]"
-                    />
-                  </motion.div>
-                  <div className="text-center mt-2 font-medium">Было</div>
+                  <div className="bg-white border-2 border-[#7A00FF]/20 shadow-lg rounded-lg p-5 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 bg-gradient-to-r from-[#7A00FF]/10 to-[#BC49FF]/10 w-full h-12 flex items-center px-4">
+                      <div className="text-[#7A00FF] font-semibold text-lg">ДО</div>
+                    </div>
+                    <div className="pt-8">
+                      <img 
+                        src="/src/assets/images/avito/before.png" 
+                        alt="Статистика Авито до оптимизации" 
+                        className="rounded-md w-full h-auto shadow-sm"
+                      />
+                      <div className="text-center text-foreground/70 text-sm mt-3">Низкая конверсия и дорогие клики</div>
+                    </div>
+                  </div>
                 </div>
                 
-                {/* Стрелка из референса */}
+                <div className="relative">
+                  <div className="bg-white border-2 border-[#7A00FF]/20 shadow-lg rounded-lg p-5 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] w-full h-12 flex items-center px-4">
+                      <div className="text-white font-semibold text-lg">ПОСЛЕ</div>
+                    </div>
+                    <div className="pt-8">
+                      <img 
+                        src="/src/assets/images/avito/after.png" 
+                        alt="Статистика Авито после оптимизации" 
+                        className="rounded-md w-full h-auto shadow-sm"
+                      />
+                      <div className="text-center text-foreground/70 text-sm mt-3">Рост конверсии и снижение стоимости привлечения</div>
+                    </div>
+                  </div>
+                  
+                  <div className="absolute top-1/2 left-0 transform -translate-x-full -translate-y-1/2 hidden md:block">
+                    <img 
+                      src="/src/assets/images/avito/arrow.png" 
+                      alt="Стрелка" 
+                      className="h-16 w-16 object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          {/* Ваш магазин на авито под ключ секция */}
+          <section className="py-20 bg-gray-50 relative overflow-hidden">
+            <div className="container">
+              <div className="text-center mb-12">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+                  Ваш магазин на авито <span className="text-[#7A00FF]">под ключ</span>
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-3xl mx-auto">
+                  Полный комплекс услуг для эффективного продвижения вашего бизнеса на площадке Авито
+                </p>
+              </div>
+              
+              <div className="relative">
+                <img 
+                  src="/src/assets/images/avito/avitoshop.png" 
+                  alt="Магазин на Авито" 
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl mb-12"
+                />
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">Анализ конкурентов</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Тщательное изучение стратегий и объявлений ваших конкурентов для выявления сильных сторон и возможностей
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">Создание объявлений</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Разработка привлекательных и конверсионных объявлений с оптимальными заголовками и описаниями
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">Фото и видео контент</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Подготовка качественных фотографий и видеоматериалов, повышающих привлекательность объявлений
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">Настройка продвижения</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Оптимальная настройка рекламных кампаний и продвижения для максимального охвата целевой аудитории
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">A/B тестирование</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Проведение тестов различных вариантов объявлений для выявления наиболее эффективных подходов
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 min-h-[140px]">
+                    <div className="flex items-start mb-4">
+                      <div className="h-10 w-10 rounded-full bg-[#7A00FF]/10 flex items-center justify-center mr-4">
+                        <Check className="h-5 w-5 text-[#7A00FF]" />
+                      </div>
+                      <h3 className="text-lg font-semibold">Аналитика и отчетность</h3>
+                    </div>
+                    <p className="text-foreground/70 text-sm pl-14">
+                      Регулярный анализ результатов и предоставление детальных отчетов с рекомендациями по улучшению
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          {/* Секция "Авитолог - зачем он нужен?" */}
+          <section className="py-20 relative">
+            <div className="container">
+              <div className="text-center mb-16">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4">
+                  Авитолог - <span className="text-[#7A00FF]">зачем он нужен?</span>
+                </h2>
+                <p className="text-foreground/70 text-lg max-w-3xl mx-auto">
+                  Специалист по продвижению на Авито поможет вывести ваш бизнес на новый уровень
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.7, delay: 0.3 }}
-                  whileHover={{ scale: 1.1 }}
-                  className="flex items-center justify-center -my-4 md:my-8"
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="w-full lg:w-3/5 flex flex-col space-y-6"
                 >
                   <img 
-                    src="/src/assets/images/avito/stats/arrow.png" 
-                    alt="Направление роста" 
-                    className="w-20 md:w-24 h-20 md:h-24 object-contain"
+                    src="/src/assets/images/avito/whyusavito.png" 
+                    alt="Нужен ли вам авитолог?" 
+                    className="w-full h-auto rounded-2xl shadow-lg"
                   />
                 </motion.div>
                 
-                {/* После */}
-                <div className="relative">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="bg-white rounded-xl shadow-lg p-3 md:p-4 border border-gray-200"
-                  >
-                    <img 
-                      src="/src/assets/images/avito/stats/after.png" 
-                      alt="Статистика после оптимизации" 
-                      className="w-full object-contain max-w-[300px]"
-                    />
-                  </motion.div>
-                  <div className="text-center mt-2 font-medium">Через 2 дня</div>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-                <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border">
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-semibold mb-4">Что вы получаете?</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Стабильный поток целевых клиентов</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Аналитика и отчеты по эффективности</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Оптимизация расходов на рекламу</span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Улучшение видимости объявлений</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-2xl"></div>
-                </div>
-                
-                <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border">
-                  <div className="relative z-10">
-                    <h3 className="text-xl font-semibold mb-4">Требуется для старта:</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
-                          <span className="text-primary text-xs font-bold">1</span>
-                        </div>
-                        <span>Аккаунт на Авито</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
-                          <span className="text-primary text-xs font-bold">2</span>
-                        </div>
-                        <span>Информация о вашем продукте/услуге</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
-                          <span className="text-primary text-xs font-bold">3</span>
-                        </div>
-                        <span>Фотографии товаров или услуг</span>
-                      </li>
-                      <li className="flex items-start">
-                        <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
-                          <span className="text-primary text-xs font-bold">4</span>
-                        </div>
-                        <span>Бюджет на рекламу</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-2xl"></div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Декоративные элементы */}
-            <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary/10 animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-primary/20 animate-float-right"></div>
-          </section>
-          
-          {/* Ваш магазин на авито под ключ */}
-          <section className="py-20 bg-white relative overflow-hidden">
-            <div className="container px-4">
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
-                {/* Левая колонка с заголовком и карточками */}
-                <div className="w-full lg:w-3/5">
-                  <motion.h2 
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-3xl md:text-4xl font-bold mb-12"
-                  >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7A00FF] to-[#BC49FF]">Ваш магазин</span> на авито <br />под ключ
-                  </motion.h2>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Карточка 1 */}
-                    <motion.div 
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.1 }}
-                      className="bg-gray-100 rounded-xl p-6 relative"
-                    >
-                      <h3 className="text-xl font-semibold mb-3">Высокий рейтинг</h3>
-                      <p className="text-gray-600">
-                        Высокий рейтинг, значки "Надежный продавец" и прочие дадут вам приоритетное количество показов, просмотров и заявок.
-                      </p>
-                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
-                    </motion.div>
-                    
-                    {/* Карточка 2 */}
-                    <motion.div 
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                      className="bg-gray-100 rounded-xl p-6 relative"
-                    >
-                      <h3 className="text-xl font-semibold mb-3">Оформленный профиль</h3>
-                      <p className="text-gray-600">
-                        Баннеры, инфографика, маркетинговая упаковка помогают принять решение о покупке не только в объявлении, но и в профиле.
-                      </p>
-                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
-                    </motion.div>
-                    
-                    {/* Карточка 3 */}
-                    <motion.div 
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3 }}
-                      className="bg-gray-100 rounded-xl p-6 relative md:col-span-2"
-                    >
-                      <h3 className="text-xl font-semibold mb-3">Продающие объявления</h3>
-                      <p className="text-gray-600">
-                        Объявления, которые генерируют до 50 заявок в день, дешевле директа в 2-5 раз. Фотография и УТП - это первое, на что обращает внимание 90% пользователей.
-                      </p>
-                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
-                    </motion.div>
-                  </div>
-                </div>
-                
-                {/* Правая колонка с изображением */}
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6 }}
-                  className="w-full lg:w-2/5 flex justify-center"
-                >
-                  <div className="relative">
-                    <img 
-                      src="/src/assets/images/avito/avitoshop.png" 
-                      alt="Магазин на Авито" 
-                      className="rounded-xl shadow-xl max-w-full lg:max-w-xl w-full border border-gray-200"
-                      style={{ minWidth: "400px" }}
-                    />
-                    <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-primary/20 rounded-full blur-xl z-[-1]"></div>
-                    <div className="absolute -top-3 -left-3 w-16 h-16 bg-[#BC49FF]/30 rounded-full blur-xl z-[-1]"></div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-            
-            {/* Декоративные элементы */}
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-primary/10 rounded-full"></div>
-            <div className="absolute top-1/4 right-0 w-24 h-24 bg-[#BC49FF]/10 rounded-full"></div>
-          </section>
-          
-          {/* Авитолог: кто это и зачем нужен? */}
-          <section className="py-20 bg-background/50 relative">
-            <div className="container px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Тебе точно нужны мы, если:</h2>
-                </motion.div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-                  {/* Карточка 1 */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className="bg-gray-100 rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
-                  >
-                    <p className="text-gray-800 font-medium text-center text-lg">Нужно привлечь больше клиентов</p>
-                  </motion.div>
-                  
-                  {/* Карточка 2 */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
-                  >
-                    <p className="text-white font-semibold text-center text-lg">Нужно сэкономить время и оптимизировать затраты на продвижение</p>
-                  </motion.div>
-                  
-                  {/* Карточка 3 */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="bg-gray-100 rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
-                  >
-                    <p className="text-gray-800 font-medium text-center text-lg">Объявления не приносят продаж</p>
-                  </motion.div>
-                  
-                  {/* Карточка 4 */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-6 shadow-sm flex items-center justify-center min-h-[140px]"
-                  >
-                    <p className="text-white font-semibold text-center text-lg">Хочется увеличить позицию в выдаче и получить преимущество</p>
-                  </motion.div>
-                </div>
-              </div>
-              
-              <div className="flex flex-col lg:flex-row items-start gap-12 mt-16">
-                <motion.div 
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="w-full lg:w-3/5"
-                >
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Авитолог: кто это и зачем нужен?</h2>
-                  <div className="prose max-w-none">
-                    <p className="text-lg text-gray-700 mb-6">
-                      Авитолог или Avitolog — специалист, который выполняет комплексную работу по продвижению на Авито, 
-                      чтобы увеличить продажи на платформе. Эффективное продвижение авитологом включает в себя работу с 
-                      текстами, изображениями, рекламным бюджетом и аккаунтом клиента.
-                    </p>
-                    <p className="text-lg text-gray-700 mb-6">
-                      <strong>Мы</strong> предоставляем полный цикл услуг, начиная от написания продающих текстов и заканчивая 
-                      разработкой визуала под ключ. Наша команда будет работать с вами на протяжении всего периода 
-                      сотрудничества, чтобы обеспечить вас стабильным потоком клиентов и гарантированным ростом продаж.
-                    </p>
-                    <p className="text-lg text-gray-700">
-                      В отличие от обычного маркетолога, авитолог специализируется именно на особенностях платформы Авито, 
-                      знает все её алгоритмы и специфику работы с различными категориями товаров и услуг.
-                    </p>
-                  </div>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="w-full lg:w-2/5 flex justify-center items-center"
@@ -637,8 +495,10 @@ const AvitoPage: React.FC = () => {
             </div>
           </section>
           
-          {/* Остальные секции страницы */}
-          {/* ... */}
+          {/* Секция контактов */}
+          <div id="contact">
+            <ContactSection />
+          </div>
         </main>
       </div>
       
