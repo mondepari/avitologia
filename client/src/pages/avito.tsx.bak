@@ -1,0 +1,434 @@
+import React from "react";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
+import { ContactPopup } from "@/components/ui/contact-popup";
+import { Link } from "wouter";
+import { ArrowRight, Check, CheckCircle, ChevronRight } from "lucide-react";
+import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
+import astronautImage from "../assets/avito/astronaut.svg";
+import needsCardsImage from "../assets/avito/needs-cards.svg";
+import workflowProcessImage from "../assets/avito/workflow-process.svg";
+
+const AvitoPage: React.FC = () => {
+  return (
+    <>
+      <Navbar />
+      
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="bg-background py-16 md:py-20 relative overflow-hidden">
+          <div className="container px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                Вы получите <span className="text-primary">стабильный поток</span> из целевых клиентов
+              </h1>
+              <p className="text-lg md:text-xl text-foreground/80 mb-8">
+                Min <span className="text-primary border-b border-primary">1 день</span> на запуск кампании &nbsp;&nbsp;&nbsp; Max <span className="text-primary border-b border-primary">30 дней</span> на достижение результата
+              </p>
+              <div className="flex justify-center">
+                <ContactPopup>
+                  <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    Заказать рекламу на Авито
+                  </button>
+                </ContactPopup>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border">
+                <div className="relative z-10">
+                  <h3 className="text-xl font-semibold mb-4">Что вы получаете?</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Стабильный поток целевых клиентов</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Аналитика и отчеты по эффективности</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Оптимизация расходов на рекламу</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Улучшение видимости объявлений</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-2xl"></div>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border">
+                <div className="relative z-10">
+                  <h3 className="text-xl font-semibold mb-4">Требуется для старта:</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                        <span className="text-primary text-xs font-bold">1</span>
+                      </div>
+                      <span>Аккаунт на Авито</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                        <span className="text-primary text-xs font-bold">2</span>
+                      </div>
+                      <span>Информация о вашем продукте/услуге</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                        <span className="text-primary text-xs font-bold">3</span>
+                      </div>
+                      <span>Фотографии товаров или услуг</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="h-5 w-5 bg-primary/20 rounded-full flex items-center justify-center mr-2 mt-0.5 flex-shrink-0">
+                        <span className="text-primary text-xs font-bold">4</span>
+                      </div>
+                      <span>Бюджет на рекламу</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-primary/20 -z-10 blur-2xl"></div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Декоративные элементы */}
+          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary/10 animate-float"></div>
+          <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-primary/20 animate-float-right"></div>
+        </section>
+        
+        {/* Тарифные планы */}
+        <section className="py-16 bg-background/50">
+          <div className="container px-4">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Что мы скрываем?</h2>
+              <p className="text-foreground/70">Выберите оптимальный план для вашего бизнеса</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* План 1 */}
+              <div className="bg-[#7A00FF]/50 rounded-xl p-6 text-white relative overflow-hidden transform transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="absolute -right-6 -top-6 w-24 h-24 bg-white/10 rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="text-2xl font-bold mb-2">50%</div>
+                  <h3 className="text-lg font-semibold mb-4">Анализ конкурентов</h3>
+                  <p className="text-white/80 text-sm mb-6">
+                    Мы анализируем топовых конкурентов, чтобы выявить их стратегии и тактики
+                  </p>
+                  <div className="absolute bottom-6 right-6">
+                    <ArrowRight className="h-5 w-5 text-white/70" />
+                  </div>
+                </div>
+              </div>
+              
+              {/* План 2 */}
+              <div className="bg-[#7A00FF]/50 rounded-xl p-6 text-white relative overflow-hidden transform transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="absolute -right-6 -top-6 w-24 h-24 bg-white/10 rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="text-2xl font-bold mb-2">75%</div>
+                  <h3 className="text-lg font-semibold mb-4">Аналитика запросов</h3>
+                  <p className="text-white/80 text-sm mb-6">
+                    Собираем и анализируем поисковые запросы для максимальной конверсии
+                  </p>
+                  <div className="absolute bottom-6 right-6">
+                    <ArrowRight className="h-5 w-5 text-white/70" />
+                  </div>
+                </div>
+              </div>
+              
+              {/* План 3 */}
+              <div className="bg-[#7A00FF]/50 rounded-xl p-6 text-white relative overflow-hidden transform transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="absolute -right-6 -top-6 w-24 h-24 bg-white/10 rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="text-2xl font-bold mb-2">100%</div>
+                  <h3 className="text-lg font-semibold mb-4">Полная оптимизация</h3>
+                  <p className="text-white/80 text-sm mb-6">
+                    Детальная работа над всеми элементами рекламной кампании
+                  </p>
+                  <div className="absolute bottom-6 right-6">
+                    <ArrowRight className="h-5 w-5 text-white/70" />
+                  </div>
+                </div>
+              </div>
+              
+              {/* План 4 */}
+              <div className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] rounded-xl p-6 text-white relative overflow-hidden transform transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="absolute -right-6 -top-6 w-24 h-24 bg-white/10 rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="text-2xl font-bold mb-2">+500%</div>
+                  <h3 className="text-lg font-semibold mb-4">Маркетинговая стратегия</h3>
+                  <p className="text-white/80 text-sm mb-6">
+                    Комплексный подход для максимального роста вашего бизнеса на Авито
+                  </p>
+                  <div className="absolute bottom-6 right-6">
+                    <ArrowRight className="h-5 w-5 text-white/70" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Объяснение услуг */}
+        <section className="py-16 bg-background">
+          <div className="container px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+                Тебе точно нужны мы, если:
+              </h2>
+              
+              <div className="w-full overflow-hidden mb-8">
+                <img 
+                  src={needsCardsImage} 
+                  alt="Причины обратиться к нам" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-[#FFECB3] flex items-center justify-center mr-3 text-amber-600">1</span>
+                    Быстрый запуск
+                  </h3>
+                  <p className="text-gray-600 pl-11">
+                    Мы помогаем быстро выйти на Авито и начать получать первые заявки. Настраиваем аккаунт, создаем объявления и запускаем рекламу.
+                  </p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-[#E1F5FE] flex items-center justify-center mr-3 text-blue-600">2</span>
+                    Целевые клиенты
+                  </h3>
+                  <p className="text-gray-600 pl-11">
+                    Точно знаем, как привлекать именно вашу целевую аудиторию и уменьшать количество нецелевых обращений.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center mt-10">
+                <ContactPopup>
+                  <button className="bg-primary/10 text-primary border border-primary/30 px-8 py-3 rounded-full font-medium hover:bg-primary/20 transition-all duration-300">
+                    Начать работать с нами
+                  </button>
+                </ContactPopup>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Магазины на Авито */}
+        <section className="py-16 bg-background/50">
+          <div className="container px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="mb-10 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-3">
+                  <span className="text-primary">ваш магазин</span> на авито
+                </h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-10">
+                  под ключ
+                </h2>
+              </div>
+              
+              <div className="relative mb-12">
+                <div className="aspect-video w-full max-w-4xl mx-auto">
+                  <img 
+                    src={avitoDashboardImage} 
+                    alt="Панель управления Авито" 
+                    className="w-full h-auto object-contain mx-auto mb-8"
+                  />
+                </div>
+                
+                {/* Декоративные элементы */}
+                <div className="absolute -top-10 -left-10 w-32 h-32 rounded-full bg-primary/10 -z-10 blur-xl"></div>
+                <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-primary/10 -z-10 blur-xl"></div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                {/* Высокий рейтинг */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-3">Высокий рейтинг</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Высокий рейтинг, значки "Надежный продавец" и прочие дадут вам приоритетное количество показов, просмотров и заявок.
+                    </p>
+                  </div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
+                </div>
+                
+                {/* Оформленный профиль */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-3">Оформленный профиль</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Баннеры, инфографика, маркетинговая упаковка помогают принять решение о покупке не только в объявлении, но и в профиле.
+                    </p>
+                  </div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
+                </div>
+                
+                {/* Продающие объявления */}
+                <div className="bg-gray-100 rounded-xl p-6 relative overflow-hidden border border-gray-200">
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-3">Продающие объявления</h3>
+                    <p className="text-foreground/70 text-sm">
+                      Объявления, которые генерируют до 50 заявок в день, дешевле директа в 2-5 раз. Фотографии и УТП - это первое, на что обращает внимание 90% пользователей.
+                    </p>
+                  </div>
+                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-primary rounded-b-xl"></div>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                <div className="bg-white rounded-xl shadow-md p-6 border border-border">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3 text-primary">A</span>
+                    Почему Авито?
+                  </h3>
+                  <ul className="space-y-3 pl-11">
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">50+ млн аудитория в месяц</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Доступная стоимость размещения и рекламы</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Высокая конверсия в заявки/продажи</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Возможность охватить только свой регион</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-md p-6 border border-border">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <span className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mr-3 text-primary">B</span>
+                    Про нашу услугу
+                  </h3>
+                  <ul className="space-y-3 pl-11">
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Полный аудит вашего профиля и объявлений</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Подбор оптимальных тарифов и рекламных пакетов</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Разработка стратегии продвижения и оптимизации</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
+                      <span className="text-gray-600">Ежедневный мониторинг и непрерывная оптимизация</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Космонавт */}
+        <section className="py-16 bg-gradient-to-r from-[#6200EE]/10 to-[#7A36DF]/10 relative overflow-hidden">
+          <div className="container px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-5 order-2 lg:order-1">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Выйдите на <span className="text-primary">новый уровень</span> продаж на Авито
+                  </h2>
+                  <p className="text-foreground/70 mb-6">
+                    Наш опыт работы с десятками бизнесов позволяет нам добиваться результатов, которые превосходят ожидания клиентов.
+                  </p>
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-start">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                        <span className="text-primary font-bold">01</span>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold mb-1">Увеличение просмотров</h3>
+                        <p className="text-foreground/70 text-sm">В среднем рост просмотров объявлений в 3-5 раз за первые 2 недели</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                        <span className="text-primary font-bold">02</span>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold mb-1">Снижение стоимости заявки</h3>
+                        <p className="text-foreground/70 text-sm">Оптимизация расходов и повышение конверсии снижает стоимость привлечения клиента</p>
+                      </div>
+                    </div>
+                  </div>
+                  <ContactPopup>
+                    <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                      Заказать рекламу на Авито
+                    </button>
+                  </ContactPopup>
+                </div>
+                <div className="lg:col-span-7 order-1 lg:order-2 flex justify-center">
+                  <img 
+                    src={astronautImage} 
+                    alt="Космонавт с флагом" 
+                    className="max-h-[400px] lg:max-h-[500px] object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Процесс работы */}
+        <section className="py-16 bg-background">
+          <div className="container px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+                Как происходит <span className="text-primary">работа с нами</span>
+              </h2>
+              
+              <div className="w-full overflow-hidden mb-12">
+                <img 
+                  src={workflowProcessImage} 
+                  alt="Процесс работы" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              
+              <div className="text-center">
+                <p className="text-lg mb-8">
+                  Оставьте заявку сейчас и получите бесплатный аудит вашего текущего присутствия на Авито или консультацию по старту
+                </p>
+                <div className="flex justify-center space-x-4">
+                  <ContactPopup>
+                    <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                      Заказать рекламу на Авито
+                    </button>
+                  </ContactPopup>
+                  <button className="bg-primary/10 text-primary px-8 py-3 rounded-full font-medium hover:bg-primary/20 transition-all duration-300">
+                    <Link href="/">
+                      Вернуться на главную
+                    </Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <Footer />
+    </>
+  );
+};
+
+export default AvitoPage;
