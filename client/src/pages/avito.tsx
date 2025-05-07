@@ -441,7 +441,8 @@ const AvitoPage: React.FC = () => {
                     <img 
                       src="/src/assets/images/avito/avitoshop.png" 
                       alt="Магазин на Авито" 
-                      className="rounded-xl shadow-xl max-w-full lg:max-w-md border border-gray-200"
+                      className="rounded-xl shadow-xl max-w-full lg:max-w-xl w-full border border-gray-200"
+                      style={{ minWidth: "400px" }}
                     />
                     <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-primary/20 rounded-full blur-xl z-[-1]"></div>
                     <div className="absolute -top-3 -left-3 w-16 h-16 bg-[#BC49FF]/30 rounded-full blur-xl z-[-1]"></div>
@@ -453,6 +454,112 @@ const AvitoPage: React.FC = () => {
             {/* Декоративные элементы */}
             <div className="absolute bottom-0 left-0 w-16 h-16 bg-primary/10 rounded-full"></div>
             <div className="absolute top-1/4 right-0 w-24 h-24 bg-[#BC49FF]/10 rounded-full"></div>
+          </section>
+          
+          {/* Авитолог: кто это и зачем нужен? */}
+          <section className="py-20 bg-background/50 relative">
+            <div className="container px-4">
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Тебе точно нужны мы, если:</h2>
+                </motion.div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-10">
+                  {/* Карточка 1 */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="bg-gray-100 rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                  >
+                    <p className="text-gray-800 font-medium text-center">Нужно привлечь больше клиентов</p>
+                  </motion.div>
+                  
+                  {/* Карточка 2 */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                  >
+                    <p className="text-white font-medium text-center">Нужно сэкономить время и оптимизировать затраты на продвижение</p>
+                  </motion.div>
+                  
+                  {/* Карточка 3 */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="bg-gray-100 rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                  >
+                    <p className="text-gray-800 font-medium text-center">Объявления не приносят продаж</p>
+                  </motion.div>
+                  
+                  {/* Карточка 4 */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-xl p-5 shadow-sm flex items-center justify-center h-32"
+                  >
+                    <p className="text-white font-medium text-center">Хочется увеличить позицию в выдаче и получить преимущество</p>
+                  </motion.div>
+                </div>
+              </div>
+              
+              <div className="flex flex-col lg:flex-row items-start gap-12 mt-16">
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="w-full lg:w-3/5"
+                >
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Авитолог: кто это и зачем нужен?</h2>
+                  <div className="prose max-w-none">
+                    <p className="text-lg text-gray-700 mb-6">
+                      Авитолог или Avitolog — специалист, который выполняет комплексную работу по продвижению на Авито, 
+                      чтобы увеличить продажи на платформе. Эффективное продвижение авитологом включает в себя работу с 
+                      текстами, изображениями, рекламным бюджетом и аккаунтом клиента.
+                    </p>
+                    <p className="text-lg text-gray-700 mb-6">
+                      <strong>Мы</strong> предоставляем полный цикл услуг, начиная от написания продающих текстов и заканчивая 
+                      разработкой визуала под ключ. Наша команда будет работать с вами на протяжении всего периода 
+                      сотрудничества, чтобы обеспечить вас стабильным потоком клиентов и гарантированным ростом продаж.
+                    </p>
+                    <p className="text-lg text-gray-700">
+                      В отличие от обычного маркетолога, авитолог специализируется именно на особенностях платформы Авито, 
+                      знает все её алгоритмы и специфику работы с различными категориями товаров и услуг.
+                    </p>
+                  </div>
+                </motion.div>
+                
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="w-full lg:w-2/5 flex justify-center items-center"
+                >
+                  <div className="relative">
+                    <div className="bg-purple-100 rounded-full p-2 absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
+                      <span className="bg-[#7A00FF] text-white px-4 py-1 rounded-full text-sm font-medium">1 КОМПАНИЯ = </span>
+                    </div>
+                    <div className="bg-gradient-to-b from-[#7A00FF] to-[#BC49FF] rounded-full h-64 w-64 flex items-center justify-center text-center p-10">
+                      <div className="text-white">
+                        <h3 className="text-xl font-bold mb-2">ЭФФЕКТИВНОЕ СОТРУДНИЧЕСТВО НА ГОДЫ</h3>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            
+            {/* Декоративные элементы */}
+            <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-primary/5 animate-float-slow"></div>
+            <div className="absolute bottom-40 left-10 w-24 h-24 rounded-full bg-[#BC49FF]/5 animate-float-slow"></div>
           </section>
           
           {/* Тарифные планы */}
