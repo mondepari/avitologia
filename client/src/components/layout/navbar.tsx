@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'wouter';
 import Logo from '@/components/ui/logo';
-import logoImage from "../../assets/logo.png";
+import logoImage from "@/assets/logo.png";
 import { Menu, X, MessageCircle, Phone, ChevronRight, MapPin, Mail } from 'lucide-react';
 import { ContactPopup } from '@/components/ui/contact-popup';
 

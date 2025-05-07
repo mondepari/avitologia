@@ -106,7 +106,7 @@ const HeroSection = () => {
                         </div>
                       </div>
                       <div className="ml-2">
-                        <img src="/src/assets/icons/chart-growth.svg" alt="График роста" className="h-7 w-7" />
+                        <img src="@/assets/icons/chart-growth.svg" alt="График роста" className="h-7 w-7" />
                       </div>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
               <div className="relative z-20">
                 <div className="relative">
                   <img 
-                    src="/src/assets/images/phone.png"
+                    src="@/assets/images/phone.png"
                     alt="Телефон с аналитикой" 
                     className="max-h-[500px] md:max-h-[550px] object-contain"
                   />
