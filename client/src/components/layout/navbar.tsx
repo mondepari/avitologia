@@ -4,9 +4,6 @@ import Logo from '@/components/ui/logo';
 import { Menu, X, MessageCircle, Phone, ChevronRight, MapPin, Mail } from 'lucide-react';
 import { ContactPopup } from '@/components/ui/contact-popup';
 
-// Прямое использование пути к логотипу для мобильного меню
-const logoPath = "/src/assets/logo.png";
-
 const Navbar = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
