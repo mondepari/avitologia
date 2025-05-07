@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <div className="flex items-center cursor-pointer">
-        <img src="/static/logo.png" alt="TF Logo" className="h-10" />
+        <div className="text-purple-700 font-bold text-xl">TF Logo</div>
       </div>
     </Link>
   );

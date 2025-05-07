@@ -24,9 +24,9 @@ function Router() {
 
 function App() {
   return (
-    <div className="dark">
+    <div>
       <QueryClientProvider client={queryClient}>
-        <div className="bg-background min-h-screen">
+        <div className="bg-white min-h-screen">
           <Navbar />
           <Router />
           <Toaster />
