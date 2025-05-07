@@ -103,7 +103,7 @@ const Navbar = () => {
             </ContactPopup>
           </div>
             
-          <div className="md:hidden flex items-center">            
+          <div className="flex items-center">            
             <button 
               type="button" 
               onClick={toggleSideMenu}
