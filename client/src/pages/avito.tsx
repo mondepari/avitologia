@@ -370,6 +370,91 @@ const AvitoPage: React.FC = () => {
             <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-primary/20 animate-float-right"></div>
           </section>
           
+          {/* Ваш магазин на авито под ключ */}
+          <section className="py-20 bg-white relative overflow-hidden">
+            <div className="container px-4">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20">
+                {/* Левая колонка с заголовком и карточками */}
+                <div className="w-full lg:w-3/5">
+                  <motion.h2 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-3xl md:text-4xl font-bold mb-12"
+                  >
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#7A00FF] to-[#BC49FF]">Ваш магазин</span> на авито <br />под ключ
+                  </motion.h2>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Карточка 1 */}
+                    <motion.div 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.1 }}
+                      className="bg-gray-100 rounded-xl p-6 relative"
+                    >
+                      <h3 className="text-xl font-semibold mb-3">Высокий рейтинг</h3>
+                      <p className="text-gray-600">
+                        Высокий рейтинг, значки "Надежный продавец" и прочие дадут вам приоритетное количество показов, просмотров и заявок.
+                      </p>
+                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
+                    </motion.div>
+                    
+                    {/* Карточка 2 */}
+                    <motion.div 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                      className="bg-gray-100 rounded-xl p-6 relative"
+                    >
+                      <h3 className="text-xl font-semibold mb-3">Оформленный профиль</h3>
+                      <p className="text-gray-600">
+                        Баннеры, инфографика, маркетинговая упаковка помогают принять решение о покупке не только в объявлении, но и в профиле.
+                      </p>
+                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
+                    </motion.div>
+                    
+                    {/* Карточка 3 */}
+                    <motion.div 
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.3 }}
+                      className="bg-gray-100 rounded-xl p-6 relative md:col-span-2"
+                    >
+                      <h3 className="text-xl font-semibold mb-3">Продающие объявления</h3>
+                      <p className="text-gray-600">
+                        Объявления, которые генерируют до 50 заявок в день, дешевле директа в 2-5 раз. Фотография и УТП - это первое, на что обращает внимание 90% пользователей.
+                      </p>
+                      <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#7A00FF] to-[#BC49FF] rounded-b-xl"></div>
+                    </motion.div>
+                  </div>
+                </div>
+                
+                {/* Правая колонка с изображением */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6 }}
+                  className="w-full lg:w-2/5 flex justify-center"
+                >
+                  <div className="relative">
+                    <img 
+                      src="/src/assets/images/avito/avitoshop.png" 
+                      alt="Магазин на Авито" 
+                      className="rounded-xl shadow-xl max-w-full lg:max-w-md border border-gray-200"
+                    />
+                    <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-primary/20 rounded-full blur-xl z-[-1]"></div>
+                    <div className="absolute -top-3 -left-3 w-16 h-16 bg-[#BC49FF]/30 rounded-full blur-xl z-[-1]"></div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            
+            {/* Декоративные элементы */}
+            <div className="absolute bottom-0 left-0 w-16 h-16 bg-primary/10 rounded-full"></div>
+            <div className="absolute top-1/4 right-0 w-24 h-24 bg-[#BC49FF]/10 rounded-full"></div>
+          </section>
+          
           {/* Тарифные планы */}
           <section className="py-16 bg-background/50">
             <div className="container px-4">
