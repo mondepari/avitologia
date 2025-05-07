@@ -63,13 +63,13 @@ const Navbar = () => {
             </div>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center mr-4">
+          <div className="flex items-center justify-end ml-auto">
+            <div className="hidden md:flex items-center mr-2">
               <MapPin className="h-4 w-4 mr-1 text-purple-700" />
               <span className="text-sm text-gray-600">Работаем удаленно по всей России</span>
             </div>
             
-            <div className="flex items-center space-x-2 mr-4">
+            <div className="hidden md:flex items-center space-x-2 mr-2">
               <a href="https://t.me/username" target="_blank" rel="noopener" 
                 className="flex items-center justify-center w-7 h-7 bg-purple-100 rounded-full hover:bg-purple-200 transition-all">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-purple-700">
@@ -95,15 +95,15 @@ const Navbar = () => {
               </a>
             </div>
             
-            <ContactPopup>
-              <button className="flex items-center rounded-full text-purple-700 whitespace-nowrap">
-                <Phone className="h-4 w-4 mr-2" />
-                <span className="font-medium text-sm">+7(937) 343-45-43</span>
-              </button>
-            </ContactPopup>
-          </div>
+            <div className="hidden md:block mr-2">
+              <ContactPopup>
+                <button className="flex items-center rounded-full text-purple-700 whitespace-nowrap">
+                  <Phone className="h-4 w-4 mr-2" />
+                  <span className="font-medium text-sm">+7(937) 343-45-43</span>
+                </button>
+              </ContactPopup>
+            </div>
             
-          <div className="flex items-center">            
             <button 
               type="button" 
               onClick={toggleSideMenu}
