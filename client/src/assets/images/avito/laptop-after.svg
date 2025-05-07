@@ -1,46 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="380" height="150" viewBox="0 0 380 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="340" height="140" viewBox="0 0 340 140" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Macbook frame -->
-  <rect x="10" y="10" width="360" height="100" rx="6" fill="#F5F5F7" stroke="#DDDDDD"/>
-  <rect x="20" y="15" width="340" height="90" rx="4" fill="white" stroke="#E6E6E6"/>
+  <rect x="10" y="10" width="320" height="85" rx="6" fill="#F5F5F7" stroke="#DDDDDD"/>
+  <rect x="20" y="15" width="300" height="75" rx="4" fill="white" stroke="#E6E6E6"/>
   
   <!-- Window content frame with border -->
-  <rect x="30" y="25" width="320" height="70" rx="4" fill="white" stroke="#7A36DF"/>
+  <rect x="30" y="25" width="280" height="60" rx="4" fill="white" stroke="#7A36DF"/>
   
   <!-- Window header -->
-  <rect x="30" y="25" width="320" height="20" rx="4 4 0 0" fill="#F9F0FC" stroke="#7A36DF"/>
+  <rect x="30" y="25" width="280" height="20" rx="4 4 0 0" fill="#F9F0FC" stroke="#7A36DF"/>
   <text x="42" y="39" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#333333">17 мая, пятница</text>
   
   <!-- Data rows -->
-  <line x1="30" y1="48" x2="350" y2="48" stroke="#EEEEEE" stroke-width="1"/>
+  <line x1="30" y1="48" x2="310" y2="48" stroke="#EEEEEE" stroke-width="1"/>
   
   <!-- Table content with icons -->
-  <text x="45" y="62" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Просмотры</text>
-  <text x="340" y="62" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">2312</text>
+  <text x="40" y="62" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Просмотры</text>
+  <text x="300" y="62" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">2312</text>
   
-  <line x1="30" y1="65" x2="350" y2="65" stroke="#EEEEEE" stroke-width="0.5"/>
+  <line x1="30" y1="65" x2="310" y2="65" stroke="#EEEEEE" stroke-width="0.5"/>
   
-  <text x="45" y="75" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Контакты</text>
-  <text x="340" y="75" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">44</text>
+  <text x="40" y="75" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Контакты</text>
+  <text x="300" y="75" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">44</text>
   
-  <line x1="30" y1="78" x2="350" y2="78" stroke="#EEEEEE" stroke-width="0.5"/>
+  <line x1="30" y1="78" x2="310" y2="78" stroke="#EEEEEE" stroke-width="0.5"/>
   
-  <text x="45" y="88" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Посещения телефон</text>
-  <text x="340" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">25</text>
+  <text x="40" y="88" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Посещения</text>
+  <text x="300" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">25</text>
   
-  <line x1="30" y1="91" x2="350" y2="91" stroke="#EEEEEE" stroke-width="0.5"/>
+  <line x1="30" y1="91" x2="310" y2="91" stroke="#EEEEEE" stroke-width="0.5"/>
   
-  <text x="45" y="101" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Написали в чат</text>
-  <text x="340" y="101" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">18</text>
-  
-  <line x1="30" y1="104" x2="350" y2="104" stroke="#EEEEEE" stroke-width="0.5"/>
-  
-  <text x="45" y="114" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Активные объявления</text>
-  <text x="340" y="114" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">37</text>
+  <text x="40" y="101" font-family="Arial, sans-serif" font-size="9" fill="#888888">→ Чат/Объявления</text>
+  <text x="300" y="101" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">18/37</text>
   
   <!-- Macbook stand -->
-  <path d="M190 120 L140 140 L240 140 L190 120" fill="#EEEEEE" stroke="#DDDDDD"/>
+  <path d="M170 105 L140 125 L200 125 L170 105" fill="#EEEEEE" stroke="#DDDDDD"/>
   
   <!-- Caption -->
-  <text x="190" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Результат через 2 дня</text>
+  <text x="170" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Через 2 дня</text>
 </svg>
