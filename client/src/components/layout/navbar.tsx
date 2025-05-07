@@ -4,6 +4,9 @@ import Logo from '@/components/ui/logo';
 import { Menu, X, MessageCircle, Phone, ChevronRight, MapPin, Mail } from 'lucide-react';
 import { ContactPopup } from '@/components/ui/contact-popup';
 
+// Прямое использование пути к логотипу для мобильного меню
+const logoPath = "/src/assets/logo.png";
+
 const Navbar = () => {
   const [sideMenuOpen, setSideMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -136,7 +139,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <div className="flex items-center">
-            <img src="/src/assets/logo.png" alt="Логотип сайта" className="h-8" />
+            <img src={logoPath} alt="Логотип сайта" className="h-8" />
           </div>
           <button 
             onClick={toggleSideMenu}
