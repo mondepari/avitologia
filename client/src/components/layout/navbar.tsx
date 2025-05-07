@@ -139,7 +139,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <div className="flex items-center">
-            <img src="/src/assets/logo.png" alt="TF Logo" className="h-8" />
+            <img src="/static/logo.png" alt="TF Logo" className="h-8" />
           </div>
           <button 
             onClick={toggleSideMenu}
