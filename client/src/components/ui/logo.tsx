@@ -3,8 +3,8 @@ import { Link } from "wouter";
 const Logo = () => {
   return (
     <Link href="/">
-      <div className="flex items-center text-primary cursor-pointer">
-        <img src="/src/assets/logo.png" alt="TE Logo" className="h-10" />
+      <div className="flex items-center cursor-pointer">
+        <div className="font-bold text-2xl text-[#6200EE]">TF</div>
       </div>
     </Link>
   );
