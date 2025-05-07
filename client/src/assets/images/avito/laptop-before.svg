@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="380" height="120" viewBox="0 0 380 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="10" width="340" height="90" rx="4" fill="#F5F5F7" stroke="#DDDDDD"/>
+  <rect x="35" y="25" width="310" height="60" rx="4" fill="white" stroke="#E6E6E6"/>
+  <rect x="50" y="35" width="280" height="40" rx="2" fill="white" stroke="#EEEEEE"/>
+  
+  <!-- Window header -->
+  <rect x="50" y="35" width="280" height="25" rx="2" fill="#F9F0FC" stroke="#DE57C5"/>
+  <text x="60" y="52" font-family="Arial, sans-serif" font-size="10" fill="#333333">15 мая, среда</text>
+  
+  <!-- Table header -->
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="9" fill="#888888">Просмотры</text>
+  <text x="280" y="70" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">209</text>
+  
+  <text x="60" y="85" font-family="Arial, sans-serif" font-size="9" fill="#888888">Контакты</text>
+  <text x="280" y="85" font-family="Arial, sans-serif" font-size="9" fill="#333333" text-anchor="end">5</text>
+  
+  <text x="150" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333333" text-anchor="middle">Было</text>
+</svg>

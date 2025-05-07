@@ -4,6 +4,7 @@ import Footer from "@/components/layout/footer";
 import { ContactPopup } from "@/components/ui/contact-popup";
 import { Link } from "wouter";
 import { ArrowRight, Check, CheckCircle, ChevronRight, MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 import avitoDashboardImage from "../assets/avito/avito-dashboard.svg";
 import astronautImage from "../assets/avito/astronaut.svg";
 import needsCardsImage from "../assets/avito/needs-cards.svg";
@@ -218,17 +219,32 @@ const AvitoPage: React.FC = () => {
         
         {/* Существующий контент страницы */}
         <main className="pt-10">
-          {/* Hero Section */}
+          {/* Hero Section - доработано согласно референсу */}
           <section className="bg-background py-16 md:py-20 relative overflow-hidden">
             <div className="container px-4 relative z-10">
-              <div className="max-w-4xl mx-auto text-center mb-12">
+              <div className="max-w-4xl mx-auto text-center mb-10">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                  Вы получите <span className="text-primary">стабильный поток</span> из целевых клиентов
+                  <span className="text-primary">Вы получите</span> стабильный поток из целевых клиентов!
                 </h1>
-                <p className="text-lg md:text-xl text-foreground/80 mb-8">
-                  Min <span className="text-primary border-b border-primary">1 день</span> на запуск кампании &nbsp;&nbsp;&nbsp; Max <span className="text-primary border-b border-primary">30 дней</span> на достижение результата
-                </p>
-                <div className="flex justify-center">
+                
+                <div className="flex flex-wrap justify-center gap-8 md:gap-16 lg:gap-24 mt-12 mb-10">
+                  <div className="text-center">
+                    <div className="text-primary text-3xl md:text-4xl font-bold">Min</div>
+                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Минимальный вложения от 10 000 р.</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-primary text-3xl md:text-4xl font-bold">1 день</div>
+                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Минимальный срок на первые сделки</div>
+                  </div>
+                  
+                  <div className="text-center">
+                    <div className="text-primary text-3xl md:text-4xl font-bold">Max</div>
+                    <div className="text-xs text-gray-500 max-w-[120px] mx-auto">Высокий средний чек</div>
+                  </div>
+                </div>
+                
+                <div className="flex justify-center mt-6 mb-8">
                   <ContactPopup>
                     <button className="bg-gradient-to-r from-[#6200EE] to-[#7A36DF] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       Заказать рекламу на Авито
@@ -237,7 +253,51 @@ const AvitoPage: React.FC = () => {
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mt-12 relative">
+                {/* Ноутбук "Было" */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="w-full max-w-sm shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                >
+                  <img 
+                    src="/src/assets/images/avito/laptop-before.svg" 
+                    alt="Статистика до оптимизации" 
+                    className="w-full object-contain"
+                  />
+                </motion.div>
+                
+                {/* Стрелка между ноутбуками */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                  className="md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 z-10 md:w-16 md:h-16"
+                >
+                  <img 
+                    src="/src/assets/images/avito/arrow-curved.svg" 
+                    alt="Направление роста" 
+                    className="w-16 h-16 object-contain"
+                  />
+                </motion.div>
+                
+                {/* Ноутбук "Стало" */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="w-full max-w-sm shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                >
+                  <img 
+                    src="/src/assets/images/avito/laptop-after.svg" 
+                    alt="Статистика после оптимизации" 
+                    className="w-full object-contain"
+                  />
+                </motion.div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
                 <div className="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden border border-border">
                   <div className="relative z-10">
                     <h3 className="text-xl font-semibold mb-4">Что вы получаете?</h3>
