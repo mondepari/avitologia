@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <div className="text-purple-700 font-bold text-2xl">TF</div>
+                <img src="/src/assets/logo.png" alt="Logo" className="h-9" />
               </div>
             </Link>
             <div className="text-xs font-medium text-gray-600 hidden md:block">
@@ -132,7 +132,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           <div className="flex items-center">
-            <div className="text-purple-700 font-bold text-2xl">TF</div>
+            <img src="/src/assets/logo.png" alt="Logo" className="h-9" />
           </div>
           <button 
             onClick={toggleSideMenu}
