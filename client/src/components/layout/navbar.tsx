@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <Logo />
-              <div className="ml-4 text-xs font-medium text-gray-600 hidden lg:block">
+              <div className="ml-4 text-xs font-medium text-gray-600 hidden md:block">
                 <p>Сертифицированный специалист по<br />Яндекс.Директ</p>
               </div>
             </div>

@@ -1,17 +1,16 @@
 import { Link } from "wouter";
-import logoPath from "../../assets/logo.png"; // Импортируем файл изображения
 
+// Важно: используем полный путь к изображению
 const Logo = () => {
   return (
     <Link href="/">
       <div className="flex items-center cursor-pointer">
-        {/* Используем импортированное изображение */}
         <img 
-          src={logoPath} 
+          src="/src/assets/logo.png" 
           alt="TF Logo" 
           className="h-9" 
           onError={(e) => {
-            // Если изображение не загрузилось, показываем резервный SVG
+            // Если изображение не загрузилось, показываем резервный текст
             const target = e.currentTarget as HTMLImageElement;
             target.style.display = 'none';
             const parent = target.parentNode as HTMLElement;

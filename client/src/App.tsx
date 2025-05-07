@@ -8,7 +8,6 @@ import CasesPage from "@/pages/cases";
 import CaseDetails from "@/pages/case-details";
 import AvitoPage from "@/pages/avito";
 import BackToTop from "@/components/ui/back-to-top";
-import Navbar from "@/components/layout/navbar";
 
 function Router() {
   return (
@@ -27,7 +26,6 @@ function App() {
     <div>
       <QueryClientProvider client={queryClient}>
         <div className="bg-white min-h-screen">
-          <Navbar />
           <Router />
           <Toaster />
           <BackToTop />
